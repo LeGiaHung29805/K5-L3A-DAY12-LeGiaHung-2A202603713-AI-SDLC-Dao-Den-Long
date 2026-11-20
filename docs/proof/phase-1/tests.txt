@@ -1,0 +1,196 @@
+TAP version 13
+# Subtest: CLI supports contract command, emits parseable JSONL, stops immediately on win
+ok 1 - CLI supports contract command, emits parseable JSONL, stops immediately on win
+  ---
+  duration_ms: 128.2737
+  type: 'test'
+  ...
+# Subtest: CLI malformed JSON, duplicate ticks and bad scenario produce exit 2 on stderr
+ok 2 - CLI malformed JSON, duplicate ticks and bad scenario produce exit 2 on stderr
+  ---
+  duration_ms: 597.595
+  type: 'test'
+  ...
+# Subtest: CLI output is byte-identical on repeat; snapshots have sim_tick=tick
+ok 3 - CLI output is byte-identical on repeat; snapshots have sim_tick=tick
+  ---
+  duration_ms: 177.5469
+  type: 'test'
+  ...
+# Subtest: scenario tick 0 is event-free, score-free, preserves omitted lanterns
+ok 4 - scenario tick 0 is event-free, score-free, preserves omitted lanterns
+  ---
+  duration_ms: 4.2357
+  type: 'test'
+  ...
+# Subtest: 60 steps move exactly player_speed metres and consume one second
+ok 5 - 60 steps move exactly player_speed metres and consume one second
+  ---
+  duration_ms: 3.1108
+  type: 'test'
+  ...
+# Subtest: time_left_s retains contract precision; only coordinates are rounded
+ok 6 - time_left_s retains contract precision; only coordinates are rounded
+  ---
+  duration_ms: 0.8827
+  type: 'test'
+  ...
+# Subtest: yaw follows contract formula and diagonals normalize
+ok 7 - yaw follows contract formula and diagonals normalize
+  ---
+  duration_ms: 2.1241
+  type: 'test'
+  ...
+# Subtest: partial frames preserve movement and camera
+ok 8 - partial frames preserve movement and camera
+  ---
+  duration_ms: 1.1171
+  type: 'test'
+  ...
+# Subtest: held jump triggers once, a new edge jumps again
+ok 9 - held jump triggers once, a new edge jumps again
+  ---
+  duration_ms: 0.7985
+  type: 'test'
+  ...
+# Subtest: island edge is a non-damaging boundary
+ok 10 - island edge is a non-damaging boundary
+  ---
+  duration_ms: 2.6977
+  type: 'test'
+  ...
+# Subtest: pickup includes boundary, ignores height, honors capacity and scores per mote
+ok 11 - pickup includes boundary, ignores height, honors capacity and scores per mote
+  ---
+  duration_ms: 1.0026
+  type: 'test'
+  ...
+# Subtest: empty inputs keep player still and collect nothing out of reach
+ok 12 - empty inputs keep player still and collect nothing out of reach
+  ---
+  duration_ms: 1.1115
+  type: 'test'
+  ...
+# Subtest: partial deposit consumes all carried and needs a fresh interact edge
+ok 13 - partial deposit consumes all carried and needs a fresh interact edge
+  ---
+  duration_ms: 1.2209
+  type: 'test'
+  ...
+# Subtest: full deposit lights exactly once, preserves excess, and adds declared points
+ok 14 - full deposit lights exactly once, preserves excess, and adds declared points
+  ---
+  duration_ms: 0.8933
+  type: 'test'
+  ...
+# Subtest: interact selects nearest unlit lantern, fails outside inclusive radius
+ok 15 - interact selects nearest unlit lantern, fails outside inclusive radius
+  ---
+  duration_ms: 0.5107
+  type: 'test'
+  ...
+# Subtest: pulse pays exact cost, includes radius boundary, pushes and stuns only nearby shades
+ok 16 - pulse pays exact cost, includes radius boundary, pushes and stuns only nearby shades
+  ---
+  duration_ms: 1.0959
+  type: 'test'
+  ...
+# Subtest: pulse with insufficient energy has no event and no effect
+ok 17 - pulse with insufficient energy has no event and no effect
+  ---
+  duration_ms: 0.4222
+  type: 'test'
+  ...
+# Subtest: held pulse never repeats; cooldown rejects fresh edges until ready
+ok 18 - held pulse never repeats; cooldown rejects fresh edges until ready
+  ---
+  duration_ms: 1.316
+  type: 'test'
+  ...
+# Subtest: stunned shade stays still for declared duration then chases again
+ok 19 - stunned shade stays still for declared duration then chases again
+  ---
+  duration_ms: 3.4219
+  type: 'test'
+  ...
+# Subtest: shade speed approaches player without overshooting
+ok 20 - shade speed approaches player without overshooting
+  ---
+  duration_ms: 1.6719
+  type: 'test'
+  ...
+# Subtest: damage uses global invulnerability, rounds dropped count down, and has exact event ticks
+ok 21 - damage uses global invulnerability, rounds dropped count down, and has exact event ticks
+  ---
+  duration_ms: 1.8734
+  type: 'test'
+  ...
+# Subtest: lit lanterns exclude shades and protect player; unlit lanterns do not
+ok 22 - lit lanterns exclude shades and protect player; unlit lanterns do not
+  ---
+  duration_ms: 5.5066
+  type: 'test'
+  ...
+# Subtest: no flames loses once and stops further simulation
+ok 23 - no flames loses once and stops further simulation
+  ---
+  duration_ms: 1.6025
+  type: 'test'
+  ...
+# Subtest: dawn occurs on exact final step
+ok 24 - dawn occurs on exact final step
+  ---
+  duration_ms: 2.0884
+  type: 'test'
+  ...
+# Subtest: all five lanterns win with declared floor time and flame bonuses
+ok 25 - all five lanterns win with declared floor time and flame bonuses
+  ---
+  duration_ms: 1.7777
+  type: 'test'
+  ...
+# Subtest: same seed + scenario + inputs produces byte-identical output and stable IDs
+ok 26 - same seed + scenario + inputs produces byte-identical output and stable IDs
+  ---
+  duration_ms: 90.0255
+  type: 'test'
+  ...
+# Subtest: explicit empty lists and random false disable initial and periodic generation
+ok 27 - explicit empty lists and random false disable initial and periodic generation
+  ---
+  duration_ms: 0.5895
+  type: 'test'
+  ...
+# Subtest: random shades spawn at tick 600 and preserve unique scenario/generated IDs
+ok 28 - random shades spawn at tick 600 and preserve unique scenario/generated IDs
+  ---
+  duration_ms: 3.2371
+  type: 'test'
+  ...
+# Subtest: snapshot schedule includes zero, end is mandatory, ticks N executes N steps
+ok 29 - snapshot schedule includes zero, end is mandatory, ticks N executes N steps
+  ---
+  duration_ms: 0.9773
+  type: 'test'
+  ...
+# Subtest: zero ticks outputs initial snapshot and end only; positions round to 3 decimals
+ok 30 - zero ticks outputs initial snapshot and end only; positions round to 3 decimals
+  ---
+  duration_ms: 0.7933
+  type: 'test'
+  ...
+# Subtest: invalid input and scenario formats fail validation
+ok 31 - invalid input and scenario formats fail validation
+  ---
+  duration_ms: 1.7433
+  type: 'test'
+  ...
+1..31
+# tests 31
+# suites 0
+# pass 31
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1055.9791

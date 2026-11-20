@@ -1,0 +1,96 @@
+{
+  "generated_at": "2026-11-20T08:29:00.720Z",
+  "platform": "win32 10.0.19045 x64",
+  "node": "v22.19.0",
+  "cpu": "11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz",
+  "source_sha256": "f709f47ce089cc0a14a90464ef5c7754a42a23b7a45df857fc340f4535b94d60",
+  "contract_sha256": "4a6335c6ee96f72f02111f1693a35ef387e56b144eb25f1ac2873273764876c1",
+  "deterministic": true,
+  "test_exit_code": 0,
+  "checks": [
+    {
+      "name": "win",
+      "command": "node src/headless.mjs --seed 2026 --night 1 --ticks 120 --snapshot-every 10 --out docs/proof/phase-1/win.jsonl --scenario tests/fixtures/near-win.json --inputs tests/fixtures/win-inputs.json",
+      "sha256": "33c71bdf81e7fe45a0db4eb54e1d707868257d226d5f7487bc5052fcd890d330",
+      "elapsed_ms": 83.68,
+      "end": {
+        "type": "end",
+        "ticks": 1,
+        "state": "won",
+        "score": 738
+      }
+    },
+    {
+      "name": "loss",
+      "command": "node src/headless.mjs --seed 2026 --night 1 --ticks 120 --snapshot-every 10 --out docs/proof/phase-1/loss.jsonl --scenario tests/fixtures/near-loss.json",
+      "sha256": "0e0631b04104c8889c38e9e157a4a432e6b9f218466915c782dc061e6624448c",
+      "elapsed_ms": 79.01,
+      "end": {
+        "type": "end",
+        "ticks": 1,
+        "state": "lost",
+        "score": 0
+      }
+    },
+    {
+      "name": "pulse",
+      "command": "node src/headless.mjs --seed 2026 --night 1 --ticks 210 --snapshot-every 10 --out docs/proof/phase-1/pulse.jsonl --scenario tests/fixtures/pulse.json --inputs tests/fixtures/pulse-inputs.json",
+      "sha256": "78f75c2447fc8d8b250a7e9e3cd3d3c1d4e5c09b95ad270829c3fc0a961fa8a3",
+      "elapsed_ms": 94.21,
+      "end": {
+        "type": "end",
+        "ticks": 210,
+        "state": "playing",
+        "score": 25
+      }
+    },
+    {
+      "name": "seed-a",
+      "command": "node src/headless.mjs --seed 2026 --night 1 --ticks 900 --snapshot-every 30 --out docs/proof/phase-1/seed-a.jsonl",
+      "sha256": "644fe8feaacdc2061e5118da7c70153918340cd80ee6b1469f5966395684bcd7",
+      "elapsed_ms": 111.78,
+      "end": {
+        "type": "end",
+        "ticks": 900,
+        "state": "playing",
+        "score": 0
+      }
+    },
+    {
+      "name": "seed-b",
+      "command": "node src/headless.mjs --seed 2026 --night 1 --ticks 900 --snapshot-every 30 --out docs/proof/phase-1/seed-b.jsonl",
+      "sha256": "644fe8feaacdc2061e5118da7c70153918340cd80ee6b1469f5966395684bcd7",
+      "elapsed_ms": 108.31,
+      "end": {
+        "type": "end",
+        "ticks": 900,
+        "state": "playing",
+        "score": 0
+      }
+    },
+    {
+      "name": "full-route",
+      "command": "node src/headless.mjs --seed 2026 --night 1 --ticks 1432 --snapshot-every 60 --out docs/proof/phase-1/full-route.jsonl --scenario docs/proof/phase-1/full-route.scenario.json --inputs docs/proof/phase-1/full-route.inputs.json",
+      "sha256": "405db10333712244db187cfab025fb3b5d3fc5d88745a10c97934fa43b2699aa",
+      "elapsed_ms": 100.39,
+      "end": {
+        "type": "end",
+        "ticks": 1431,
+        "state": "won",
+        "score": 2352
+      }
+    },
+    {
+      "name": "default-world",
+      "command": "node src/headless.mjs --seed 2026 --night 1 --ticks 2954 --snapshot-every 60 --out docs/proof/phase-1/default-world.jsonl --inputs docs/proof/phase-1/default-world.inputs.json",
+      "sha256": "95eaeda6b516bf31967e90c6ed078dfb3d7b1793fbf42a31f2fb0a77c70397c9",
+      "elapsed_ms": 203.64,
+      "end": {
+        "type": "end",
+        "ticks": 2953,
+        "state": "won",
+        "score": 2770
+      }
+    }
+  ]
+}
