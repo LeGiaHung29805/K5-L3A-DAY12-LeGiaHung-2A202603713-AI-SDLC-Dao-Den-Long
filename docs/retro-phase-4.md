@@ -26,6 +26,15 @@ Không có số liệu billing/token đầy đủ từ nền tảng, nên không
 
 Tiết kiệm rõ nhất là tái dùng core, fixture và script evidence; không dựng engine khác khi luật đổi. Không đo thời gian so với một baseline làm tay nên không đưa số giờ hay phần trăm tiết kiệm giả. Đọc có mục tiêu, log rút gọn, checkpoint và lưu bằng chứng giúp giảm đọc lại. Chạy UI muộn gây thêm lượt sửa CSS/benchmark; nên mở sớm viewport chuẩn.
 
+| Phase | Ước tính token |
+|---|---:|
+| 1 | 25.000–40.000 |
+| 2 | 30.000–50.000 |
+| 3 | 20.000–35.000 |
+| 4 | 25.000–175.000 |
+
+Phase 1–3 dùng các khoảng trong notes từng phase. Với Phase 4, kịch bản sử dụng thấp lấy 100.000 trừ 75.000 token cho ba phase đầu. Kịch bản sử dụng cao lấy 300.000 trừ 125.000. Đây là hai kịch bản lập kế hoạch có độ tin cậy thấp. Cần telemetry phiên để ước tính sát hơn.
+
 ## Cải thiện lần sau
 
 1. Lập ma trận yêu cầu → test → artifact ngay đầu mỗi phase; phân biệt logic, UI và hiệu năng.

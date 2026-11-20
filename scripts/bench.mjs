@@ -35,7 +35,7 @@ try {
     const query = new URLSearchParams({ seed: String(seed), duration: String(duration), token, process_start: String(processEpoch), record: values.video ? '1' : '0' });
     const url = `http://localhost:${port}/bench.html?${query}`; console.log(`BENCH_URL=${url}`);
     if (!values['no-open']) {
-      const command = process.platform === 'win32' ? ['cmd', ['/c', 'start', '', url]] : process.platform === 'darwin' ? ['open', [url]] : ['xdg-open', [url]];
+      const command = process.platform === 'win32' ? ['rundll32.exe', ['url.dll,FileProtocolHandler', url]] : process.platform === 'darwin' ? ['open', [url]] : ['xdg-open', [url]];
       const opener = spawn(command[0], command[1], { stdio: 'ignore', windowsHide: true }); opener.on('error', () => console.log('Open BENCH_URL manually.'));
     }
   });

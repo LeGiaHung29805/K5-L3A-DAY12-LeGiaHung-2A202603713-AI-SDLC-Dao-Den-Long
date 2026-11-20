@@ -1,0 +1,26 @@
+{
+  "contract_version": "1.3",
+  "avg_fps": 127.43333333333334,
+  "p1_low_fps": 71.31102578167884,
+  "frame_ms_p95": 13.900000000001455,
+  "frames": 3823,
+  "load_ms": 840.5305,
+  "peak_mem_mb": null,
+  "vsync_off": false,
+  "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009A68) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+  "os": "Windows_NT 10.0.19045 x64",
+  "seed": 42,
+  "duration_s": 30,
+  "warmup_s": 3,
+  "width": 1280,
+  "height": 720,
+  "viewport": {
+    "width": 1920,
+    "height": 922
+  },
+  "shadows": 200,
+  "fireflies": 100,
+  "memory_note": "Web build: browser process RSS is not available to JavaScript.",
+  "vsync_note": "requestAnimationFrame is browser scheduled; WebGL has no portable vsync-disable API.",
+  "frame_data_sha256": "0e987b1cb5d86c9d4d67f77732b13f8a6302c526d54ec7bfa460597f4f6e8cd0"
+}

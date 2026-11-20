@@ -7,3 +7,15 @@
 - QA browser: E châm dầu (+10 điểm, dùng 2 đom đóm), W/Space/Q; báo trùng KeyS, lưu KeyI qua reload, khôi phục mặc định. Cỡ chữ tính từ DOM ở HUD 1280×720 tối thiểu 18px (font-audit.json), chữ thân trong Settings lớn 22,5px và lưu cùng giảm chuyển động. Kiểm tra cảnh báo spawn/mũi tên ngoài màn hình, 10 giây cuối, dầu yếu, gió Đêm 3. near-loss có form lưu và bản ghi vẫn hiện sau reload; CLI xuất bản ghi thật (leaderboard-export.json). Đêm 3 campaign đạt 5/7, vẫn chơi ở 00:04, tới 00:00 hiện Bình Minh và form nhập tên (830 điểm).
 - Demo ghi gameplay thật trong fixture refuel, cảnh benchmark quay riêng ở lượt sơ bộ có ghi nhãn và slide số liệu cuối. Video không dùng để tính FPS chính thức.
 - Chưa xác minh ngưỡng hiệu năng trên máy giảng viên hoặc hidden tests.
+
+## Kiểm tra lại sau khi sửa lệnh mở browser trên Windows
+
+Lệnh cũ qua `cmd start` cắt query string tại dấu `&`. Gọi URL handler trực tiếp giữ đủ mã phiên, seed và thời lượng. Hai lượt dưới đây dùng WebGL thật trên Intel UHD, seed 42, warmup 3 giây và đo 30 giây. Hash SHA-256 của mỗi mảng frame time khớp báo cáo.
+
+| Cách chạy | Viewport | FPS trung bình | 1% low | Load | Kết quả |
+|---|---:|---:|---:|---:|---|
+| Tự mở Chrome sau khi sửa | 1920×922 | 127,43 | 71,31 | 0,84 s | Đạt ba ngưỡng trên canvas 1280×720. Viewport lớn hơn kích thước ticket nên dùng làm bằng chứng sửa launcher. |
+| Mở browser tích hợp ở foreground, `--no-open` | 1280×720 | 92,67 | 30,06 | 21,26 s | Hai ngưỡng FPS đạt ở đúng viewport. Load tính cả thời gian đợi công cụ mở tab và vượt 10 s. |
+
+- Tự mở Chrome: [kết quả](bench-retest-auto.json) · [raw frame times](bench-retest-auto.frames.json).
+- Đúng viewport: [kết quả](bench-retest-1280.json) · [raw frame times](bench-retest-1280.frames.json).

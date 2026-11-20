@@ -69,10 +69,17 @@ Soak chạy 10 Đêm một tiến trình, seed 7…16, đảo 1→2→3, đổi 
 
 Đọc số đo thực tế và giới hạn tại [báo cáo](docs/proof/phase-4/README.md). Không coi headless timing là FPS hay coi mục tiêu máy giảng viên đã đạt trên mọi máy.
 
-## Bàn giao và sáng tạo
+## Bàn giao
 
 URL QA ghi nhãn tình huống: /?scenario=refuel, relight, drain-pulse, near-loss, accessibility; /?night=3&scenario=wind; /?scenario=campaign rút ngắn Đêm để thử luồng. Luồng / luôn bắt đầu Đêm 1, thắng mới sang Đêm 2.
 
-Mây nón lá treo đèn nhỏ, đảo procedural, bến gỗ/đường đá, minimap, nhạc Web Audio, vệt Lướt. Đèn tắt xẹp và có vết rách; thanh dầu không chỉ dựa vào màu. Hình ảnh/âm thanh không đổi seed, thực thể hay output headless.
+[Bảng truy vết và cách tái tạo bằng chứng cho bốn phase](docs/proof/rubric.md).
+
+## Sáng tạo của tôi
+
+- **Đèn tắt đổi hình dáng.** Lồng đèn xẹp và lộ vết rách để người chơi nhận ra đèn đã tắt qua hình dáng. Mở `/?scenario=relight`, quan sát đèn tắt rồi nhấn **E** trong tầm tương tác để so sánh trước và sau. [Bằng chứng headless của ca thắp lại](docs/proof/phase-4/regression/relight.jsonl)
+- **Minimap theo địa hình từng Đêm.** Bản đồ thu nhỏ giúp định hướng khi đèn nằm ngoài khung hình. [Ảnh gameplay](docs/proof/phase-4/gameplay.jpg)
+
+Hai chi tiết nằm ở lớp hiển thị. Core và kết quả headless được đối chiếu qua [19 ca hồi quy](docs/proof/phase-4/regression/summary.json).
 
 [CHANGELOG](CHANGELOG.md) · [Retro](docs/retro-phase-4.md) · [ADR dầu/bình minh](docs/adr/003-lantern-fuel-and-dawn.md) · [ADR release](docs/adr/004-release-measurements.md) · [CREDITS](CREDITS.md) · [MIT](LICENSE). Harness công khai: AGENTS.md, pre-commit fail-closed, tests, evidence scripts, GitHub Actions. MP4/ZIP/checksum và hướng dẫn trong Release.
