@@ -40,3 +40,14 @@ Xuất từng tag bằng `git archive` vào thư mục tạm riêng trong checko
 | Checkout Phase 4 có bản sửa launcher | 73/73 | 19 ca CLI |
 
 QA UI và FPS ở Phase 2 vẫn theo trạng thái ghi tại tag gốc.
+
+## Đối chiếu lại cho mục B
+
+Sau `npm run verify` và `npm run evidence`, đối chiếu từng tệp JSONL tái sinh với SHA-256 trong manifest, bản ở `phase-4:docs/proof/phase-4/regression/` và bản ở `phase-3:docs/proof/phase-3/`. Cả 19/19 tệp khớp ở cả ba phép đối chiếu. `npm run build` hoàn thành sau khi sinh fixture. [Manifest kèm lệnh và SHA-256](phase-4/regression/summary.json)
+
+## Chơi được và sáng tạo cho mục F
+
+- **Thắp lại đèn.** Mở `/?scenario=relight`, chọn vào Đêm 1, chờ báo đèn cạn dầu rồi nhấn **E**. Trong lượt browser đã kiểm tra, HUD đổi từ 0/5 đèn, 5/10 đom đóm và 0 điểm sang 1/5 đèn, 0/12 đom đóm và 65 điểm. Hai ảnh trích từ WebM do trình ghi WebGL của game tạo, tại 0,12 giây và 3 giây. Ở ca CLI tương ứng, `lantern_out` xảy ra trước `deposit` 5 đom đóm và `lantern_lit` có `relight: true`. [Trước](phase-4/relight-before.jpg) · [Sau](phase-4/relight-after.jpg) · [JSONL gốc](phase-4/regression/relight.jsonl)
+- **Minimap theo từng Đêm.** Ảnh gameplay Đảo Bến cho thấy bản đồ, vị trí Mây, các đèn và mũi tên chỉ đèn ngoài khung hình. Ảnh Bình Minh Đảo Chuông có tên đảo và cách bố trí các đèn khác, cùng kết quả 5/7 đèn sáng. [Đảo Bến](phase-4/gameplay.jpg) · [Đảo Chuông](phase-4/night3-name.jpg)
+
+Lượt browser thắp lại chạy trên bản Phase 4. Với `phase-2`, kiểm tra bổ sung nạp nguyên module `web/audio.js` từ tag vào Node, dùng `AudioContext` giả lập và ghi nhận các lệnh gọi `tone`. Cả 10 hiệu ứng theo ticket phát sinh chuỗi tần số riêng, ba Đêm có nốt mở đầu khác nhau và âm lượng 0 dừng lên lịch nốt nhạc nền. Đây là kiểm tra logic tạo âm, còn kiểm tra nghe âm thanh thật, luồng UI đủ ba Đêm, lưu cài đặt qua reload và FPS 1280×720 tại tag Phase 2 vẫn theo proof gốc. [Mã âm thanh Phase 2](https://github.com/LeGiaHung29805/K5-L3A-DAY12-LeGiaHung-2A202603713-AI-SDLC-Dao-Den-Long/blob/phase-2/web/audio.js) · [Trạng thái QA Phase 2](phase-2/browser-status.json)

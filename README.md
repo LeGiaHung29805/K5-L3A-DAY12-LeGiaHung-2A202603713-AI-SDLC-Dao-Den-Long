@@ -79,8 +79,8 @@ URL QA ghi nhãn tình huống: /?scenario=refuel, relight, drain-pulse, near-lo
 
 ## Sáng tạo của tôi
 
-- **Đèn tắt đổi hình dáng.** Lồng đèn xẹp và lộ vết rách để người chơi nhận ra đèn đã tắt qua hình dáng. Mở `/?scenario=relight`, quan sát đèn tắt rồi nhấn **E** trong tầm tương tác để so sánh trước và sau. [Bằng chứng headless của ca thắp lại](docs/proof/phase-4/regression/relight.jsonl)
-- **Minimap theo địa hình từng Đêm.** Bản đồ thu nhỏ giúp định hướng khi đèn nằm ngoài khung hình. [Ảnh gameplay](docs/proof/phase-4/gameplay.jpg)
+- **Đèn tắt đổi hình dáng.** Lồng đèn xẹp và lộ vết rách để người chơi nhận ra đèn đã tắt qua hình dáng. Mở `/?scenario=relight`, quan sát đèn tắt rồi nhấn **E** trong tầm tương tác. [Trước khi nhấn E](docs/proof/phase-4/relight-before.jpg) · [Sau khi thắp lại](docs/proof/phase-4/relight-after.jpg) · [JSONL](docs/proof/phase-4/regression/relight.jsonl)
+- **Minimap theo địa hình từng Đêm.** Bản đồ thu nhỏ giúp định hướng khi đèn nằm ngoài khung hình. [Đảo Bến](docs/proof/phase-4/gameplay.jpg) · [Đảo Chuông](docs/proof/phase-4/night3-name.jpg)
 
 Hai chi tiết nằm ở lớp hiển thị. Core và kết quả headless được đối chiếu qua [19 ca hồi quy](docs/proof/phase-4/regression/summary.json).
 
