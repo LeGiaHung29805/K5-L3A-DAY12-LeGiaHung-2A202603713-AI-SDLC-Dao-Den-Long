@@ -1,0 +1,51 @@
+name: Publish game release
+
+on:
+  push:
+    tags: ["v*.*.*"]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm ci
+      - run: npm run verify
+      - run: npm run evidence
+
+  publish:
+    needs: verify
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Make playable ZIP
+        run: |
+          git archive --format=zip --output=game-web.zip HEAD
+          zip -qr game-web.zip dist
+          sha256sum game-web.zip > SHA256SUMS.txt
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" game-web.zip SHA256SUMS.txt \
+            --verify-tag \
+            --title "Đảo Đèn Lồng $GITHUB_REF_NAME" \
+            --notes "Giải nén ZIP, chạy node scripts/serve.mjs với Node.js 22+, rồi mở http://localhost:5173."
