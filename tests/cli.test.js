@@ -15,7 +15,7 @@ test('CLI supports contract command, emits parseable JSONL, stops immediately on
     assert.equal(result.status, 0, result.stderr); assert.equal(result.stderr, '');
     const rows = readFileSync(out, 'utf8').trim().split('\n').map(JSON.parse);
     assert.equal(rows[0].type, 'snapshot'); assert.equal(rows[0].tick, 0); assert.equal(rows[0].score, 0);
-    assert.deepEqual(rows.at(-1), { type: 'end', ticks: 1, state: 'won', score: 738 });
+    assert.deepEqual(rows.at(-1), { type: 'end', ticks: 1, state: 'won', score: 588 });
     assert.equal(rows.find(r => r.name === 'game_over').tick, 1);
   } finally { rmSync(dir, { recursive: true, force: true }); }
 });
@@ -27,7 +27,7 @@ test('CLI malformed JSON, duplicate ticks and bad scenario produce exit 2 on std
     for (const [flag, body] of [['--inputs', '{'], ['--inputs', '{"frames":[{"tick":0},{"tick":0}]}'], ['--scenario', '{"motes":[[0]]}'], ['--scenario', 'null']]) {
       writeFileSync(file, body); const result = invoke([...base, flag, file]); assert.equal(result.status, 2); assert.match(result.stderr, /Input error/); assert.equal(result.stdout, '');
     }
-    for (const extra of [['--snapshot-every', '0'], ['--ticks', '-1'], ['--night', '2'], ['--unknown', '1']]) assert.equal(invoke([...base, ...extra]).status, 2);
+    for (const extra of [['--snapshot-every', '0'], ['--ticks', '-1'], ['--night', '4'], ['--unknown', '1']]) assert.equal(invoke([...base, ...extra]).status, 2);
   } finally { rmSync(dir, { recursive: true, force: true }); }
 });
 test('CLI output is byte-identical on repeat; snapshots have sim_tick=tick', () => {

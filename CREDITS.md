@@ -8,3 +8,5 @@
 - Font hệ thống Segoe UI/system-ui, Georgia/Times New Roman; không phân phối font ngoài.
 
 MIT của repo áp dụng mã nguồn triển khai, không cấp lại quyền PRD/nguyên tác của giảng viên hoặc dependency; giữ quyền/giấy phép tác giả tương ứng.
+
+Phase2: bố cục Đảo Cau/Đảo Chuông, số liệu chuẩn và bảng màu từ Ticket-02 trên lab board. Geometry dốc/tầng/cầu/bục/tháp chuông/Gió Lạc/Bùa Gió và nhạc từng Đêm được tạo bằng code với hỗ trợ Codex, không asset bên ngoài mới.

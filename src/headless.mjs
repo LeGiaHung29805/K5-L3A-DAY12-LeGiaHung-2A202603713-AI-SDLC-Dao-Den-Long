@@ -23,7 +23,7 @@ try {
   };
   const seed = integer('seed', Number.MIN_SAFE_INTEGER);
   const night = integer('night', 1);
-  if (night !== 1) throw new InputError('Phase 1 supports --night 1 only');
+  if (night > 3) throw new InputError('--night must be 1, 2 or 3');
   const ticks = integer('ticks', 0);
   const snapshotEvery = integer('snapshot-every', 1, '10');
   if (!values.out) throw new InputError('--out is required');
@@ -33,9 +33,9 @@ try {
   const inputs = values.inputs ? json(values.inputs) : { frames: [] };
   // Validate fully before truncating the destination.
   const { validateScenario, validateInputs } = await import('./core.js');
-  validateScenario(scenario, contract.tuning); validateInputs(inputs);
+  validateScenario(scenario, contract.tuning, night); validateInputs(inputs);
   output = openSync(values.out, 'w');
-  simulate({ tuning: contract.tuning, seed, scenario, inputs, ticks, snapshotEvery,
+  simulate({ tuning: contract.tuning, seed, night, scenario, inputs, ticks, snapshotEvery,
     write: row => writeSync(output, JSON.stringify(row) + '\n') });
 } catch (e) {
   process.stderr.write(`${e instanceof InputError ? 'Input error' : 'Error'}: ${e.message}\n`);

@@ -3,7 +3,7 @@ const root = new URL('../', import.meta.url);
 await mkdir(new URL('dist/vendor/', root), { recursive: true });
 await cp(new URL('web/', root), new URL('dist/', root), { recursive: true });
 await mkdir(new URL('dist/src/', root), { recursive: true });
-await copyFile(new URL('src/core.js', root), new URL('dist/src/core.js', root));
+for (const file of ['core.js', 'rules.js', 'simulation.js', 'world.js', 'campaign.js']) await copyFile(new URL(`src/${file}`, root), new URL(`dist/src/${file}`, root));
 await copyFile(new URL('game.contract.json', root), new URL('dist/game.contract.json', root));
 await cp(new URL('tests/fixtures/', root), new URL('dist/scenarios/', root), { recursive: true });
 for (const file of ['three.module.js', 'three.core.js']) await copyFile(new URL(`node_modules/three/build/${file}`, root), new URL(`dist/vendor/${file}`, root));
