@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071726">
+  <meta name="description" content="Cùng Mây gom đom đóm, đẩy lùi Bóng Mực và thắp sáng Đảo Bến. Game 3D Đảo Đèn Lồng.">
+  <title>Đảo Đèn Lồng · Đêm 1 — Đảo Bến</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='17' y='12' width='30' height='40' rx='12' fill='%23ffc36a'/%3E%3Cpath d='M23 8h18M23 56h18M32 56v7' stroke='%23d58c43' stroke-width='4'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./game.js"></script>
+</head>
+<body>
+  <canvas id="world" aria-label="Thế giới 3D Đảo Đèn Lồng"></canvas>
+  <div class="vignette"></div>
+  <header>
+    <div class="brand"><span class="brand-mark">✦</span><div><h1>Đảo Đèn Lồng</h1><p>ĐÊM 1 <span>·</span> ĐẢO BẾN</p></div></div>
+    <div class="top-actions"><button id="sound" class="icon-button" aria-label="Bật âm thanh" title="Âm thanh">♪ <span>Âm thanh tắt</span></button><button id="help" class="icon-button" aria-label="Hướng dẫn điều khiển">?</button></div>
+  </header>
+  <main>
+    <section id="intro" class="intro panel">
+      <p class="eyebrow">MỘT ĐỐM SÁNG. CẢ MỘT HÒN ĐẢO.</p>
+      <h2>Mang ánh sáng<br>về nhà.</h2>
+      <p class="story">Sương đen đã phủ kín Đảo Bến. Cùng Mây gom những đốm đom đóm, thắp lại năm chiếc đèn và đánh thức hòn đảo giữa biển mây.</p>
+      <div class="mission"><span class="tiny-lantern">✧</span><p>Thắp đủ <strong>5 đèn lồng</strong> trước bình minh.<br><span>Giữ lửa trong tim, đừng để Bóng Mực chạm vào.</span></p></div>
+      <button id="start" class="primary">Bắt đầu hành trình <span>↵</span></button>
+      <p class="intro-foot">WASD để đi · Space để nhảy · E nạp đèn · Q tỏa sáng</p>
+    </section>
+    <section id="hud" class="hidden" aria-label="Thông tin trò chơi">
+      <div class="resources panel"><div class="resource"><span class="resource-label">NGỌN LỬA</span><strong id="flames" class="hearts">● ● ●</strong></div><div class="resource"><span class="resource-label">ĐOM ĐÓM</span><strong><span id="carried">0</span><small> / 12</small><span class="gold"> ✧</span></strong></div><div class="resource"><span class="resource-label">BÌNH MINH SAU</span><strong id="time">05:00</strong></div></div>
+      <div class="objective"><p>THẮP SÁNG ĐẢO BẾN <strong id="lit-count">0 / 5</strong></p><div id="lantern-progress"></div><span id="objective-note">Mỗi đèn cần 10 đom đóm</span></div>
+      <div class="score-box"><span>ĐIỂM HÀNH TRÌNH</span><strong id="score">0000</strong></div>
+      <div id="prompt" class="interaction hidden"></div>
+      <div class="bottom-bar"><div><span class="key">W A S D</span> Di chuyển <span class="key">SPACE</span> Nhảy <span class="key">E</span> Nạp đèn <span class="key">Q</span> Tỏa sáng <span class="cost">−3 ✧</span></div><p>Kéo chuột / ← → xoay camera <span>·</span> Esc tạm dừng</p></div>
+      <div class="map panel"><div class="map-title">ĐẢO BẾN <span id="map-status">SƯƠNG ĐEN</span></div><canvas id="minimap" width="180" height="180" aria-label="Bản đồ: Mây, đom đóm, đèn lồng và Bóng Mực"></canvas><div class="map-legend"><span>● Mây</span><span>✧ Đèn</span><span class="danger">● Bóng Mực</span></div></div>
+      <div class="pulse-status panel"><span class="key">Q</span><div><strong id="pulse-label">Tỏa sáng</strong><span id="pulse-status">Cần 3 đom đóm</span></div><div class="pulse-meter"><i id="pulse-meter"></i></div></div>
+    </section>
+    <section id="ending" class="modal hidden panel" aria-live="polite"><p id="ending-kicker" class="eyebrow">HÀNH TRÌNH ĐÊM 1</p><h2 id="ending-title"></h2><p id="ending-text"></p><div id="ending-score"></div><button id="replay" class="primary">Chơi lại Đêm 1</button><button id="home" class="text-button">Về màn hình đầu</button></section>
+    <section id="help-panel" class="modal hidden panel"><p class="eyebrow">NGƯỜI GIỮ ĐÈN NHỎ TUỔI</p><h2 id="help-title">Một chút ánh sáng.</h2><div class="help-grid"><kbd>W A S D</kbd><span>Di chuyển theo camera</span><kbd>SPACE</kbd><span>Nhảy</span><kbd>E</kbd><span>Nạp đom đóm vào đèn gần nhất</span><kbd>Q</kbd><span>Tốn 3 đom đóm, đẩy và làm choáng Bóng Mực</span><kbd>← → / kéo chuột</kbd><span>Xoay camera</span><kbd>ESC</kbd><span>Tạm dừng / tiếp tục</span></div><p class="tip">Đèn đã thắp tạo vùng an toàn. Túi mang tối đa 12 đom đóm; mỗi đèn cần 10. Đom đóm sẽ tự được nhặt khi bạn đến gần.</p><button id="resume" class="primary">Đã hiểu</button></section>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <div id="loading" class="loading">Đang đánh thức hòn đảo…</div>
+  </main>
+  <footer id="intro-footer"><span>✦ MỘT HÒN ĐẢO NHỎ, MỘT HÀNH TRÌNH ẤM ÁP.</span><span>ĐƯỢC DẪN LỐI BỞI ÁNH SÁNG</span></footer>
+</body>
+</html>

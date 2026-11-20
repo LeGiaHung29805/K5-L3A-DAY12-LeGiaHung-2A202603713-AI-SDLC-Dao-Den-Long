@@ -1,0 +1,13 @@
+import { mkdir, cp, copyFile, readFile } from 'node:fs/promises';
+const root = new URL('../', import.meta.url);
+await mkdir(new URL('dist/vendor/', root), { recursive: true });
+await cp(new URL('web/', root), new URL('dist/', root), { recursive: true });
+await mkdir(new URL('dist/src/', root), { recursive: true });
+await copyFile(new URL('src/core.js', root), new URL('dist/src/core.js', root));
+await copyFile(new URL('game.contract.json', root), new URL('dist/game.contract.json', root));
+await cp(new URL('tests/fixtures/', root), new URL('dist/scenarios/', root), { recursive: true });
+for (const file of ['three.module.js', 'three.core.js']) await copyFile(new URL(`node_modules/three/build/${file}`, root), new URL(`dist/vendor/${file}`, root));
+await copyFile(new URL('node_modules/three/LICENSE', root), new URL('dist/vendor/THREE-LICENSE.txt', root));
+const contract = JSON.parse(await readFile(new URL('game.contract.json', root), 'utf8'));
+if (contract.tuning.lantern_count_night1 !== 5) throw new Error('Phase 1 requires exactly five lanterns');
+console.log('Built dist/ — static web game, no CDN or runtime network dependency.');
