@@ -2,6 +2,8 @@
 
 **Lê Gia Hưng · 2A202603713 · Day 12 AI SDLC · Contract 1.3**
 
+[Tải video demo MP4 (1 phút 12 giây)](https://github.com/LeGiaHung29805/K5-L3A-DAY12-LeGiaHung-2A202603713-AI-SDLC-Dao-Den-Long/releases/download/v1.0.0/dao-den-long-demo.mp4) · [Bản phát hành v1.0.0](https://github.com/LeGiaHung29805/K5-L3A-DAY12-LeGiaHung-2A202603713-AI-SDLC-Dao-Den-Long/releases/tag/v1.0.0)
+
 Game 3D cổ tích: cùng Mây gom đom đóm, thắp đèn và giữ đảo sáng tới bình minh. Chơi lần lượt Đêm 1 — Đảo Bến, Đêm 2 — hai đảo Đảo Cau nối bằng cầu tre, Đêm 3 — Đảo Chuông nhiều tầng. Thắng Đêm trước mới mở Đêm sau.
 
 ![Game chạy thực tế](docs/proof/phase-4/gameplay.jpg)
@@ -18,7 +20,7 @@ npm start
 
 Mở **http://localhost:5173**. Build sao chép Three.js và giấy phép vào dist; chơi không cần CDN, tài khoản hay API key. Sửa source: build lại và tải lại trang. Dev: npm run dev. Headless/soak không cần GPU.
 
-[Release v1.0.0](https://github.com/LeGiaHung29805/K5-L3-LAB-Day12-LeGiaHung-2A202603713-AI-SDLC/releases/tag/v1.0.0) có ZIP dựng sẵn: giải nén, chạy `node scripts/serve.mjs`, mở địa chỉ trên; không cần npm install. Có thể phục vụ riêng dist bằng static server; khi đó bảng điểm chỉ lưu trong trình duyệt, xuất bằng nút **Xuất JSON**.
+[Release v1.0.0](https://github.com/LeGiaHung29805/K5-L3A-DAY12-LeGiaHung-2A202603713-AI-SDLC-Dao-Den-Long/releases/tag/v1.0.0) có ZIP dựng sẵn: giải nén, chạy `node scripts/serve.mjs`, mở địa chỉ trên; không cần npm install. Có thể phục vụ riêng dist bằng static server; khi đó bảng điểm chỉ lưu trong trình duyệt, xuất bằng nút **Xuất JSON**.
 
 ## Điều khiển và luật chơi
 

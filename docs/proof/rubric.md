@@ -16,7 +16,7 @@ Dùng tag tương ứng khi kiểm tra lại Phase 1–4. Ở mỗi tag, chạy 
 | `phase-4` | Bảng điểm, lưu và xuất JSON | Test sắp hạng, validate tên, lưu và xuất; QA form sau thua và sau thắng Đêm 3. [Bảng Phase 4](phase-4/README.md) |
 | `phase-4` | Đổi phím, cảnh báo, giảm chuyển động, cỡ chữ | Test đổi phím và QA ảnh, cỡ chữ tính từ DOM ở 1280×720. [Bảng Phase 4](phase-4/README.md) |
 | `phase-4` và lượt chạy bổ sung | Benchmark và soak | Lượt chạy bổ sung ở 1280×720 đạt 92,67 FPS trung bình, 30,06 FPS ở 1% low; load 21,26 giây chưa đạt. Soak đủ 10 Đêm, không crash, RSS tăng 4,25%. Báo cáo tách số đo ở tag và số đo sau sửa launcher. [Bảng Phase 4](phase-4/README.md) |
-| `v1.0.0` | Gói chơi được, demo dưới 5 phút, hướng dẫn, credit, license và retro | Release có ZIP, MP4 và checksum. MP4 dài 71,63 giây; URL tải trả HTTP 200 không cần đăng nhập. [Release](https://github.com/LeGiaHung29805/K5-L3-LAB-Day12-LeGiaHung-2A202603713-AI-SDLC/releases/tag/v1.0.0) · [Retro](../retro-phase-4.md) |
+| `v1.0.0` | Gói chơi được, demo dưới 5 phút, hướng dẫn, credit, license và retro | Release có ZIP, MP4 và checksum. MP4 dài 71,63 giây; URL tải trả HTTP 200 không cần đăng nhập. [Release](https://github.com/LeGiaHung29805/K5-L3A-DAY12-LeGiaHung-2A202603713-AI-SDLC-Dao-Den-Long/releases/tag/v1.0.0) · [Retro](../retro-phase-4.md) |
 
 Bộ test ẩn do giảng viên chạy. Chưa có biên bản đánh giá của người hoặc agent khác người viết. Các mục giới hạn trong proof từng phase ghi rõ điều kiện và phạm vi của lần chạy gốc.
 
@@ -24,8 +24,9 @@ Bộ test ẩn do giảng viên chạy. Chưa có biên bản đánh giá của 
 
 - API GitHub xác nhận repo ở chế độ public. `git ls-remote` qua HTTPS với credential helper tắt liệt kê đủ bốn tag phase và tag `v1.0.0`.
 - Tag release `v1.0.0` và tag `phase-4` cùng trỏ tới commit `9b58376`.
-- Workflow Release verification đạt ở commit `9b58376` của `phase-4` và ở commit `d29672a` trên main trước đợt bổ sung tài liệu này. [CI Phase 4](https://github.com/LeGiaHung29805/K5-L3-LAB-Day12-LeGiaHung-2A202603713-AI-SDLC/actions/runs/44742355196) · [CI main](https://github.com/LeGiaHung29805/K5-L3-LAB-Day12-LeGiaHung-2A202603713-AI-SDLC/actions/runs/44744627546)
+- Workflow Release verification đạt ở commit `9b58376` của `phase-4` và ở commit `d29672a` trên main trước đợt bổ sung tài liệu này. [CI Phase 4](https://github.com/LeGiaHung29805/K5-L3A-DAY12-LeGiaHung-2A202603713-AI-SDLC-Dao-Den-Long/actions/runs/44742355196) · [CI main](https://github.com/LeGiaHung29805/K5-L3A-DAY12-LeGiaHung-2A202603713-AI-SDLC-Dao-Den-Long/actions/runs/44744627546)
 - MP4 local giải mã hết bằng FFmpeg mà không báo lỗi. Video có gameplay ở đầu, cảnh benchmark có nhãn lần đo sơ bộ khoảng 00:24–00:48 và trang kết quả test, evidence cùng dòng JSONL cuối của ca Đêm 3 vào khoảng 00:56. Tham chiếu số đo chính thức trong [báo cáo benchmark](phase-4/README.md).
+- Clone sạch từ GitHub qua HTTPS với credential helper tắt. `npm ci --offline` dùng npm cache, `npm run build` thành công và `npm start` phục vụ trang chính, contract 1.3 và JavaScript game với HTTP 200. SHA-256 của ZIP và MP4 local khớp manifest release.
 
 ## Kết quả tái chạy theo tag
 
