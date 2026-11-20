@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.0.0 / Phase 4 — 2026-11-20
+
+- Contract 1.3 thêm bench_cmd/soak_cmd; tuning và JSONL gameplay giữ nguyên Phase 3.
+- Benchmark WebGL 1280×720, 200 wander/100 đom đóm, camera chuẩn, raw dt + SHA-256; giới hạn web khai thật.
+- Soak 10 Đêm một tiến trình, seed liên tiếp, RSS/reset/GC và exit fail khi tăng quá 20%.
+- Bảng điểm top 10 local, xác thực tên, lưu qua restart, màn menu và CLI export.
+- Đổi 9 phím, báo trùng/reset/lưu; chữ 18px/×1,25, giảm chuyển động; cảnh báo bóng/gió/giờ/dầu.
+- QA sửa hướng orbit +X→-Z, toast che cảnh báo, specificity cỡ đồng hồ/lửa và hướng dẫn theo phím đã đổi.
+- 73 test, bằng chứng riêng, tài liệu bốn phase và gói/video phát hành. Không đổi luật gameplay.
+
 ## Phase 3 — Breaking changes (2026-11-20)
 
 - Contract1.2: thời lượng240/270/300; chỉ thắngtại bìnhminh với60%đèn, bỏall_lit vàtimebonus.

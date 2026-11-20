@@ -1,0 +1,222 @@
+[
+  {
+    "id": "",
+    "size": "40px",
+    "tag": "SPAN"
+  },
+  {
+    "id": "",
+    "size": "26px",
+    "tag": "H1"
+  },
+  {
+    "id": "chapter-label",
+    "size": "18px",
+    "tag": "P"
+  },
+  {
+    "id": "sound",
+    "size": "18px",
+    "tag": "BUTTON"
+  },
+  {
+    "id": "open-settings",
+    "size": "18px",
+    "tag": "BUTTON"
+  },
+  {
+    "id": "help",
+    "size": "18px",
+    "tag": "BUTTON"
+  },
+  {
+    "id": "",
+    "size": "18px",
+    "tag": "SPAN"
+  },
+  {
+    "id": "flames",
+    "size": "24px",
+    "tag": "STRONG"
+  },
+  {
+    "id": "charm-status",
+    "size": "18px",
+    "tag": "SMALL"
+  },
+  {
+    "id": "",
+    "size": "18px",
+    "tag": "SPAN"
+  },
+  {
+    "id": "time",
+    "size": "36px",
+    "tag": "STRONG"
+  },
+  {
+    "id": "",
+    "size": "18px",
+    "tag": "SPAN"
+  },
+  {
+    "id": "lit-count",
+    "size": "18px",
+    "tag": "STRONG"
+  },
+  {
+    "id": "",
+    "size": "18px",
+    "tag": "SPAN"
+  },
+  {
+    "id": "",
+    "size": "18px",
+    "tag": "SPAN"
+  },
+  {
+    "id": "",
+    "size": "18px",
+    "tag": "SPAN"
+  },
+  {
+    "id": "",
+    "size": "18px",
+    "tag": "SPAN"
+  },
+  {
+    "id": "",
+    "size": "18px",
+    "tag": "SPAN"
+  },
+  {
+    "id": "",
+    "size": "18px",
+    "tag": "P"
+  },
+  {
+    "id": "score",
+    "size": "18px",
+    "tag": "STRONG"
+  },
+  {
+    "id": "campaign-score",
+    "size": "18px",
+    "tag": "SMALL"
+  },
+  {
+    "id": "",
+    "size": "18px",
+    "tag": "SPAN"
+  },
+  {
+    "id": "carried",
+    "size": "18px",
+    "tag": "STRONG"
+  },
+  {
+    "id": "",
+    "size": "18px",
+    "tag": "SMALL"
+  },
+  {
+    "id": "",
+    "size": "18px",
+    "tag": "SPAN"
+  },
+  {
+    "id": "",
+    "size": "18px",
+    "tag": "STRONG"
+  },
+  {
+    "id": "dash-status",
+    "size": "18px",
+    "tag": "SMALL"
+  },
+  {
+    "id": "",
+    "size": "18px",
+    "tag": "SPAN"
+  },
+  {
+    "id": "",
+    "size": "18px",
+    "tag": "STRONG"
+  },
+  {
+    "id": "pulse-status",
+    "size": "18px",
+    "tag": "SMALL"
+  },
+  {
+    "id": "map-title",
+    "size": "18px",
+    "tag": "DIV"
+  },
+  {
+    "id": "",
+    "size": "18px",
+    "tag": "SMALL"
+  },
+  {
+    "id": "",
+    "size": "18px",
+    "tag": "SPAN"
+  },
+  {
+    "id": "",
+    "size": "18px",
+    "tag": "SPAN"
+  },
+  {
+    "id": "",
+    "size": "18px",
+    "tag": "DIV"
+  },
+  {
+    "id": "",
+    "size": "18px",
+    "tag": "KBD"
+  },
+  {
+    "id": "",
+    "size": "18px",
+    "tag": "KBD"
+  },
+  {
+    "id": "",
+    "size": "18px",
+    "tag": "KBD"
+  },
+  {
+    "id": "",
+    "size": "18px",
+    "tag": "KBD"
+  },
+  {
+    "id": "",
+    "size": "18px",
+    "tag": "P"
+  },
+  {
+    "id": "toast",
+    "size": "18px",
+    "tag": "DIV"
+  },
+  {
+    "id": "spawn-direction",
+    "size": "28px",
+    "tag": "SPAN"
+  },
+  {
+    "id": "spawn-text",
+    "size": "18px",
+    "tag": "SPAN"
+  },
+  {
+    "id": "hazard-alert",
+    "size": "18px",
+    "tag": "DIV"
+  }
+]

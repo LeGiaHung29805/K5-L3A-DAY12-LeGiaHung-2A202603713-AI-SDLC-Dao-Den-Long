@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { Campaign } from '../src/campaign.js';
-import { Settings } from '../web/settings.js';
+import { Settings, DEFAULT_SETTINGS } from '../web/settings.js';
 import { InputBuffer } from '../web/input.js';
 test('campaign sums only won nights, loss/replay never double-counts, dawn followsnight3', () => {
   const c = new Campaign(); assert.equal(c.next(), false); assert.equal(c.record({ night: 1, state: 'lost', score: 99 }), 0);
@@ -11,7 +11,7 @@ test('campaign sums only won nights, loss/replay never double-counts, dawn follo
 });
 test('settings persist volume/sensitivity across new sessions and survive denied/corruptstorage', () => {
   const data = new Map(), storage = { getItem: k => data.get(k), setItem: (k, v) => data.set(k, v) };
-  const a = new Settings(storage); a.set({ volume: .6, sensitivity: 1.75, accessiblePalette: true }); assert.deepEqual(new Settings(storage).value, { volume: .6, sensitivity: 1.75, accessiblePalette: true });
+  const a = new Settings(storage); a.set({ volume: .6, sensitivity: 1.75, accessiblePalette: true }); assert.deepEqual(new Settings(storage).value, { ...DEFAULT_SETTINGS, volume: .6, sensitivity: 1.75, accessiblePalette: true, bindings: { ...a.value.bindings } });
   storage.setItem('dao-den-long.settings', '{'); assert.doesNotThrow(() => new Settings(storage));
   const denied = new Settings({ getItem() { throw Error(); }, setItem() { throw Error(); } }); assert.doesNotThrow(() => denied.set({ volume: 0 }));
 });

@@ -1,7 +1,7 @@
-# Đảo Đèn Lồng — Phase 3 / Contract 1.2
+# Đảo Đèn Lồng — Phase 4 / Contract 1.3
 
 - Work only in this checkout. The sibling lab repository is reference material.
-- Requirements: docs/spec/phase-3.md, docs/adr/003-lantern-fuel-and-dawn.md, game.contract.json. Phase 1 is preserved at tag phase-1.
+- Requirements: docs/spec/phase-4.txt, docs/spec/phase-3.md, docs/adr/003-lantern-fuel-and-dawn.md, game.contract.json. Earlier phase tags/proofs must remain intact.
 - Runtime: Node >=22. Commands: npm ci; npm run build; npm start.
 - Before declaring work complete, run npm run verify and npm run evidence.
 - src/core.js exports pure simulation/rules/world/campaign, shared by browser and Node.
@@ -14,8 +14,8 @@
 - Update docs/notes/phase-3.md and the regression-change table for changed rules. Never overwrite Phase1/2 proof.
 - Preserve previous phase tests unless a published ticket explicitly changes their requirements.
 - Verification harness: scripts/verify.mjs is fail-closed; .githooks/pre-commit invokes it.
-- npm run evidence emits Phase3 fixtures +19 CLI runs, fuel/drain/relight/dawn/capacity, hashes and18000-tick timing. Rebuild after fixture generation for UI QA.
-- BrowserFPS: active foreground tab, actual1280x720, >=20s after2s warmup. Background/throttled or wrong-size samples are invalid. Do not claim FPS based on headless timing.
+- npm run evidence emits Phase4 regression fixtures +19 CLI runs without overwriting Phase3 proof. Rebuild after fixture generation for UI QA.
+- Benchmark: actual1280x720, 200 wander/100 motes, warmup3s then30s by Ticket04; close other active renderers. Preserve raw dt and real load_ms, including browser launch delay. Do not claim FPS from headless.
 - A browser-control policy stop is a verification limit; do not bypass it with another automation mechanism. Record incomplete checks honestly.
 - Do not commit secrets or node_modules/dist. Keep source, harness and evidence in Git.
 

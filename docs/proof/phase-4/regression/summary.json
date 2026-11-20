@@ -1,0 +1,244 @@
+{
+  "contract_version": "1.3",
+  "generated_at": "2026-11-20T10:15:09.410Z",
+  "node": "v22.19.0",
+  "platform": "win32 10.0.19045 x64",
+  "cpu": "11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz",
+  "source_sha256": {
+    "src/simulation.js": "cbc340fcd62fa86596944223499f109e7da73f3b8f75fbdaaa16b63db184a0ca",
+    "src/rules.js": "2a24b69b2b99434c0264cd2cf55bf58c07af17f9a9c54adf0563a14e366344cf",
+    "game.contract.json": "3accbdb668f15cdd5086f56a7a276e6ca78d54b232e34589c09a901efcf88e06"
+  },
+  "deterministic": true,
+  "test_exit_code": 0,
+  "checks": [
+    {
+      "name": "fuel-out",
+      "command": "node src/headless.mjs --seed 2026 --night 1 --scenario tests/fixtures/phase4-regression/fuel-out.json --inputs tests/fixtures/phase4-regression/fuel-out.inputs.json --ticks 6001 --snapshot-every 10 --out docs/proof/phase-4/regression/fuel-out.jsonl",
+      "elapsed_ms": 94.7,
+      "sha256": "f6c171091b2369153b78924bde1895b404118d696bd537f21a3e8d4273acfd4d",
+      "end": {
+        "type": "end",
+        "ticks": 6001,
+        "state": "playing",
+        "score": 0
+      }
+    },
+    {
+      "name": "refuel",
+      "command": "node src/headless.mjs --seed 2026 --night 1 --scenario tests/fixtures/phase4-regression/refuel.json --inputs tests/fixtures/phase4-regression/refuel.inputs.json --ticks 10 --snapshot-every 10 --out docs/proof/phase-4/regression/refuel.jsonl",
+      "elapsed_ms": 57.89,
+      "sha256": "f05900d6dee99a0ea3fbbfd606c62313ba8e41a8936de1d814b58631bc04eec7",
+      "end": {
+        "type": "end",
+        "ticks": 10,
+        "state": "playing",
+        "score": 10
+      }
+    },
+    {
+      "name": "relight",
+      "command": "node src/headless.mjs --seed 2026 --night 1 --scenario tests/fixtures/phase4-regression/relight.json --inputs tests/fixtures/phase4-regression/relight.inputs.json --ticks 10 --snapshot-every 10 --out docs/proof/phase-4/regression/relight.jsonl",
+      "elapsed_ms": 58.92,
+      "sha256": "f87d464a4d63f408e885247aef1c3cb2050e0e6db55aad2180d5a6fb2ef048da",
+      "end": {
+        "type": "end",
+        "ticks": 10,
+        "state": "playing",
+        "score": 65
+      }
+    },
+    {
+      "name": "drain",
+      "command": "node src/headless.mjs --seed 2026 --night 1 --scenario tests/fixtures/phase4-regression/drain.json --inputs tests/fixtures/phase4-regression/drain.inputs.json --ticks 120 --snapshot-every 10 --out docs/proof/phase-4/regression/drain.jsonl",
+      "elapsed_ms": 70.91,
+      "sha256": "f7bd0bb8bb33f6977d9e7361902ac653ac849fe6a3cab7e6aa10d7748a4d60d7",
+      "end": {
+        "type": "end",
+        "ticks": 120,
+        "state": "playing",
+        "score": 0
+      }
+    },
+    {
+      "name": "drain-pulse",
+      "command": "node src/headless.mjs --seed 2026 --night 1 --scenario tests/fixtures/phase4-regression/drain-pulse.json --inputs tests/fixtures/phase4-regression/drain-pulse.inputs.json --ticks 10 --snapshot-every 10 --out docs/proof/phase-4/regression/drain-pulse.jsonl",
+      "elapsed_ms": 64.58,
+      "sha256": "2696f3f93e1d9d96bace166e356ff1777003070a95825a58fa62bef479219d27",
+      "end": {
+        "type": "end",
+        "ticks": 10,
+        "state": "playing",
+        "score": 15
+      }
+    },
+    {
+      "name": "safe-restored",
+      "command": "node src/headless.mjs --seed 2026 --night 1 --scenario tests/fixtures/phase4-regression/safe-restored.json --inputs tests/fixtures/phase4-regression/safe-restored.inputs.json --ticks 10 --snapshot-every 10 --out docs/proof/phase-4/regression/safe-restored.jsonl",
+      "elapsed_ms": 61.95,
+      "sha256": "e130c225411a4fb4bacc4bca92e4c53d20aa41f63c281547490476ce867e428e",
+      "end": {
+        "type": "end",
+        "ticks": 10,
+        "state": "playing",
+        "score": 15
+      }
+    },
+    {
+      "name": "capacity",
+      "command": "node src/headless.mjs --seed 2026 --night 1 --scenario tests/fixtures/phase4-regression/capacity.json --inputs tests/fixtures/phase4-regression/capacity.inputs.json --ticks 10 --snapshot-every 10 --out docs/proof/phase-4/regression/capacity.jsonl",
+      "elapsed_ms": 57.72,
+      "sha256": "729bcf165c7a2743618c7d8d86abc8ac752da3939359840833c66eb87679f85c",
+      "end": {
+        "type": "end",
+        "ticks": 10,
+        "state": "playing",
+        "score": 65
+      }
+    },
+    {
+      "name": "pause-fuel",
+      "command": "node src/headless.mjs --seed 2026 --night 1 --scenario tests/fixtures/phase4-regression/pause-fuel.json --inputs tests/fixtures/phase4-regression/pause-fuel.inputs.json --ticks 120 --snapshot-every 10 --out docs/proof/phase-4/regression/pause-fuel.jsonl",
+      "elapsed_ms": 58.85,
+      "sha256": "9503ccbd9fc73a2b08ddb3919d92c5c39d8d5b61b5e44c359b9b82cc0faa4989",
+      "end": {
+        "type": "end",
+        "ticks": 120,
+        "state": "paused",
+        "score": 0
+      }
+    },
+    {
+      "name": "no-early-win",
+      "command": "node src/headless.mjs --seed 2026 --night 1 --scenario tests/fixtures/phase4-regression/no-early-win.json --inputs tests/fixtures/phase4-regression/no-early-win.inputs.json --ticks 120 --snapshot-every 10 --out docs/proof/phase-4/regression/no-early-win.jsonl",
+      "elapsed_ms": 73.7,
+      "sha256": "050833821c4c056614bb8f76e865c6215c7e93ae4d8ab817403eb0f27f06734a",
+      "end": {
+        "type": "end",
+        "ticks": 120,
+        "state": "playing",
+        "score": 0
+      }
+    },
+    {
+      "name": "dawn-out",
+      "command": "node src/headless.mjs --seed 2026 --night 1 --scenario tests/fixtures/phase4-regression/dawn-out.json --inputs tests/fixtures/phase4-regression/dawn-out.inputs.json --ticks 10 --snapshot-every 10 --out docs/proof/phase-4/regression/dawn-out.jsonl",
+      "elapsed_ms": 68.59,
+      "sha256": "2b1c19e0c4535289f16cbdacf9e25c60478602bc72d0f71301998b206fe5e3f0",
+      "end": {
+        "type": "end",
+        "ticks": 1,
+        "state": "lost",
+        "score": 0
+      }
+    },
+    {
+      "name": "dawn-1-lost",
+      "command": "node src/headless.mjs --seed 2026 --night 1 --scenario tests/fixtures/phase4-regression/dawn-1-lost.json --inputs tests/fixtures/phase4-regression/dawn-1-lost.inputs.json --ticks 130 --snapshot-every 10 --out docs/proof/phase-4/regression/dawn-1-lost.jsonl",
+      "elapsed_ms": 78.39,
+      "sha256": "83c8818a1dfc3da480624501241a3006584c9389c382d8514768de2edc941378",
+      "end": {
+        "type": "end",
+        "ticks": 120,
+        "state": "lost",
+        "score": 0
+      }
+    },
+    {
+      "name": "dawn-1-won",
+      "command": "node src/headless.mjs --seed 2026 --night 1 --scenario tests/fixtures/phase4-regression/dawn-1-won.json --inputs tests/fixtures/phase4-regression/dawn-1-won.inputs.json --ticks 130 --snapshot-every 10 --out docs/proof/phase-4/regression/dawn-1-won.jsonl",
+      "elapsed_ms": 74.65,
+      "sha256": "f9bd79f456faed49c077f04d78d48a20450e2e8c72a7f5dafae3afe989f69dc9",
+      "end": {
+        "type": "end",
+        "ticks": 120,
+        "state": "won",
+        "score": 444
+      }
+    },
+    {
+      "name": "dawn-2-lost",
+      "command": "node src/headless.mjs --seed 2026 --night 2 --scenario tests/fixtures/phase4-regression/dawn-2-lost.json --inputs tests/fixtures/phase4-regression/dawn-2-lost.inputs.json --ticks 130 --snapshot-every 10 --out docs/proof/phase-4/regression/dawn-2-lost.jsonl",
+      "elapsed_ms": 65.9,
+      "sha256": "f69e181136eab59a5b410a9df2ab05291eecabd3b7230828a91dfc6ceb3b76f7",
+      "end": {
+        "type": "end",
+        "ticks": 120,
+        "state": "lost",
+        "score": 0
+      }
+    },
+    {
+      "name": "dawn-2-won",
+      "command": "node src/headless.mjs --seed 2026 --night 2 --scenario tests/fixtures/phase4-regression/dawn-2-won.json --inputs tests/fixtures/phase4-regression/dawn-2-won.inputs.json --ticks 130 --snapshot-every 10 --out docs/proof/phase-4/regression/dawn-2-won.jsonl",
+      "elapsed_ms": 65.38,
+      "sha256": "2b8b71574d3afcd7771e5951fa007906e8fdcb1e878af6331fa9c8b4470a7ac5",
+      "end": {
+        "type": "end",
+        "ticks": 120,
+        "state": "won",
+        "score": 542
+      }
+    },
+    {
+      "name": "dawn-3-lost",
+      "command": "node src/headless.mjs --seed 2026 --night 3 --scenario tests/fixtures/phase4-regression/dawn-3-lost.json --inputs tests/fixtures/phase4-regression/dawn-3-lost.inputs.json --ticks 130 --snapshot-every 10 --out docs/proof/phase-4/regression/dawn-3-lost.jsonl",
+      "elapsed_ms": 63.44,
+      "sha256": "d87fd41a1f073001fd769ccf5e105c79221917cdfd96d29ccd9c642d5e5497e2",
+      "end": {
+        "type": "end",
+        "ticks": 120,
+        "state": "lost",
+        "score": 0
+      }
+    },
+    {
+      "name": "dawn-3-won",
+      "command": "node src/headless.mjs --seed 2026 --night 3 --scenario tests/fixtures/phase4-regression/dawn-3-won.json --inputs tests/fixtures/phase4-regression/dawn-3-won.inputs.json --ticks 130 --snapshot-every 10 --out docs/proof/phase-4/regression/dawn-3-won.jsonl",
+      "elapsed_ms": 63.77,
+      "sha256": "2a7ef63a02bed8be8e723d1d3d7a06563c7dacb95bb33618fd95c745b857e4c2",
+      "end": {
+        "type": "end",
+        "ticks": 120,
+        "state": "won",
+        "score": 640
+      }
+    },
+    {
+      "name": "full-night-3",
+      "command": "node src/headless.mjs --seed 2026 --night 3 --scenario tests/fixtures/phase4-regression/full-night-3.json --inputs tests/fixtures/phase4-regression/full-night-3.inputs.json --ticks 18000 --snapshot-every 60 --out docs/proof/phase-4/regression/full-night-3.jsonl",
+      "elapsed_ms": 487.35,
+      "sha256": "b5184219165ba6f227822e774d4fc5a7cde79a9079658e0a0332d37adf2c886d",
+      "end": {
+        "type": "end",
+        "ticks": 18000,
+        "state": "lost",
+        "score": 0
+      }
+    },
+    {
+      "name": "seed-a",
+      "command": "node src/headless.mjs --seed 2026 --night 1 --scenario tests/fixtures/phase4-regression/seed-a.json --inputs tests/fixtures/phase4-regression/seed-a.inputs.json --ticks 2400 --snapshot-every 30 --out docs/proof/phase-4/regression/seed-a.jsonl",
+      "elapsed_ms": 95.23,
+      "sha256": "975915ec59e2797032202677d3317fc2b3ff9f0ddee145b365f9dff86860c0db",
+      "end": {
+        "type": "end",
+        "ticks": 2400,
+        "state": "playing",
+        "score": 0
+      }
+    },
+    {
+      "name": "seed-b",
+      "command": "node src/headless.mjs --seed 2026 --night 1 --scenario tests/fixtures/phase4-regression/seed-b.json --inputs tests/fixtures/phase4-regression/seed-b.inputs.json --ticks 2400 --snapshot-every 30 --out docs/proof/phase-4/regression/seed-b.jsonl",
+      "elapsed_ms": 104.56,
+      "sha256": "975915ec59e2797032202677d3317fc2b3ff9f0ddee145b365f9dff86860c0db",
+      "end": {
+        "type": "end",
+        "ticks": 2400,
+        "state": "playing",
+        "score": 0
+      }
+    }
+  ]
+}

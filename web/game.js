@@ -4,27 +4,31 @@ import { GameView } from './render.js';
 import { InputBuffer } from './input.js';
 import { Settings } from './settings.js';
 import { GameAudio } from './audio.js';
+import { ReleaseUI } from './release-ui.js';
+import { DemoRecorder } from './demo.js';
 const $ = id => document.getElementById(id);
 let view;
 try { view = new GameView($('world')); }
 catch (error) { $('loading').innerHTML = '<p>Trình duyệt cần WebGL 2 để mở hòn đảo.<br>Hãy thử Chrome, Edge hoặc Firefox có tăng tốc đồ họa.</p>'; throw error; }
 const contract = await fetch('./game.contract.json').then(r => { if (!r.ok) throw Error('Cannot load contract'); return r.json(); });
 const tuning = contract.tuning, params = new URLSearchParams(location.search);
+const demo = new DemoRecorder(params.get('record') === '1');
 const debugNight = [1, 2, 3].includes(Number(params.get('night'))) ? Number(params.get('night')) : 1;
 const scenarioName = params.get('scenario');
 const scenarioFiles = { refuel: 'phase3/refuel', relight: 'phase3/relight', drain: 'phase3/drain', 'drain-pulse': 'phase3/drain-pulse', 'fuel-out': 'phase3/fuel-out', 'near-win': 'near-win', 'near-loss': 'near-loss', pulse: 'pulse', dash: 'phase2/dash', charm: 'phase2/charm', drifter: 'phase2/drifter', wind: 'phase2/wind', fall: 'phase2/fall', pad: 'phase2/pad', tiers: 'phase2/tiers' };
 let storage; try { storage = localStorage; } catch { /* Storage may be disabled. */ }
-const settings = new Settings(storage), audio = new GameAudio(settings.value.volume), input = new InputBuffer();
+const settings = new Settings(storage), audio = new GameAudio(settings.value.volume), input = new InputBuffer(settings.value.bindings);
 let campaign = new Campaign(debugNight), game, mode = 'menu', settingsReturn = 'menu', yaw = 0, accumulator = 0, lastTime = 0, toastUntil = 0, countdown = null, settingsAfterPause = false;
 let fpsFrames = 0, fpsElapsed = 0, fpsWarmup = 0;
 const benchmark = params.get('benchmark') === '1';
 if (benchmark) $('fps-panel').classList.remove('hidden');
 if (scenarioName || debugNight !== 1) $('mode-label').textContent = `TÌNH HUỐNG KIỂM CHỨNG · ${scenarioName ?? `ĐÊM ${debugNight}`}`;
-const ids = ['menu', 'night-intro', 'hud', 'pause-panel', 'settings-panel', 'ending'];
+const ids = ['menu', 'night-intro', 'hud', 'pause-panel', 'settings-panel', 'ending', 'leaderboard-panel'];
+const releaseUI = new ReleaseUI({ settings, input, onChange: updateSettings, openBoard: () => { mode = 'leaderboard'; panels('leaderboard-panel'); }, closeBoard: () => menu().catch(fatal) });
 function panels(...visible) { for (const id of ids) $(id).classList.toggle('hidden', !visible.includes(id)); $('intro-footer').classList.toggle('hidden', !visible.includes('menu')); }
 function toast(message) { $('toast').textContent = message; $('toast').classList.add('show'); toastUntil = performance.now() + 2800; }
 async function newGame(night) {
-  const file = scenarioName === 'campaign' ? `phase3/campaign-${night}` : scenarioFiles[scenarioName];
+  const file = scenarioName === 'accessibility' ? 'phase4-accessibility' : scenarioName === 'campaign' ? `phase3/campaign-${night}` : scenarioFiles[scenarioName];
   const scenario = file ? await fetch(`./scenarios/${file}.json`).then(r => { if (!r.ok) throw Error('Cannot load scenario'); return r.json(); }) : {};
   return new Game({ tuning, seed: 2026, night, scenario });
 }
@@ -42,7 +46,7 @@ function launchNight() {
 }
 async function retry() { await prepareNight(); launchNight(); }
 async function menu() { audio.stopMusic(); campaign = new Campaign(debugNight); await prepareNight(); mode = 'menu'; panels('menu'); }
-function queuePause() { input.down('KeyP'); input.up('KeyP'); }
+function queuePause() { input.down(settings.value.bindings.pause); input.up(settings.value.bindings.pause); }
 function openSettings() {
   if (mode === 'playing') { settingsAfterPause = true; input.clear(); queuePause(); return; }
   settingsReturn = mode; mode = 'settings'; input.clear(); panels(...(settingsReturn === 'paused' ? ['hud', 'settings-panel'] : ['settings-panel']));
@@ -50,6 +54,7 @@ function openSettings() {
 }
 function closeSettings() { mode = settingsReturn; panels(...(mode === 'paused' ? ['hud', 'pause-panel'] : mode === 'intro' ? ['night-intro'] : mode === 'result' || mode === 'dawn' ? ['hud', 'ending'] : ['menu'])); }
 function updateSettings() {
+  releaseUI.syncPreferences(); view.reducedMotion = settings.value.reducedMotion;
   $('accessible-palette').checked = settings.value.accessiblePalette; document.body.classList.toggle('accessible-palette', settings.value.accessiblePalette); view.setAccessiblePalette(settings.value.accessiblePalette);
   $('volume').value = Math.round(settings.value.volume * 100); $('volume-value').textContent = `${Math.round(settings.value.volume * 100)}%`;
   $('sensitivity').value = Math.round(settings.value.sensitivity * 100); $('sensitivity-value').textContent = `${settings.value.sensitivity.toFixed(2)}×`;
@@ -66,7 +71,7 @@ $('volume').oninput = () => { settings.set({ volume: Number($('volume').value) /
 $('sensitivity').oninput = () => { settings.set({ sensitivity: Number($('sensitivity').value) / 100 }); updateSettings(); };
 $('accessible-palette').onchange = () => { settings.set({ accessiblePalette: $('accessible-palette').checked }); updateSettings(); };
 function showEnding() {
-  audio.stopMusic(); input.clear(); campaign.record(game); const won = game.state === 'won'; mode = won && game.night === 3 ? 'dawn' : 'result'; panels('hud', 'ending');
+  audio.stopMusic(); input.clear(); campaign.record(game); releaseUI.recordResult(campaign, game); const won = game.state === 'won'; mode = won && game.night === 3 ? 'dawn' : 'result'; panels('hud', 'ending');
   $('ending-kicker').textContent = mode === 'dawn' ? 'BA HÒN ĐẢO ĐÃ THỨC GIẤC' : `KẾT QUẢ ĐÊM ${game.night} · ${game.world.name.toUpperCase()}`;
   $('ending-title').textContent = mode === 'dawn' ? 'Bình Minh' : won ? 'Đảo đã sáng rồi!' : 'Một đốm hy vọng.';
   $('ending-text').textContent = mode === 'dawn' ? 'Tiếng chuông ngân qua biển mây. Mây đã mang ánh sáng về nhà, và Ông Đăng đang chờ bên ngọn đèn.' : won ? 'Đèn đã thức giấc. Nghỉ một chút rồi cùng Ông Đăng đến hòn đảo tiếp theo nhé.' : game.timeLeft <= 0 ? 'Bình minh đã đến nhưng số đèn còn sáng chưa đủ ngưỡng. Mây có thể thử lại Đêm này.' : 'Ngọn lửa cuối cùng đã tắt. Những đốm đom đóm vẫn chờ Mây quay lại.';
@@ -93,6 +98,7 @@ function handle(events) {
   }
 }
 document.addEventListener('keydown', e => {
+  if (releaseUI.captureKey(e)) return;
   if (e.target instanceof HTMLInputElement) { if (e.code === 'Escape') closeSettings(); return; }
   if (['Space', 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(e.code)) e.preventDefault();
   if (e.code === 'Escape' && mode === 'settings') { closeSettings(); return; }
@@ -134,8 +140,8 @@ function updateHUD() {
   $('pulse-status').textContent = pulseCD > 0 ? `${pulseCD.toFixed(1)}s` : p.carried >= 3 ? 'Sẵn sàng · −3 con' : 'Cần 3 đom đóm';
   $('dash-meter').style.width = `${100 * (1 - Math.min(1, dashCD / 1.5))}%`; $('pulse-meter').style.width = `${100 * (1 - Math.min(1, pulseCD / 3))}%`;
   const nearest = game.lanterns.filter(l => game.accepts(l)).sort((a, b) => distance(a.pos, p.pos) - distance(b.pos, p.pos))[0];
-  const near = nearest && distance(nearest.pos, p.pos) <= 2;
-  $('prompt').classList.toggle('hidden', !near || mode !== 'playing'); if (near) $('prompt').textContent = nearest.lit ? `E — Châm dầu (${game.fuel(nearest)}/100)` : `E — ${nearest.ever_lit ? 'Thắp lại' : 'Nạp ánh sáng'} (${nearest.deposited}/${game.lightCost(nearest)})`;
+  const near = nearest && distance(nearest.pos, p.pos) <= 2, interactKey = settings.value.bindings.interact.replace(/^Key/, '');
+  $('prompt').classList.toggle('hidden', !near || mode !== 'playing'); if (near) $('prompt').textContent = nearest.lit ? `${interactKey} — Châm dầu (${game.fuel(nearest)}/100)` : `${interactKey} — ${nearest.ever_lit ? 'Thắp lại' : 'Nạp ánh sáng'} (${nearest.deposited}/${game.lightCost(nearest)})`;
   const hint = nearest ? view.lampHint(nearest) : null; $('lamp-arrow').classList.toggle('hidden', !hint || hint.visible || mode !== 'playing');
   if (hint) { $('arrow-symbol').style.transform = `rotate(${hint.angle}deg)`; $('arrow-distance').textContent = `${nearest.id} · ${Math.round(distance(nearest.pos, p.pos))} m`; }
   drawMap();
@@ -145,7 +151,7 @@ await prepareNight(); mode = 'menu'; panels('menu'); updateSettings(); $('loadin
 function animate(ms) {
   requestAnimationFrame(animate); const rawDelta = lastTime ? (ms - lastTime) / 1000 : DT, delta = Math.min(.1, rawDelta); lastTime = ms;
   if (mode === 'playing' || mode === 'paused' || mode === 'settings' && settingsReturn === 'paused') {
-    if (mode === 'playing') { if (input.held.has('ArrowLeft')) yaw += delta * 1.5; if (input.held.has('ArrowRight')) yaw -= delta * 1.5; }
+    if (mode === 'playing') { if (input.held.has('ArrowLeft') && !Object.values(settings.value.bindings).includes('ArrowLeft')) yaw += delta * 1.5; if (input.held.has('ArrowRight') && !Object.values(settings.value.bindings).includes('ArrowRight')) yaw -= delta * 1.5; }
     accumulator += delta;
     while (accumulator >= DT && ['playing', 'paused', 'settings'].includes(mode)) {
       const frame = mode === 'settings' ? { move: [0, 0], pause: false, jump: false, pulse: false, dash: false, interact: false } : input.frame(game.input, yaw);
@@ -158,7 +164,9 @@ function animate(ms) {
   }
   if (toastUntil && ms > toastUntil) { $('toast').classList.remove('show'); toastUntil = 0; }
   view.sync(game, ms / 1000, delta, yaw, ['menu', 'intro'].includes(mode));
+  demo.frame(view, game, mode, ms);
   if (!['menu', 'intro'].includes(mode)) updateHUD();
+  releaseUI.indicators(game, view, mode === 'playing');
   if (mode === 'playing' && document.visibilityState === 'visible' && document.hasFocus()) {
     fpsWarmup += rawDelta;
     if (fpsWarmup >= 2) { fpsFrames++; fpsElapsed += rawDelta; }

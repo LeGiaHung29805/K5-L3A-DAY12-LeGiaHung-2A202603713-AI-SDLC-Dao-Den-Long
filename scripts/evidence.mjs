@@ -5,7 +5,7 @@ import { performance } from 'node:perf_hooks';
 import os from 'node:os';
 import assert from 'node:assert/strict';
 import { worldFor } from '../src/world.js';
-const dir = 'docs/proof/phase-3', fixtures = 'tests/fixtures/phase3';
+const dir = process.env.EVIDENCE_DIR ?? 'docs/proof/phase-3', fixtures = process.env.FIXTURE_DIR ?? 'tests/fixtures/phase3';
 mkdirSync(dir, { recursive: true }); mkdirSync(fixtures, { recursive: true });
 const json = (path, value) => writeFileSync(path, JSON.stringify(value, null, 2) + '\n');
 const hash = path => createHash('sha256').update(readFileSync(path)).digest('hex');
@@ -57,5 +57,5 @@ assert.equal(full.at(-1).ticks, 18000); assert.ok(checks.at(-1).elapsed_ms < 300
 for (const suffix of ['a', 'b']) run(`seed-${suffix}`, cases.drain.scenario, [], 2400, 1, 30);
 assert.equal(hash(`${dir}/seed-a.jsonl`), hash(`${dir}/seed-b.jsonl`));
 const tests = spawnSync(process.execPath, ['--test'], { encoding: 'utf8' }); writeFileSync(`${dir}/tests.txt`, tests.stdout + tests.stderr); assert.equal(tests.status, 0);
-json(`${dir}/summary.json`, { contract_version: '1.2', generated_at: new Date().toISOString(), node: process.version, platform: `${os.platform()} ${os.release()} ${os.arch()}`, cpu: os.cpus()[0]?.model, source_sha256: Object.fromEntries(['src/simulation.js', 'src/rules.js', 'game.contract.json'].map(p => [p, hash(p)])), deterministic: true, test_exit_code: tests.status, checks });
+json(`${dir}/summary.json`, { contract_version: JSON.parse(readFileSync('game.contract.json', 'utf8')).contract_version, generated_at: new Date().toISOString(), node: process.version, platform: `${os.platform()} ${os.release()} ${os.arch()}`, cpu: os.cpus()[0]?.model, source_sha256: Object.fromEntries(['src/simulation.js', 'src/rules.js', 'game.contract.json'].map(p => [p, hash(p)])), deterministic: true, test_exit_code: tests.status, checks });
 console.log(`Phase 3: ${checks.length} real headless runs passed; fuel/drain/relight/dawn/capacity + full 18000-tick night.`);

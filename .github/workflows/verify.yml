@@ -1,4 +1,4 @@
-name: Phase 3 verification
+name: Release verification
 on: [push, pull_request]
 jobs:
   verify:
@@ -15,8 +15,11 @@ jobs:
       - run: npm ci
       - run: npm run verify
       - run: npm run evidence
+      - run: npm run soak -- --seed 7 --nights 10 --out soak-ci.json
       - run: npm run build
       - uses: actions/upload-artifact@v4
         with:
-          name: phase-3-evidence-${{ matrix.os }}
-          path: docs/proof/phase-3/
+          name: phase-4-evidence-${{ matrix.os }}
+          path: |
+            docs/proof/phase-4/regression/
+            soak-ci.json

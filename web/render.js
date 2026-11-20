@@ -71,7 +71,7 @@ export class GameView {
   build(game) {
     this.clearGroup(this.worldGroup); this.clearGroup(this.dynamic);
     for (const e of this.effects) { this.scene.remove(e.mesh); e.mesh.geometry.dispose(); e.mesh.material.dispose(); } this.effects = [];
-    this.motes = new Map(); this.shades = new Map(); this.drifters = new Map(); this.charms = new Map(); this.lamps = [];
+    this.motes = new Map(); this.shades = new Map(); this.drifters = new Map(); this.charms = new Map(); this.lamps = []; this.crowd = null;
     const w = game.world, m = this.materials, random = seededRandom(7300 + game.night);
     const sea = this.add(new THREE.CircleGeometry(230, 64), m.sea, this.worldGroup, [30, -18, 0]); sea.rotation.x = -Math.PI / 2;
     for (const island of w.islands) {
@@ -144,7 +144,25 @@ export class GameView {
       this.add(this.geo.box, m.gold, g, [-.22, 0, .04], [.05, .65, .05]); this.add(this.geo.box, m.gold, g, [.22, 0, .04], [.05, .65, .05]);
       this.add(this.geo.cone, m.gold, g, [0, 0, .07], [.12, .2, .03]); this.charms.set(c.id, { g, paper });
     }
+    if (this.benchmarkMode) this.makeCrowd(game);
     const cx = w.night === 2 ? 30 : 0; this.camera.position.set(cx - 22, 28, -43); this.lookTarget.set(cx, 0, 2);
+  }
+  makeCrowd(game) {
+    // Identical models/materials, batched for the fixed 200-wanderer benchmark.
+    const instanced = (geometry, material, count) => { const mesh = new THREE.InstancedMesh(geometry, material, count); mesh.frustumCulled = false; mesh.instanceMatrix.setUsage(THREE.DynamicDrawUsage); this.dynamic.add(mesh); return mesh; };
+    this.crowd = { body: instanced(this.geo.orb, this.materials.shade, game.shades.length), eyes: instanced(this.geo.orb, this.materials.rim, game.shades.length * 2), tails: instanced(this.geo.cone, this.materials.shade, game.shades.length * 3), motes: instanced(this.geo.orb, this.materials.mote, game.motes.length), halos: instanced(this.geo.orb, this.materials.moteHalo, game.motes.length), dummy: new THREE.Object3D() };
+  }
+  syncCrowd(game, time) {
+    const c = this.crowd, o = c.dummy;
+    const set = (mesh, i, x, y, z, sx, sy, sz, yaw = 0, roll = 0) => { o.position.set(x, y, z); o.rotation.set(0, yaw, roll); o.scale.set(sx, sy, sz); o.updateMatrix(); mesh.setMatrixAt(i, o.matrix); };
+    game.shades.forEach((s, i) => {
+      const [x, y, z] = s.pos, bob = Math.sin(time * 3) * .08, a = Math.atan2(-x, -z), ca = Math.cos(a), sa = Math.sin(a);
+      set(c.body, i, x, y + bob, z, .68, .8, .6, a);
+      for (let j = 0; j < 2; j++) { const local = j ? .23 : -.23; set(c.eyes, i * 2 + j, x + local * ca + .5 * sa, y + bob + .12, z - local * sa + .5 * ca, .09, .065, .06, a); }
+      for (let j = 0; j < 3; j++) { const local = (j - 1) * .33; set(c.tails, i * 3 + j, x + local * ca, y + bob - .52, z - local * sa, .2, .6, .23, a, Math.PI); }
+    });
+    game.motes.forEach((m, i) => { const phase = Number(m.id.replace(/\D/g, '')) || 1, [x, y, z] = m.pos, height = y + .6 + Math.sin(time * 2 + phase) * .15; set(c.motes, i, x, height, z, .12, .12, .12); set(c.halos, i, x, height, z, .3, .3, .3); });
+    for (const key of ['body', 'eyes', 'tails', 'motes', 'halos']) c[key].instanceMatrix.needsUpdate = true;
   }
   effect(name, pos) {
     if (!['pulse', 'dash', 'lantern_lit'].includes(name)) return;
@@ -155,23 +173,24 @@ export class GameView {
   sync(game, time, delta, yaw, menu = false) {
     const p = game.player, m = this.materials;
     this.keeper.position.set(...p.pos); this.keeper.rotation.y = Math.atan2(game.facing[0], game.facing[1]);
-    this.keeper.visible = game.respawnTicks === 0 && (p.invuln_ticks === 0 || Math.floor(time * 12) % 2 === 0);
+    this.keeper.visible = game.respawnTicks === 0 && (this.reducedMotion || p.invuln_ticks === 0 || Math.floor(time * 12) % 2 === 0);
     const moving = Math.hypot(p.vel[0], p.vel[2]) > .1 && game.state === 'playing';
     this.legs.forEach((o, i) => { o.rotation.x = moving ? Math.sin(time * 12 + i * Math.PI) * .5 : 0; }); this.arms.forEach((o, i) => { o.rotation.x = moving ? Math.sin(time * 12 - i * Math.PI) * .35 : .08; }); this.hat.rotation.z = Math.sin(time * 1.8) * .025;
     game.lanterns.forEach((l, i) => {
-      const v = this.lamps[i], fuel = l.fuelUnits / 60, blink = l.lit && fuel < game.t.low_fuel_threshold && Math.floor(time * 2) % 2 === 0;
+      const v = this.lamps[i], fuel = l.fuelUnits / 60, blink = !this.reducedMotion && l.lit && fuel < game.t.low_fuel_threshold && Math.floor(time * 2) % 2 === 0;
       v.body.material = l.lit ? m.core : m.off; v.body.scale.set(.9, l.lit ? 1.2 : .96, .9); v.tear.visible = !l.lit;
       v.body.visible = !blink; v.light.intensity = l.lit ? blink ? 3 : 25 : 0; v.ring.visible = game.hasSafeZone(l);
       v.bar.visible = l.lit && !blink; v.barBack.visible = l.lit;
       v.bar.scale.x = 1.4 * fuel / game.t.fuel_max; v.bar.position.x = v.bar.scale.x / 2;
     });
+    if (this.crowd) this.syncCrowd(game, time);
     const moteIds = new Set(game.motes.map(o => o.id));
     for (const [id, g] of this.motes) if (!moteIds.has(id)) { this.dynamic.remove(g); this.motes.delete(id); }
-    for (const item of game.motes) {
+    if (!this.crowd) for (const item of game.motes) {
       if (!this.motes.has(item.id)) { const g = new THREE.Group(); this.dynamic.add(g); this.add(this.geo.orb, m.mote, g, [0, 0, 0], [.12, .12, .12]); this.add(this.geo.orb, m.moteHalo, g, [0, 0, 0], [.3, .3, .3]); this.motes.set(item.id, g); }
       const g = this.motes.get(item.id), phase = Number(item.id.replace(/\D/g, '')) || 1; g.position.set(item.pos[0], item.pos[1] + .6 + Math.sin(time * 2 + phase) * .15, item.pos[2]);
     }
-    for (const item of game.shades) {
+    if (!this.crowd) for (const item of game.shades) {
       if (!this.shades.has(item.id)) {
         const g = new THREE.Group(); this.dynamic.add(g); const body = this.add(this.geo.orb, m.shade, g, [0, 0, 0], [.68, .8, .6]);
         for (const x of [-.23, .23]) this.add(this.geo.orb, m.rim, g, [x, .12, .5], [.09, .065, .06]);
@@ -199,7 +218,8 @@ export class GameView {
     this.windLeaves.forEach((leaf, i) => { leaf.visible = game.wind.active || game.windWarning; if (leaf.visible) { const a = game.wind.dir_deg * Math.PI / 180, travel = (game.simTick / 60 * (game.wind.active ? 8 : 3) + i * 1.7) % 24 - 12; leaf.position.set(p.pos[0] + Math.cos(a) * travel + Math.sin(i) * 8, p.pos[1] + 1 + (i % 5), p.pos[2] + Math.sin(a) * travel + Math.cos(i) * 8); leaf.rotation.set(time + i, i, time * 2); } });
     for (const e of this.effects) { e.left -= delta; e.mesh.scale.setScalar(Math.max(.1, (1 - e.left / .6) * e.radius)); e.mesh.material.opacity = Math.max(0, e.left); }
     this.effects = this.effects.filter(e => { if (e.left > 0) return true; this.scene.remove(e.mesh); e.mesh.geometry.dispose(); e.mesh.material.dispose(); return false; });
-    if (menu) { const cx = game.night === 2 ? 32 : 0; this.targetCamera.set(cx - 22 + Math.sin(time * .06) * 3, game.night === 3 ? 35 : 28, -42); this.lookTarget.set(cx + 4, 1, 2); }
+    if (this.cameraOverride) { this.camera.position.set(...this.cameraOverride.pos); this.targetCamera.copy(this.camera.position); this.lookTarget.set(...this.cameraOverride.target); }
+    else if (menu) { const cx = game.night === 2 ? 32 : 0; this.targetCamera.set(cx - 22 + (this.reducedMotion ? 0 : Math.sin(time * .06) * 3), game.night === 3 ? 35 : 28, -42); this.lookTarget.set(cx + 4, 1, 2); }
     else { this.targetCamera.set(p.pos[0] - Math.sin(yaw) * 16, Math.max(-1, p.pos[1]) + 12, p.pos[2] - Math.cos(yaw) * 16); this.lookTarget.set(p.pos[0] + Math.sin(yaw) * 4, Math.max(-1, p.pos[1]) + .6, p.pos[2] + Math.cos(yaw) * 4); }
     this.camera.position.lerp(this.targetCamera, 1 - Math.exp(-delta * 6)); this.camera.lookAt(this.lookTarget); this.renderer.render(this.scene, this.camera);
   }

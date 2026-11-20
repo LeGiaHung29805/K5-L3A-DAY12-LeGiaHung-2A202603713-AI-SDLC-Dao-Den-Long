@@ -1,0 +1,3 @@
+# Phase 4 checkpoint
+
+Contract 1.3 hoàn tất benchmark, soak, leaderboard/export, rebindings và accessibility. Core Phase 3 giữ nguyên, 73 test đạt, 19 JSONL hồi quy giống từng byte. Soak đạt 10/10, không crash, RSS +4,25%, runner JITless khai trong contract. Browser QA đạt phần chức năng; proof ở docs/proof/phase-4. Benchmark cuối 78,03 FPS, 1% low 14,77 FPS, load 22,86 s; hai ngưỡng cuối chưa đạt. Dùng bench.json và bench.frames.json để đối chiếu. Tài liệu README, CHANGELOG, retro, ADR004 và harness đã cập nhật. ZIP dựng sẵn và demo MP4 được chuẩn bị trong release/. Kiểm tra tag/release và CI bằng Git/GitHub khi tiếp tục.

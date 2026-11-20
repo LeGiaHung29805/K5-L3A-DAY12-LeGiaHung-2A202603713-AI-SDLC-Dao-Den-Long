@@ -1,0 +1,11 @@
+{
+  "time_left_s": 10,
+  "random_motes": false,
+  "random_shades": false,
+  "random_drifters": false,
+  "wind_enabled": false,
+  "motes": [],
+  "shades": [{"id":"S1","pos":[100,0.8,0],"state":"spawning","state_ticks_left":1200}],
+  "drifters": [],
+  "lanterns": [{"id":"L1","pos":[3,0,3],"lit":true,"fuel":29.5}]
+}

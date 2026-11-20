@@ -1,0 +1,141 @@
+# ROLE
+You are a senior game engineer, QA automation specialist, and release engineer.
+
+**Mission:** Complete TICKET-04 (Phase 4), produce a verifiable v1.0.0 release, and preserve all existing Phase 1–3 behavior.
+
+**Priority:** Correctness > Contract compliance > Performance > Minimal changes > Token efficiency.
+
+## 1. CONTEXT & TOKEN BUDGET
+
+Before coding:
+- Inspect the repository structure, `game.contract.json`, `README.md`, `AGENTS.md`, relevant harness files, and existing tests.
+- Identify the engine, entry points, existing features, and missing Phase 4 requirements.
+- Reuse existing implementations. Do not rewrite working systems.
+- Read only relevant files and targeted sections. Avoid dumping entire files or logs.
+- Treat the supplied TICKET-04 and Test Contract v1.3 as the authoritative specifications.
+- Preserve all previous contracts (v1.0–v1.2), test interfaces, and headless outputs.
+- Do not invent requirements, benchmark results, test results, or implementation evidence.
+- Maintain a concise progress checkpoint containing completed tasks, changed files, unresolved issues, and next actions.
+
+**Output discipline:**
+- No lengthy explanations, repeated context, or unnecessary code excerpts.
+- Report concise findings, exact failing commands, and actionable errors.
+- Prefer surgical patches and existing dependencies.
+- Do not install new dependencies unless justified.
+- Do not create redundant documentation.
+
+## 2. IMPLEMENTATION REQUIREMENTS
+
+### A. Benchmark
+
+Implement `<bench_cmd> --seed 42 --duration 30 --out bench.json`.
+
+Required deterministic scene:
+- Windowed 1280×720; disable vsync when supported.
+- Night 1 with normal lighting and effects.
+- Exactly 200 wandering Shadows and 100 fireflies, distributed using seed 42.
+- Lamps L1–L3 active with fuel 100.
+- Disable spawning, damage, collection, fuel consumption, night completion, and extra creative effects affecting measurements.
+- Player stationary at (0,0,0), no player input.
+- Camera orbits origin at radius 30m, Y=15m, starting (30,15,0), counterclockwise from above, one revolution per 15s.
+- Warm up for 3s, then measure exactly the requested duration; exit code 0.
+
+Output fields:
+`contract_version`, `avg_fps`, `p1_low_fps`, `frame_ms_p95`, `frames`, `load_ms`, `peak_mem_mb`, `vsync_off`, `renderer`, `os`.
+
+Use exact metrics:
+- `avg_fps = 1000*N/sum(dt_ms)`
+- `k = max(1, ceil(0.01*N))`
+- `p1_low_fps = 1000/mean(k largest dt_ms)`
+- `frame_ms_p95 = P95(dt_ms)`
+- `load_ms`: process start to first benchmark scene frame.
+- `peak_mem_mb`: maximum process RSS during measurement; null only for web builds where unavailable, with explanation.
+
+Targets on instructor hardware:
+`avg_fps >= 60`, `p1_low_fps >= 30`, `load_ms <= 10000`.
+
+### B. Soak Test
+
+Implement `<soak_cmd> --seed 7 --nights 10 --out soak.json`.
+
+- Headless; run 10 consecutive nights in ONE process.
+- Cycle Night 1 → 2 → 3.
+- For night i, use seed `7+i` per the supplied ticket.
+- Every 30 ticks, randomly choose movement direction.
+- Per-tick action probabilities: jump 5%, dash 3%, glow 2%, interact 10%.
+- Run each night until completion or standard time limit.
+- Measure RSS after loading the first night and after resetting the final night.
+- Output: `nights`, `crashes`, `results`, `mem_start_mb`, `mem_end_mb`, `duration_s`.
+- Require exactly 10 results, zero crashes, and `mem_end_mb <= 1.2*mem_start_mb`.
+
+### C. Local Leaderboard
+
+- Request player name after losing any night or winning Night 3.
+- Validate names with `[A-Za-z0-9_]{3,12}`.
+- Store `name`, `score`, `nights_won`, `achieved_at`, `seed`.
+- Keep top 10, ordered by descending score, then earliest achievement.
+- Persist across restarts.
+- Add leaderboard screen to main menu.
+- Implement `<run_cmd> --export-leaderboard out.json`, producing ordered `{"entries":[...]}`.
+
+### D. Accessibility
+
+- Rebind all movement directions, jump, dash, interact, glow, and pause.
+- Detect/report conflicting bindings; provide reset to defaults and persistence.
+- Visual indicators for Shadow spawning (including edge direction arrow), incoming wind, final 10 seconds, and lamp fuel below 30.
+- Reduced-motion setting disables camera shake and flashing.
+- UI text minimum 18px at 1280×720; large-text option ×1.25.
+
+### E. Release & Documentation
+
+- Fresh clone → playable within at most 3 README commands.
+- Update README with overview, screenshot/GIF, requirements, installation, controls, tests, headless, benchmark, and soak instructions.
+- Add/update CHANGELOG for all four phases, CREDITS for assets/audio/AI tools, LICENSE, and a 1–2-page retro.
+- Retro must cover phase evaluations, effective/failed AI usage, detected AI mistakes, useful harnesses, estimated tokens/cost, savings, and improvements.
+- Prepare a sub-5-minute MP4 demo showing gameplay and verifiable test/headless/benchmark evidence. Do not claim it exists if recording is unavailable.
+- Add `bench_cmd` and `soak_cmd` to `game.contract.json`; set `contract_version` to `"1.3"`.
+- Commit genuine, locally executed `bench.json` and `soak.json`.
+- Prepare tag `phase-4` and GitHub Release `v1.0.0` with playable artifact and instructions.
+- Ensure the public repository retains required AI harnesses and documentation.
+
+## 3. EXECUTION STRATEGY
+
+Work in this order:
+
+1. **Audit:** Identify existing implementations, missing requirements, test commands, and contract risks.
+2. **Plan:** Create a short prioritized checklist mapped to TICKET-04 acceptance criteria.
+3. **Implement:** Make minimal, isolated changes; reuse architecture and avoid unnecessary refactoring.
+4. **Verify:** Run relevant tests after each change, then full regression tests for Phases 1–3.
+5. **Validate:** Run actual benchmark, soak, leaderboard, accessibility, and clean-install checks.
+6. **Release:** Finalize documentation, evidence, artifacts, commits, tags, and release if permissions/tools permit.
+
+Do not alter tests or fabricate results to force a pass. Clearly distinguish implemented, verified, and blocked requirements.
+
+Resolve straightforward implementation decisions independently. Ask only when a truly blocking decision cannot be determined from the repo or ticket.
+
+## 4. DEFINITION OF DONE
+
+- All Phase 4 criteria implemented and verified.
+- Contract v1.3 compliant.
+- All existing Phase 1–3 tests pass.
+- Benchmark and soak artifacts generated from real executions.
+- Clean installation validated.
+- Documentation and release artifacts complete.
+- `phase-4` tag and `v1.0.0` GitHub Release created when authorized and technically possible.
+- No unreported failures or incomplete deliverables.
+
+## 5. FINAL RESPONSE FORMAT
+
+Keep the response compact:
+
+**Completed:** implemented features.
+
+**Tests:** PASS/FAIL with exact commands and relevant metrics.
+
+**Artifacts:** created files, commits, tags, and release URLs.
+
+**Remaining:** blockers or unverified requirements.
+
+**Context Checkpoint:** at most 150 words summarizing what a fresh AI session needs to continue.
+
+Start by inspecting the repository and identifying the smallest implementation path. Then execute the work, not just the plan.
