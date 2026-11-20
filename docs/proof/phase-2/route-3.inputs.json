@@ -1,0 +1,6972 @@
+{
+  "frames": [
+    {
+      "tick": 0,
+      "move": [
+        1,
+        0
+      ],
+      "interact": false
+    },
+    {
+      "tick": 342,
+      "move": [
+        1,
+        0
+      ],
+      "interact": true
+    },
+    {
+      "tick": 343,
+      "move": [
+        -0.496513,
+        -0.868029
+      ],
+      "interact": false
+    },
+    {
+      "tick": 452,
+      "move": [
+        -0.496513,
+        -0.86803
+      ],
+      "interact": false
+    },
+    {
+      "tick": 568,
+      "move": [
+        -0.496512,
+        -0.86803
+      ],
+      "interact": false
+    },
+    {
+      "tick": 569,
+      "move": [
+        -0.496513,
+        -0.86803
+      ],
+      "interact": false
+    },
+    {
+      "tick": 572,
+      "move": [
+        -0.496512,
+        -0.86803
+      ],
+      "interact": false
+    },
+    {
+      "tick": 573,
+      "move": [
+        -0.496513,
+        -0.86803
+      ],
+      "interact": false
+    },
+    {
+      "tick": 576,
+      "move": [
+        -0.496512,
+        -0.86803
+      ],
+      "interact": false
+    },
+    {
+      "tick": 577,
+      "move": [
+        -0.496513,
+        -0.86803
+      ],
+      "interact": false
+    },
+    {
+      "tick": 579,
+      "move": [
+        -0.496512,
+        -0.86803
+      ],
+      "interact": false
+    },
+    {
+      "tick": 580,
+      "move": [
+        -0.496513,
+        -0.86803
+      ],
+      "interact": false
+    },
+    {
+      "tick": 583,
+      "move": [
+        -0.496512,
+        -0.86803
+      ],
+      "interact": false
+    },
+    {
+      "tick": 584,
+      "move": [
+        -0.496513,
+        -0.86803
+      ],
+      "interact": false
+    },
+    {
+      "tick": 587,
+      "move": [
+        -0.496512,
+        -0.86803
+      ],
+      "interact": false
+    },
+    {
+      "tick": 588,
+      "move": [
+        -0.496513,
+        -0.86803
+      ],
+      "interact": false
+    },
+    {
+      "tick": 591,
+      "move": [
+        -0.496512,
+        -0.86803
+      ],
+      "interact": false
+    },
+    {
+      "tick": 592,
+      "move": [
+        -0.496513,
+        -0.86803
+      ],
+      "interact": false
+    },
+    {
+      "tick": 595,
+      "move": [
+        -0.496512,
+        -0.86803
+      ],
+      "interact": false
+    },
+    {
+      "tick": 596,
+      "move": [
+        -0.496513,
+        -0.86803
+      ],
+      "interact": false
+    },
+    {
+      "tick": 599,
+      "move": [
+        -0.496512,
+        -0.86803
+      ],
+      "interact": false
+    },
+    {
+      "tick": 600,
+      "move": [
+        -0.496513,
+        -0.86803
+      ],
+      "interact": false
+    },
+    {
+      "tick": 603,
+      "move": [
+        -0.496512,
+        -0.86803
+      ],
+      "interact": false
+    },
+    {
+      "tick": 604,
+      "move": [
+        -0.496513,
+        -0.86803
+      ],
+      "interact": false
+    },
+    {
+      "tick": 607,
+      "move": [
+        -0.496512,
+        -0.86803
+      ],
+      "interact": false
+    },
+    {
+      "tick": 608,
+      "move": [
+        -0.496513,
+        -0.86803
+      ],
+      "interact": false
+    },
+    {
+      "tick": 611,
+      "move": [
+        -0.496512,
+        -0.86803
+      ],
+      "interact": false
+    },
+    {
+      "tick": 612,
+      "move": [
+        -0.496513,
+        -0.86803
+      ],
+      "interact": false
+    },
+    {
+      "tick": 615,
+      "move": [
+        -0.496512,
+        -0.86803
+      ],
+      "interact": false
+    },
+    {
+      "tick": 616,
+      "move": [
+        -0.496513,
+        -0.86803
+      ],
+      "interact": false
+    },
+    {
+      "tick": 619,
+      "move": [
+        -0.496512,
+        -0.86803
+      ],
+      "interact": false
+    },
+    {
+      "tick": 620,
+      "move": [
+        -0.496513,
+        -0.86803
+      ],
+      "interact": false
+    },
+    {
+      "tick": 623,
+      "move": [
+        -0.496512,
+        -0.86803
+      ],
+      "interact": false
+    },
+    {
+      "tick": 624,
+      "move": [
+        -0.496513,
+        -0.86803
+      ],
+      "interact": true
+    },
+    {
+      "tick": 625,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 803,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 804,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 805,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 806,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 807,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 808,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 809,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 810,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 811,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 812,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 813,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 814,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 815,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 816,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 817,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 818,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 819,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 820,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 821,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 822,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 823,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 824,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 825,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 826,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 827,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 828,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 829,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 830,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 831,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 832,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 833,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 834,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 835,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 836,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 837,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 838,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 839,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 841,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 842,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 843,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 844,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 845,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 846,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 847,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 848,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 849,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 850,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 851,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 852,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 853,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 854,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 855,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 856,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 857,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 858,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 859,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 860,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 861,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 862,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 863,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 864,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 865,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 866,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 867,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 868,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 869,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 870,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 871,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 872,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 873,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 874,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 875,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 876,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 877,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 878,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 879,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 880,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 881,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 882,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 883,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 884,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 885,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 886,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 887,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 888,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 889,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 890,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 891,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 892,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 893,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 894,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 895,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 896,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 897,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 898,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 899,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 900,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 901,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 902,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 903,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 904,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 905,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 906,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 907,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 908,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 909,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 910,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 911,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 912,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 913,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 914,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 915,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 916,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 917,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 918,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 919,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 920,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 921,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 922,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 923,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 924,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 925,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 926,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 927,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 928,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 929,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 930,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 931,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 932,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 933,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 934,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 935,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 936,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 937,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 938,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 939,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 940,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 941,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 942,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 943,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 944,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 945,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 946,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 947,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 948,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 949,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 950,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 951,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 952,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 953,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 954,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 955,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 956,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 957,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 958,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 959,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 960,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 961,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 962,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 963,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 964,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 965,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 966,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 967,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 968,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 969,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 970,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 971,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 972,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 973,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 974,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 975,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 976,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 977,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 978,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 979,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 980,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 981,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 982,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 983,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 984,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 985,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 986,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 987,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 988,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 989,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 990,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 991,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 992,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 994,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 995,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 996,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 997,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 998,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 999,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1000,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1001,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1002,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1003,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1004,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1005,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1006,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1007,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1008,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1009,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1010,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1011,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1012,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1013,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1014,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1015,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1016,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1017,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1018,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1019,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1020,
+      "move": [
+        -0.999916,
+        -0.012942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1021,
+      "move": [
+        -0.999916,
+        -0.012941
+      ],
+      "interact": true
+    },
+    {
+      "tick": 1022,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1113,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1115,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1116,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1118,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1119,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1122,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1123,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1125,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1126,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1129,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1130,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1132,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1133,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1136,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1137,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1139,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1140,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1143,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1144,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1146,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1147,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1149,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1150,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1153,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1154,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1156,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1157,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1160,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1161,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1163,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1164,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1167,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1168,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1170,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1171,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1174,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1175,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1177,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1178,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1181,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1182,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1184,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1185,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1187,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1188,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1191,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1192,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1194,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1195,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1198,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1199,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1201,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1202,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1205,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1206,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1208,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1209,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1212,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1213,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1215,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1216,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1219,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1220,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1222,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1223,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1225,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1226,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1229,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1230,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1232,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1233,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1236,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1237,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1239,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1240,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1243,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1244,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1246,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1247,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1250,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1251,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1253,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1254,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1257,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1258,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1260,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1261,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1263,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1264,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1267,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1268,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1270,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1271,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1274,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1275,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1277,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1278,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1281,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1282,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1284,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1285,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1288,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1289,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1291,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1292,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1295,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1296,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1298,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1299,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1301,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1302,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1305,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1306,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1308,
+      "move": [
+        -0.529548,
+        0.84828
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1309,
+      "move": [
+        -0.529549,
+        0.84828
+      ],
+      "interact": true
+    },
+    {
+      "tick": 1310,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1384,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1386,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1387,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1388,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1389,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1390,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1391,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1393,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1394,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1395,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1396,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1397,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1398,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1400,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1401,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1402,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1403,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1404,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1405,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1407,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1408,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1409,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1410,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1411,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1412,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1413,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1414,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1416,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1417,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1418,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1419,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1420,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1421,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1423,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1424,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1425,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1426,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1427,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1428,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1430,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1431,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1432,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1433,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1434,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1435,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1437,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1438,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1439,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1440,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1441,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1442,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1444,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1445,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1446,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1447,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1448,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1449,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1451,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1452,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1453,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1454,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1455,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1456,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1458,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1459,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1460,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1461,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1462,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1463,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1464,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1465,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1467,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1468,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1469,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1470,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1471,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1472,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1474,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1475,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1476,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1477,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1478,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1479,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1481,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1482,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1483,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1484,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1485,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1486,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1488,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1489,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1490,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1491,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1492,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1493,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1495,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1496,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1497,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1498,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1499,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1500,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1502,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1503,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1504,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1505,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1506,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1507,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1509,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1510,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1511,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1512,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1513,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1514,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1516,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1517,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1518,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1519,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1520,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1521,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1522,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1523,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1525,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1526,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1527,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1528,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1529,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1530,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1532,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1533,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1534,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1535,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1536,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1537,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1539,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1540,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1541,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1542,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1543,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1544,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1546,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1547,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1548,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1549,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1550,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1551,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1553,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1554,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1555,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1556,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1557,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1558,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1560,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1561,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1562,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1563,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1564,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1565,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1567,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1568,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1569,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1570,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1571,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1572,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1573,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1574,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1576,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1577,
+      "move": [
+        0.321158,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1578,
+      "move": [
+        0.321157,
+        0.947026
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1579,
+      "move": [
+        0.873437,
+        -0.486938
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1627,
+      "move": [
+        0.873436,
+        -0.486938
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1628,
+      "move": [
+        0.873437,
+        -0.486938
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1629,
+      "move": [
+        0.873436,
+        -0.486938
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1631,
+      "move": [
+        0.873437,
+        -0.486938
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1632,
+      "move": [
+        0.873436,
+        -0.486938
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1633,
+      "move": [
+        0.873437,
+        -0.486938
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1634,
+      "move": [
+        0.873436,
+        -0.486938
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1636,
+      "move": [
+        0.873437,
+        -0.486938
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1637,
+      "move": [
+        0.873436,
+        -0.486938
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1638,
+      "move": [
+        0.81378,
+        -0.581174
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1652,
+      "move": [
+        0.81378,
+        -0.581173
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1653,
+      "move": [
+        0.81378,
+        -0.581174
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1656,
+      "move": [
+        0.81378,
+        -0.581173
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1657,
+      "move": [
+        0.81378,
+        -0.581174
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1660,
+      "move": [
+        0.81378,
+        -0.581173
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1661,
+      "move": [
+        0.81378,
+        -0.581174
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1664,
+      "move": [
+        0.81378,
+        -0.581173
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1665,
+      "move": [
+        0.81378,
+        -0.581174
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1666,
+      "move": [
+        0.81378,
+        -0.581174
+      ],
+      "interact": true
+    },
+    {
+      "tick": 1667,
+      "move": [
+        0.924651,
+        0.380814
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1687,
+      "move": [
+        0.924651,
+        0.380815
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1688,
+      "move": [
+        0.924651,
+        0.380814
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1690,
+      "move": [
+        0.924651,
+        0.380815
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1691,
+      "move": [
+        0.924651,
+        0.380814
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1693,
+      "move": [
+        0.924651,
+        0.380815
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1694,
+      "move": [
+        0.924651,
+        0.380814
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1697,
+      "move": [
+        0.924651,
+        0.380815
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1698,
+      "move": [
+        0.924651,
+        0.380814
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1700,
+      "move": [
+        0.924651,
+        0.380815
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1701,
+      "move": [
+        0.924651,
+        0.380814
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1703,
+      "move": [
+        0.924651,
+        0.380815
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1704,
+      "move": [
+        0.924651,
+        0.380814
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1706,
+      "move": [
+        0.924651,
+        0.380815
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1707,
+      "move": [
+        0.924651,
+        0.380814
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1709,
+      "move": [
+        0.924651,
+        0.380815
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1710,
+      "move": [
+        0.924651,
+        0.380814
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1713,
+      "move": [
+        0.924651,
+        0.380815
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1714,
+      "move": [
+        0.924651,
+        0.380814
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1716,
+      "move": [
+        0.924651,
+        0.380815
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1717,
+      "move": [
+        0.924651,
+        0.380814
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1719,
+      "move": [
+        0.924651,
+        0.380815
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1720,
+      "move": [
+        0.924651,
+        0.380814
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1722,
+      "move": [
+        0.924651,
+        0.380815
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1723,
+      "move": [
+        0.924651,
+        0.380814
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1725,
+      "move": [
+        0.924651,
+        0.380815
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1726,
+      "move": [
+        0.924652,
+        0.380814
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1727,
+      "move": [
+        0.924651,
+        0.380815
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1728,
+      "move": [
+        0.923962,
+        0.382485
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1826,
+      "move": [
+        0.923962,
+        0.382484
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1827,
+      "move": [
+        0.923962,
+        0.382485
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1829,
+      "move": [
+        0.923962,
+        0.382484
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1830,
+      "move": [
+        0.923962,
+        0.382485
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1831,
+      "move": [
+        0.923962,
+        0.382484
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1832,
+      "move": [
+        0.923962,
+        0.382485
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1833,
+      "move": [
+        0.923962,
+        0.382484
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1834,
+      "move": [
+        0.923962,
+        0.382485
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1835,
+      "move": [
+        0.923962,
+        0.382484
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1836,
+      "move": [
+        0.923962,
+        0.382485
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1837,
+      "move": [
+        0.923962,
+        0.382484
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1838,
+      "move": [
+        0.923962,
+        0.382485
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1839,
+      "move": [
+        0.923962,
+        0.382484
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1840,
+      "move": [
+        0.923962,
+        0.382485
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1842,
+      "move": [
+        0.923962,
+        0.382484
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1843,
+      "move": [
+        0.923962,
+        0.382485
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1844,
+      "move": [
+        0.923962,
+        0.382484
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1845,
+      "move": [
+        0.923962,
+        0.382485
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1846,
+      "move": [
+        0.923962,
+        0.382484
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1847,
+      "move": [
+        0.923962,
+        0.382485
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1848,
+      "move": [
+        0.923962,
+        0.382484
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1849,
+      "move": [
+        0.923962,
+        0.382485
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1850,
+      "move": [
+        0.923962,
+        0.382484
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1851,
+      "move": [
+        0.923962,
+        0.382485
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1852,
+      "move": [
+        0.923962,
+        0.382484
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1853,
+      "move": [
+        0.923962,
+        0.382485
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1855,
+      "move": [
+        0.923962,
+        0.382484
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1856,
+      "move": [
+        0.923962,
+        0.382485
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1857,
+      "move": [
+        0.923962,
+        0.382484
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1858,
+      "move": [
+        0.923962,
+        0.382485
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1859,
+      "move": [
+        0.923962,
+        0.382484
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1860,
+      "move": [
+        0.923962,
+        0.382485
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1861,
+      "move": [
+        0.923962,
+        0.382484
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1862,
+      "move": [
+        0.923962,
+        0.382485
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1863,
+      "move": [
+        0.923962,
+        0.382484
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1864,
+      "move": [
+        0.923962,
+        0.382485
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1865,
+      "move": [
+        0.923962,
+        0.382484
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1866,
+      "move": [
+        0.926175,
+        -0.377094
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1932,
+      "move": [
+        0.926175,
+        -0.377093
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1934,
+      "move": [
+        0.926175,
+        -0.377094
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1935,
+      "move": [
+        0.926175,
+        -0.377093
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1936,
+      "move": [
+        0.926175,
+        -0.377094
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1937,
+      "move": [
+        0.926175,
+        -0.377093
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1939,
+      "move": [
+        0.926175,
+        -0.377094
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1940,
+      "move": [
+        0.926175,
+        -0.377093
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1941,
+      "move": [
+        0.926175,
+        -0.377094
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1942,
+      "move": [
+        0.926175,
+        -0.377093
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1943,
+      "move": [
+        0.926175,
+        -0.377094
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1944,
+      "move": [
+        0.926175,
+        -0.377093
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1946,
+      "move": [
+        0.926175,
+        -0.377094
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1947,
+      "move": [
+        0.926175,
+        -0.377093
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1948,
+      "move": [
+        0.926175,
+        -0.377094
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1949,
+      "move": [
+        0.926175,
+        -0.377093
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1950,
+      "move": [
+        0.926175,
+        -0.377094
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1951,
+      "move": [
+        0.926175,
+        -0.377093
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1953,
+      "move": [
+        0.926175,
+        -0.377094
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1954,
+      "move": [
+        0.926175,
+        -0.377093
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1955,
+      "move": [
+        0.926175,
+        -0.377094
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1956,
+      "move": [
+        0.926175,
+        -0.377093
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1958,
+      "move": [
+        0.926175,
+        -0.377094
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1959,
+      "move": [
+        0.926175,
+        -0.377093
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1960,
+      "move": [
+        0.926175,
+        -0.377094
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1961,
+      "move": [
+        0.926175,
+        -0.377093
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1962,
+      "move": [
+        0.926175,
+        -0.377094
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1963,
+      "move": [
+        0.926175,
+        -0.377093
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1965,
+      "move": [
+        0.926175,
+        -0.377094
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1966,
+      "move": [
+        0.926175,
+        -0.377093
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1967,
+      "move": [
+        0.926175,
+        -0.377094
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1968,
+      "move": [
+        0.926175,
+        -0.377093
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1970,
+      "move": [
+        0.926175,
+        -0.377094
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1971,
+      "move": [
+        0.926175,
+        -0.377093
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1972,
+      "move": [
+        0.926175,
+        -0.377094
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1973,
+      "move": [
+        0.926175,
+        -0.377093
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1974,
+      "move": [
+        0.926175,
+        -0.377094
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1975,
+      "move": [
+        0.926175,
+        -0.377093
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1977,
+      "move": [
+        0.926175,
+        -0.377094
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1978,
+      "move": [
+        0.926175,
+        -0.377093
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1979,
+      "move": [
+        0.926175,
+        -0.377094
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1980,
+      "move": [
+        0.926175,
+        -0.377093
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1981,
+      "move": [
+        0.926175,
+        -0.377094
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1982,
+      "move": [
+        0.926175,
+        -0.377093
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1984,
+      "move": [
+        0.926175,
+        -0.377094
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1985,
+      "move": [
+        0.926175,
+        -0.377093
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1986,
+      "move": [
+        0.926175,
+        -0.377094
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1987,
+      "move": [
+        0.926175,
+        -0.377093
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1989,
+      "move": [
+        0.926175,
+        -0.377094
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1990,
+      "move": [
+        0.926175,
+        -0.377093
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1991,
+      "move": [
+        0.926175,
+        -0.377094
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1992,
+      "move": [
+        0.926175,
+        -0.377093
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1993,
+      "move": [
+        0.926175,
+        -0.377094
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1994,
+      "move": [
+        0.926175,
+        -0.377093
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1996,
+      "move": [
+        0.926175,
+        -0.377094
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1997,
+      "move": [
+        0.926175,
+        -0.377093
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1998,
+      "move": [
+        0.926175,
+        -0.377094
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1999,
+      "move": [
+        0.926175,
+        -0.377093
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2000,
+      "move": [
+        0.926175,
+        -0.377094
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2001,
+      "move": [
+        0.926175,
+        -0.377093
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2003,
+      "move": [
+        0.926175,
+        -0.377094
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2004,
+      "move": [
+        0.888346,
+        -0.459175
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2049,
+      "move": [
+        0.888346,
+        -0.459176
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2051,
+      "move": [
+        0.888346,
+        -0.459175
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2052,
+      "move": [
+        0.888346,
+        -0.459176
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2055,
+      "move": [
+        0.888346,
+        -0.459175
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2056,
+      "move": [
+        0.888346,
+        -0.459176
+      ],
+      "interact": true
+    },
+    {
+      "tick": 2057,
+      "move": [
+        -0.887878,
+        0.460078
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2074,
+      "move": [
+        -0.887878,
+        0.460079
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2075,
+      "move": [
+        -0.887878,
+        0.460078
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2077,
+      "move": [
+        -0.887878,
+        0.460079
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2078,
+      "move": [
+        -0.887878,
+        0.460078
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2079,
+      "move": [
+        -0.887878,
+        0.460079
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2080,
+      "move": [
+        -0.887878,
+        0.460078
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2082,
+      "move": [
+        -0.887878,
+        0.460079
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2083,
+      "move": [
+        -0.887878,
+        0.460078
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2085,
+      "move": [
+        -0.887878,
+        0.460079
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2086,
+      "move": [
+        -0.887878,
+        0.460078
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2087,
+      "move": [
+        -0.887878,
+        0.460079
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2088,
+      "move": [
+        -0.887878,
+        0.460078
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2090,
+      "move": [
+        -0.887878,
+        0.460079
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2091,
+      "move": [
+        -0.887878,
+        0.460078
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2093,
+      "move": [
+        -0.887878,
+        0.460079
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2094,
+      "move": [
+        -0.887878,
+        0.460078
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2095,
+      "move": [
+        -0.887878,
+        0.460079
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2096,
+      "move": [
+        -0.887878,
+        0.460078
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2098,
+      "move": [
+        -0.887878,
+        0.460079
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2099,
+      "move": [
+        -0.887878,
+        0.460078
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2101,
+      "move": [
+        -0.887878,
+        0.460079
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2102,
+      "move": [
+        -0.887878,
+        0.460078
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2103,
+      "move": [
+        -0.887878,
+        0.460079
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2104,
+      "move": [
+        -0.887878,
+        0.460078
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2106,
+      "move": [
+        -0.887878,
+        0.460079
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2107,
+      "move": [
+        -0.887878,
+        0.460078
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2108,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2132,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2133,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2134,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2135,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2136,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2137,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2138,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2140,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2141,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2142,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2143,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2144,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2145,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2147,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2148,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2149,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2150,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2151,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2152,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2153,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2154,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2156,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2157,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2158,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2159,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2160,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2161,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2162,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2163,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2165,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2166,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2167,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2168,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2169,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2170,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2171,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2172,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2174,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2175,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2176,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2177,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2178,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2179,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2180,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2181,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2183,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2184,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2185,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2186,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2187,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2188,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2189,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2190,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2192,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2193,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2194,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2195,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2196,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2197,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2198,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2199,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2201,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2202,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2203,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2204,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2205,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2206,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2207,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2208,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2210,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2211,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2212,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2213,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2214,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2215,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2216,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2217,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2219,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2220,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2221,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2222,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2223,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2224,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2225,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2226,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2228,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2229,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2230,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2231,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2232,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2233,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2234,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2235,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2237,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2238,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2239,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2240,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2241,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2242,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2244,
+      "move": [
+        -0.923623,
+        0.383302
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2245,
+      "move": [
+        -0.923623,
+        0.383303
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2246,
+      "move": [
+        -0.022069,
+        -0.999756
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2286,
+      "move": [
+        -0.002652,
+        -0.999996
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2287,
+      "move": [
+        -0.002697,
+        -0.999996
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2288,
+      "move": [
+        -0.002743,
+        -0.999996
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2289,
+      "move": [
+        -0.002792,
+        -0.999996
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2290,
+      "move": [
+        -0.002842,
+        -0.999996
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2291,
+      "move": [
+        -0.002894,
+        -0.999996
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2292,
+      "move": [
+        -0.002948,
+        -0.999996
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2293,
+      "move": [
+        -0.003004,
+        -0.999995
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2294,
+      "move": [
+        -0.003062,
+        -0.999995
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2295,
+      "move": [
+        -0.003122,
+        -0.999995
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2296,
+      "move": [
+        -0.003185,
+        -0.999995
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2297,
+      "move": [
+        -0.003251,
+        -0.999995
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2298,
+      "move": [
+        -0.003319,
+        -0.999994
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2299,
+      "move": [
+        -0.00339,
+        -0.999994
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2300,
+      "move": [
+        -0.003464,
+        -0.999994
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2301,
+      "move": [
+        -0.003542,
+        -0.999994
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2302,
+      "move": [
+        -0.003623,
+        -0.999993
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2303,
+      "move": [
+        -0.003708,
+        -0.999993
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2304,
+      "move": [
+        -0.003797,
+        -0.999993
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2305,
+      "move": [
+        -0.00389,
+        -0.999992
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2306,
+      "move": [
+        -0.003988,
+        -0.999992
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2307,
+      "move": [
+        -0.004092,
+        -0.999992
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2308,
+      "move": [
+        -0.0042,
+        -0.999991
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2309,
+      "move": [
+        -0.004315,
+        -0.999991
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2310,
+      "move": [
+        -0.004436,
+        -0.99999
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2311,
+      "move": [
+        -0.004564,
+        -0.99999
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2312,
+      "move": [
+        -0.004699,
+        -0.999989
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2313,
+      "move": [
+        -0.004843,
+        -0.999988
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2314,
+      "move": [
+        -0.004996,
+        -0.999988
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2315,
+      "move": [
+        -0.005159,
+        -0.999987
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2316,
+      "move": [
+        -0.005333,
+        -0.999986
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2317,
+      "move": [
+        -0.005519,
+        -0.999985
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2318,
+      "move": [
+        -0.005718,
+        -0.999984
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2319,
+      "move": [
+        -0.005933,
+        -0.999982
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2320,
+      "move": [
+        -0.006164,
+        -0.999981
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2321,
+      "move": [
+        -0.006414,
+        -0.999979
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2322,
+      "move": [
+        -0.006685,
+        -0.999978
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2323,
+      "move": [
+        -0.00698,
+        -0.999976
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2324,
+      "move": [
+        -0.007302,
+        -0.999973
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2325,
+      "move": [
+        -0.007655,
+        -0.999971
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2326,
+      "move": [
+        -0.008044,
+        -0.999968
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2327,
+      "move": [
+        -0.008475,
+        -0.999964
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2328,
+      "move": [
+        -0.008955,
+        -0.99996
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2329,
+      "move": [
+        -0.009492,
+        -0.999955
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2330,
+      "move": [
+        -0.010098,
+        -0.999949
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2331,
+      "move": [
+        -0.010786,
+        -0.999942
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2332,
+      "move": [
+        -0.011575,
+        -0.999933
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2333,
+      "move": [
+        -0.012489,
+        -0.999922
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2334,
+      "move": [
+        -0.013559,
+        -0.999908
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2335,
+      "move": [
+        -0.01483,
+        -0.99989
+      ],
+      "interact": false
+    },
+    {
+      "tick": 2342,
+      "move": [
+        -0.01483,
+        -0.99989
+      ],
+      "interact": true
+    }
+  ]
+}

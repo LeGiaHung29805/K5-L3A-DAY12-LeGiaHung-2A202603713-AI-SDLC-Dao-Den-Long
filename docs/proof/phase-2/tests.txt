@@ -1,0 +1,298 @@
+TAP version 13
+# Subtest: campaign sums only won nights, loss/replay never double-counts, dawn followsnight3
+ok 1 - campaign sums only won nights, loss/replay never double-counts, dawn followsnight3
+  ---
+  duration_ms: 0.8725
+  type: 'test'
+  ...
+# Subtest: settings persist volume/sensitivity across new sessions and survive denied/corruptstorage
+ok 2 - settings persist volume/sensitivity across new sessions and survive denied/corruptstorage
+  ---
+  duration_ms: 1.5564
+  type: 'test'
+  ...
+# Subtest: buffer preserves quickactiontap, forces release edge before re-press, ignoresrepeat
+ok 3 - buffer preserves quickactiontap, forces release edge before re-press, ignoresrepeat
+  ---
+  duration_ms: 0.4121
+  type: 'test'
+  ...
+# Subtest: CLI supports contract command, emits parseable JSONL, stops immediately on win
+ok 4 - CLI supports contract command, emits parseable JSONL, stops immediately on win
+  ---
+  duration_ms: 72.2567
+  type: 'test'
+  ...
+# Subtest: CLI malformed JSON, duplicate ticks and bad scenario produce exit 2 on stderr
+ok 5 - CLI malformed JSON, duplicate ticks and bad scenario produce exit 2 on stderr
+  ---
+  duration_ms: 465.7467
+  type: 'test'
+  ...
+# Subtest: CLI output is byte-identical on repeat; snapshots have sim_tick=tick
+ok 6 - CLI output is byte-identical on repeat; snapshots have sim_tick=tick
+  ---
+  duration_ms: 128.2831
+  type: 'test'
+  ...
+# Subtest: standard tuning overrides Phase 1; canonical map counts and lamp coordinates
+ok 7 - standard tuning overrides Phase 1; canonical map counts and lamp coordinates
+  ---
+  duration_ms: 2.842
+  type: 'test'
+  ...
+# Subtest: scenario tick0 has no score/events, override by lamp id keeps all other lamps
+ok 8 - scenario tick0 has no score/events, override by lamp id keeps all other lamps
+  ---
+  duration_ms: 1.2792
+  type: 'test'
+  ...
+# Subtest: movement 60Hz speed, exact time precision, yaw rotation, diagonal normalization
+ok 9 - movement 60Hz speed, exact time precision, yaw rotation, diagonal normalization
+  ---
+  duration_ms: 3.4081
+  type: 'test'
+  ...
+# Subtest: partial input retains movement/camera; jump launches only on ground and fresh edge
+ok 10 - partial input retains movement/camera; jump launches only on ground and fresh edge
+  ---
+  duration_ms: 0.6388
+  type: 'test'
+  ...
+# Subtest: pickup is inclusive XZ1m, <=1.5m height, capacity10; no pickup points
+ok 11 - pickup is inclusive XZ1m, <=1.5m height, capacity10; no pickup points
+  ---
+  duration_ms: 0.8656
+  type: 'test'
+  ...
+# Subtest: empty inputs stay still and preserve out-of-range motes
+ok 12 - empty inputs stay still and preserve out-of-range motes
+  ---
+  duration_ms: 0.4484
+  type: 'test'
+  ...
+# Subtest: partial deposit remembers progress, scores deposit amount, held interact does not repeat
+ok 13 - partial deposit remembers progress, scores deposit amount, held interact does not repeat
+  ---
+  duration_ms: 0.5396
+  type: 'test'
+  ...
+# Subtest: full deposit preserves excess; light scores once; exact ties use id
+ok 14 - full deposit preserves excess; light scores once; exact ties use id
+  ---
+  duration_ms: 0.4126
+  type: 'test'
+  ...
+# Subtest: deposit selects nearest unlit, refuses outside range and ignores lit lamps
+ok 15 - deposit selects nearest unlit, refuses outside range and ignores lit lamps
+  ---
+  duration_ms: 0.5341
+  type: 'test'
+  ...
+# Subtest: pulse measures 3D from foot+.8; inclusive radius and no phantom XZ-only hit
+ok 16 - pulse measures 3D from foot+.8; inclusive radius and no phantom XZ-only hit
+  ---
+  duration_ms: 1.0549
+  type: 'test'
+  ...
+# Subtest: pulse cost/cooldown/edge; hitting an already stunned shade scores again
+ok 17 - pulse cost/cooldown/edge; hitting an already stunned shade scores again
+  ---
+  duration_ms: 1.5727
+  type: 'test'
+  ...
+# Subtest: stun expires at120 ticks and changes to allowed wander/chase state
+ok 18 - stun expires at120 ticks and changes to allowed wander/chase state
+  ---
+  duration_ms: 0.9131
+  type: 'test'
+  ...
+# Subtest: shade normal and N3 chase speeds and detect/lose hysteresis
+ok 19 - shade normal and N3 chase speeds and detect/lose hysteresis
+  ---
+  duration_ms: 1.7979
+  type: 'test'
+  ...
+# Subtest: damage drops floor half on seeded ring, gives90 invulnerability, max1 hit/tick sorted id
+ok 20 - damage drops floor half on seeded ring, gives90 invulnerability, max1 hit/tick sorted id
+  ---
+  duration_ms: 1.1424
+  type: 'test'
+  ...
+# Subtest: shade contact requires height<=1.5 and dash gives no invulnerability
+ok 21 - shade contact requires height<=1.5 and dash gives no invulnerability
+  ---
+  duration_ms: 0.2988
+  type: 'test'
+  ...
+# Subtest: numeric shade IDs order S2 beforeS10 when both canhit
+ok 22 - numeric shade IDs order S2 beforeS10 when both canhit
+  ---
+  duration_ms: 0.2059
+  type: 'test'
+  ...
+# Subtest: dropped mote waits next tick, expires at480 ticks and is pickable like normal
+ok 23 - dropped mote waits next tick, expires at480 ticks and is pickable like normal
+  ---
+  duration_ms: 2.3842
+  type: 'test'
+  ...
+# Subtest: lit safety excludes shades at6m and protects; unlit lamp does not
+ok 24 - lit safety excludes shades at6m and protects; unlit lamp does not
+  ---
+  duration_ms: 1.5391
+  type: 'test'
+  ...
+# Subtest: lighting resolves safety before pulse and contacts in the same tick
+ok 25 - lighting resolves safety before pulse and contacts in the same tick
+  ---
+  duration_ms: 0.1782
+  type: 'test'
+  ...
+# Subtest: dash travels2.8m over12 ticks, cooldown begins at start, held/active presses ignored
+ok 26 - dash travels2.8m over12 ticks, cooldown begins at start, held/active presses ignored
+  ---
+  duration_ms: 0.5734
+  type: 'test'
+  ...
+# Subtest: air dash preserves altitude, direction from facing when idle
+ok 27 - air dash preserves altitude, direction from facing when idle
+  ---
+  duration_ms: 0.284
+  type: 'test'
+  ...
+# Subtest: fall waits untilY<-10, ignores invulnerability, only once, losesall then respawns after60
+ok 28 - fall waits untilY<-10, ignores invulnerability, only once, losesall then respawns after60
+  ---
+  duration_ms: 0.3222
+  type: 'test'
+  ...
+# Subtest: last-flame fall loses immediately without resurrection
+ok 29 - last-flame fall loses immediately without resurrection
+  ---
+  duration_ms: 0.2395
+  type: 'test'
+  ...
+# Subtest: bridge boundaries support feet and leaving the bridge falls
+ok 30 - bridge boundaries support feet and leaving the bridge falls
+  ---
+  duration_ms: 0.587
+  type: 'test'
+  ...
+# Subtest: N2 launch pad preserves horizontal momentum against input, lands on other island
+ok 31 - N2 launch pad preserves horizontal momentum against input, lands on other island
+  ---
+  duration_ms: 0.5654
+  type: 'test'
+  ...
+# Subtest: N3 walls cannot be walked up, ramps climb to3m and step off descends
+ok 32 - N3 walls cannot be walked up, ramps climb to3m and step off descends
+  ---
+  duration_ms: 1.228
+  type: 'test'
+  ...
+# Subtest: N3 pad reaches upper tier; central bell tower is solid
+ok 33 - N3 pad reaches upper tier; central bell tower is solid
+  ---
+  duration_ms: 0.6519
+  type: 'test'
+  ...
+# Subtest: charm pickup600ticks run7.2m/s, resets duration and respawns at2700
+ok 34 - charm pickup600ticks run7.2m/s, resets duration and respawns at2700
+  ---
+  duration_ms: 14.7952
+  type: 'test'
+  ...
+# Subtest: charm dash haszero cooldown but cannot restart a running dash
+ok 35 - charm dash haszero cooldown but cannot restart a running dash
+  ---
+  duration_ms: 0.5355
+  type: 'test'
+  ...
+# Subtest: drifter chase conditions, steals once, ignores invulnerability and safezones
+ok 36 - drifter chase conditions, steals once, ignores invulnerability and safezones
+  ---
+  duration_ms: 1.8463
+  type: 'test'
+  ...
+# Subtest: pulse forces chasing drifter to flee, recovers stolen motes next tick, then removes after120
+ok 37 - pulse forces chasing drifter to flee, recovers stolen motes next tick, then removes after120
+  ---
+  duration_ms: 1.4739
+  type: 'test'
+  ...
+# Subtest: drifter theft precedes shade damage, so dropped count is based on remainingcarried
+ok 38 - drifter theft precedes shade damage, so dropped count is based on remainingcarried
+  ---
+  duration_ms: 0.8404
+  type: 'test'
+  ...
+# Subtest: pause increments tick but freezes sim_tick/timers/cooldowns/TTL/enemies/spawns
+ok 39 - pause increments tick but freezes sim_tick/timers/cooldowns/TTL/enemies/spawns
+  ---
+  duration_ms: 0.5763
+  type: 'test'
+  ...
+# Subtest: wind warns2s before30s, active5s at2m/s; disabled flag stopswind
+ok 40 - wind warns2s before30s, active5s at2m/s; disabled flag stopswind
+  ---
+  duration_ms: 10.0641
+  type: 'test'
+  ...
+# Subtest: canonical random population20 distinct, no initialshade, spawn at240/300/780
+ok 41 - canonical random population20 distinct, no initialshade, spawn at240/300/780
+  ---
+  duration_ms: 10.8217
+  type: 'test'
+  ...
+# Subtest: drifter schedule1200/2400, cap2, stableDids, N1 never spawn drifters
+ok 42 - drifter schedule1200/2400, cap2, stableDids, N1 never spawn drifters
+  ---
+  duration_ms: 22.2236
+  type: 'test'
+  ...
+# Subtest: all three nights can win, score on final deposit plusstandardbonus, night_start once
+ok 43 - all three nights can win, score on final deposit plusstandardbonus, night_start once
+  ---
+  duration_ms: 1.5012
+  type: 'test'
+  ...
+# Subtest: end priorities: last-flame loses; all-lit wins onexactdawn; otherwise dawn
+ok 44 - end priorities: last-flame loses; all-lit wins onexactdawn; otherwise dawn
+  ---
+  duration_ms: 1.3693
+  type: 'test'
+  ...
+# Subtest: simulation snapshots startzero, exactNsteps, mandatoryend, pausedstateincluded
+ok 45 - simulation snapshots startzero, exactNsteps, mandatoryend, pausedstateincluded
+  ---
+  duration_ms: 1.422
+  type: 'test'
+  ...
+# Subtest: mandatoryv1.1fields, scenario counters, coordinate rounding; setuphasnoeffects
+ok 46 - mandatoryv1.1fields, scenario counters, coordinate rounding; setuphasnoeffects
+  ---
+  duration_ms: 0.3055
+  type: 'test'
+  ...
+# Subtest: same seedscenarioinputs yields identicalbytes, including allnewentities and wind
+ok 47 - same seedscenarioinputs yields identicalbytes, including allnewentities and wind
+  ---
+  duration_ms: 120.5629
+  type: 'test'
+  ...
+# Subtest: malformed inputs/scenarios rejectnewfields aswellasoldones
+ok 48 - malformed inputs/scenarios rejectnewfields aswellasoldones
+  ---
+  duration_ms: 1.1873
+  type: 'test'
+  ...
+1..48
+# tests 48
+# suites 0
+# pass 48
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 775.9314

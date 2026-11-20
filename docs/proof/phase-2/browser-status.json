@@ -1,0 +1,9 @@
+{
+  "status": "partially_verified",
+  "observed": ["main menu", "night 2 intro with Ong Dang", "Dao Cau 3D world and HUD"],
+  "fps_1280x720_status": "not_verified",
+  "invalid_sample_reason": "Background tab throttling; observed content dimensions were 1600x900 rather than 1280x720.",
+  "automation_stop_reason": "Computer Use could not determine the current Windows browser URL with sufficient confidence to enforce policy.",
+  "pending": ["foreground FPS >=30 at actual 1280x720", "full 3-night UI campaign", "settings UI persistence", "listening to all audio cues"],
+  "policy_bypass_attempted": false
+}

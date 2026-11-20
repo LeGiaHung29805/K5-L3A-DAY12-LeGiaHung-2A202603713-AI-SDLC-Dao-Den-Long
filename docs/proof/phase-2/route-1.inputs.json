@@ -1,0 +1,2996 @@
+{
+  "frames": [
+    {
+      "tick": 0,
+      "move": [
+        0,
+        1
+      ],
+      "interact": false
+    },
+    {
+      "tick": 242,
+      "move": [
+        0,
+        1
+      ],
+      "interact": true
+    },
+    {
+      "tick": 243,
+      "move": [
+        0.820202,
+        -0.572074
+      ],
+      "interact": false
+    },
+    {
+      "tick": 404,
+      "move": [
+        0.820202,
+        -0.572073
+      ],
+      "interact": false
+    },
+    {
+      "tick": 407,
+      "move": [
+        0.820202,
+        -0.572074
+      ],
+      "interact": false
+    },
+    {
+      "tick": 408,
+      "move": [
+        0.820202,
+        -0.572073
+      ],
+      "interact": false
+    },
+    {
+      "tick": 411,
+      "move": [
+        0.820202,
+        -0.572074
+      ],
+      "interact": false
+    },
+    {
+      "tick": 412,
+      "move": [
+        0.820202,
+        -0.572073
+      ],
+      "interact": false
+    },
+    {
+      "tick": 415,
+      "move": [
+        0.820202,
+        -0.572074
+      ],
+      "interact": false
+    },
+    {
+      "tick": 416,
+      "move": [
+        0.820202,
+        -0.572073
+      ],
+      "interact": false
+    },
+    {
+      "tick": 419,
+      "move": [
+        0.820202,
+        -0.572074
+      ],
+      "interact": false
+    },
+    {
+      "tick": 420,
+      "move": [
+        0.820202,
+        -0.572073
+      ],
+      "interact": false
+    },
+    {
+      "tick": 423,
+      "move": [
+        0.820202,
+        -0.572074
+      ],
+      "interact": false
+    },
+    {
+      "tick": 424,
+      "move": [
+        0.820202,
+        -0.572073
+      ],
+      "interact": false
+    },
+    {
+      "tick": 427,
+      "move": [
+        0.820202,
+        -0.572074
+      ],
+      "interact": false
+    },
+    {
+      "tick": 428,
+      "move": [
+        0.820202,
+        -0.572073
+      ],
+      "interact": false
+    },
+    {
+      "tick": 431,
+      "move": [
+        0.820202,
+        -0.572074
+      ],
+      "interact": false
+    },
+    {
+      "tick": 432,
+      "move": [
+        0.820202,
+        -0.572073
+      ],
+      "interact": false
+    },
+    {
+      "tick": 435,
+      "move": [
+        0.820202,
+        -0.572074
+      ],
+      "interact": false
+    },
+    {
+      "tick": 436,
+      "move": [
+        0.820202,
+        -0.572073
+      ],
+      "interact": false
+    },
+    {
+      "tick": 439,
+      "move": [
+        0.820202,
+        -0.572074
+      ],
+      "interact": false
+    },
+    {
+      "tick": 440,
+      "move": [
+        0.820202,
+        -0.572073
+      ],
+      "interact": false
+    },
+    {
+      "tick": 443,
+      "move": [
+        0.820202,
+        -0.572074
+      ],
+      "interact": false
+    },
+    {
+      "tick": 444,
+      "move": [
+        0.820202,
+        -0.572073
+      ],
+      "interact": false
+    },
+    {
+      "tick": 447,
+      "move": [
+        0.820202,
+        -0.572074
+      ],
+      "interact": false
+    },
+    {
+      "tick": 448,
+      "move": [
+        0.820202,
+        -0.572073
+      ],
+      "interact": false
+    },
+    {
+      "tick": 451,
+      "move": [
+        0.820202,
+        -0.572074
+      ],
+      "interact": false
+    },
+    {
+      "tick": 452,
+      "move": [
+        0.820202,
+        -0.572073
+      ],
+      "interact": false
+    },
+    {
+      "tick": 455,
+      "move": [
+        0.820202,
+        -0.572074
+      ],
+      "interact": false
+    },
+    {
+      "tick": 456,
+      "move": [
+        0.820202,
+        -0.572073
+      ],
+      "interact": false
+    },
+    {
+      "tick": 459,
+      "move": [
+        0.820202,
+        -0.572074
+      ],
+      "interact": false
+    },
+    {
+      "tick": 460,
+      "move": [
+        0.820202,
+        -0.572073
+      ],
+      "interact": false
+    },
+    {
+      "tick": 463,
+      "move": [
+        0.820202,
+        -0.572074
+      ],
+      "interact": false
+    },
+    {
+      "tick": 464,
+      "move": [
+        0.820202,
+        -0.572073
+      ],
+      "interact": false
+    },
+    {
+      "tick": 467,
+      "move": [
+        0.820202,
+        -0.572074
+      ],
+      "interact": false
+    },
+    {
+      "tick": 468,
+      "move": [
+        0.820202,
+        -0.572073
+      ],
+      "interact": false
+    },
+    {
+      "tick": 471,
+      "move": [
+        0.820202,
+        -0.572074
+      ],
+      "interact": false
+    },
+    {
+      "tick": 472,
+      "move": [
+        0.820202,
+        -0.572073
+      ],
+      "interact": false
+    },
+    {
+      "tick": 475,
+      "move": [
+        0.820202,
+        -0.572074
+      ],
+      "interact": false
+    },
+    {
+      "tick": 476,
+      "move": [
+        0.820202,
+        -0.572073
+      ],
+      "interact": false
+    },
+    {
+      "tick": 479,
+      "move": [
+        0.820202,
+        -0.572074
+      ],
+      "interact": false
+    },
+    {
+      "tick": 480,
+      "move": [
+        0.820202,
+        -0.572073
+      ],
+      "interact": false
+    },
+    {
+      "tick": 483,
+      "move": [
+        0.820202,
+        -0.572074
+      ],
+      "interact": false
+    },
+    {
+      "tick": 484,
+      "move": [
+        0.820202,
+        -0.572073
+      ],
+      "interact": false
+    },
+    {
+      "tick": 487,
+      "move": [
+        0.820202,
+        -0.572074
+      ],
+      "interact": false
+    },
+    {
+      "tick": 488,
+      "move": [
+        0.820202,
+        -0.572073
+      ],
+      "interact": false
+    },
+    {
+      "tick": 491,
+      "move": [
+        0.820202,
+        -0.572074
+      ],
+      "interact": false
+    },
+    {
+      "tick": 492,
+      "move": [
+        0.820202,
+        -0.572073
+      ],
+      "interact": false
+    },
+    {
+      "tick": 495,
+      "move": [
+        0.820202,
+        -0.572074
+      ],
+      "interact": false
+    },
+    {
+      "tick": 496,
+      "move": [
+        0.820202,
+        -0.572073
+      ],
+      "interact": false
+    },
+    {
+      "tick": 499,
+      "move": [
+        0.820202,
+        -0.572074
+      ],
+      "interact": false
+    },
+    {
+      "tick": 500,
+      "move": [
+        0.820202,
+        -0.572073
+      ],
+      "interact": false
+    },
+    {
+      "tick": 503,
+      "move": [
+        0.820202,
+        -0.572074
+      ],
+      "interact": false
+    },
+    {
+      "tick": 504,
+      "move": [
+        0.820202,
+        -0.572073
+      ],
+      "interact": false
+    },
+    {
+      "tick": 507,
+      "move": [
+        0.820202,
+        -0.572074
+      ],
+      "interact": false
+    },
+    {
+      "tick": 508,
+      "move": [
+        0.820202,
+        -0.572073
+      ],
+      "interact": false
+    },
+    {
+      "tick": 511,
+      "move": [
+        0.820202,
+        -0.572074
+      ],
+      "interact": false
+    },
+    {
+      "tick": 512,
+      "move": [
+        0.820202,
+        -0.572073
+      ],
+      "interact": false
+    },
+    {
+      "tick": 515,
+      "move": [
+        0.820202,
+        -0.572074
+      ],
+      "interact": false
+    },
+    {
+      "tick": 516,
+      "move": [
+        0.820202,
+        -0.572073
+      ],
+      "interact": false
+    },
+    {
+      "tick": 519,
+      "move": [
+        0.820202,
+        -0.572074
+      ],
+      "interact": false
+    },
+    {
+      "tick": 520,
+      "move": [
+        0.820202,
+        -0.572073
+      ],
+      "interact": false
+    },
+    {
+      "tick": 523,
+      "move": [
+        0.820202,
+        -0.572074
+      ],
+      "interact": false
+    },
+    {
+      "tick": 524,
+      "move": [
+        0.820202,
+        -0.572073
+      ],
+      "interact": false
+    },
+    {
+      "tick": 526,
+      "move": [
+        0.820202,
+        -0.572073
+      ],
+      "interact": true
+    },
+    {
+      "tick": 527,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 561,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 562,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 563,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 564,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 565,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 567,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 568,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 569,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 570,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 572,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 573,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 575,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 576,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 577,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 578,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 580,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 581,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 582,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 583,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 585,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 586,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 588,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 589,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 590,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 591,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 593,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 594,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 595,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 596,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 598,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 599,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 601,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 602,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 603,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 604,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 606,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 607,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 608,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 609,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 611,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 612,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 614,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 615,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 616,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 617,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 619,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 620,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 621,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 622,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 624,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 625,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 627,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 628,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 629,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 630,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 632,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 633,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 634,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 635,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 637,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 638,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 640,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 641,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 642,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 643,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 645,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 646,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 647,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 648,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 650,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 651,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 653,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 654,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 655,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 656,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 658,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 659,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 660,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 661,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 663,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 664,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 666,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 667,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 668,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 669,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 671,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 672,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 673,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 674,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 676,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 677,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 679,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 680,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 681,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 682,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 684,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 685,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 686,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 687,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 689,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 690,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 692,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 693,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 694,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 695,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 697,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 698,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 699,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 700,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 702,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 703,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 705,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 706,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 707,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 708,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 710,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 711,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 713,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 714,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 715,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 716,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 718,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 719,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 720,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 721,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 723,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 724,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 726,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 727,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 728,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 729,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 731,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 732,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 733,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 734,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 736,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 737,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 739,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 740,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 741,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 742,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 744,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 745,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 746,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 747,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 749,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 750,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 752,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 753,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 754,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 755,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 757,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 758,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 759,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 760,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 762,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 763,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 765,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 766,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 767,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 768,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 770,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 771,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 772,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 773,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 775,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 776,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 778,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 779,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 780,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 781,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 783,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 784,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 785,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 786,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 788,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 789,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 791,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 792,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 793,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 794,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 796,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 797,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 798,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 799,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 801,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 802,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 804,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 805,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 806,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 807,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 809,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 810,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 811,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 812,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 814,
+      "move": [
+        -0.291006,
+        -0.956721
+      ],
+      "interact": false
+    },
+    {
+      "tick": 815,
+      "move": [
+        -0.291005,
+        -0.956721
+      ],
+      "interact": true
+    },
+    {
+      "tick": 816,
+      "move": [
+        -0.999792,
+        -0.020408
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1083,
+      "move": [
+        -0.999792,
+        -0.020409
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1084,
+      "move": [
+        -0.999792,
+        -0.020408
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1085,
+      "move": [
+        -0.999792,
+        -0.020409
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1086,
+      "move": [
+        -0.999792,
+        -0.020408
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1087,
+      "move": [
+        -0.999792,
+        -0.020409
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1088,
+      "move": [
+        -0.999792,
+        -0.020408
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1089,
+      "move": [
+        -0.999792,
+        -0.020409
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1090,
+      "move": [
+        -0.999792,
+        -0.020408
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1091,
+      "move": [
+        -0.999792,
+        -0.020409
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1092,
+      "move": [
+        -0.999792,
+        -0.020408
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1093,
+      "move": [
+        -0.999792,
+        -0.020409
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1094,
+      "move": [
+        -0.999792,
+        -0.020408
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1095,
+      "move": [
+        -0.999792,
+        -0.020409
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1096,
+      "move": [
+        -0.999792,
+        -0.020408
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1097,
+      "move": [
+        -0.999792,
+        -0.020409
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1098,
+      "move": [
+        -0.999792,
+        -0.020408
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1099,
+      "move": [
+        -0.999792,
+        -0.020409
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1100,
+      "move": [
+        -0.999792,
+        -0.020408
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1101,
+      "move": [
+        -0.999792,
+        -0.020409
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1102,
+      "move": [
+        -0.999792,
+        -0.020408
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1103,
+      "move": [
+        -0.999792,
+        -0.020409
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1104,
+      "move": [
+        -0.999792,
+        -0.020408
+      ],
+      "interact": true
+    },
+    {
+      "tick": 1105,
+      "move": [
+        -0.331243,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1284,
+      "move": [
+        -0.331244,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1285,
+      "move": [
+        -0.331243,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1287,
+      "move": [
+        -0.331244,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1288,
+      "move": [
+        -0.331243,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1289,
+      "move": [
+        -0.331244,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1290,
+      "move": [
+        -0.331243,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1292,
+      "move": [
+        -0.331244,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1293,
+      "move": [
+        -0.331243,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1294,
+      "move": [
+        -0.331244,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1295,
+      "move": [
+        -0.331243,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1297,
+      "move": [
+        -0.331244,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1298,
+      "move": [
+        -0.331243,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1299,
+      "move": [
+        -0.331244,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1300,
+      "move": [
+        -0.331243,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1302,
+      "move": [
+        -0.331244,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1303,
+      "move": [
+        -0.331243,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1304,
+      "move": [
+        -0.331244,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1305,
+      "move": [
+        -0.331243,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1307,
+      "move": [
+        -0.331244,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1308,
+      "move": [
+        -0.331243,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1310,
+      "move": [
+        -0.331244,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1311,
+      "move": [
+        -0.331243,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1312,
+      "move": [
+        -0.331244,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1313,
+      "move": [
+        -0.331243,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1315,
+      "move": [
+        -0.331244,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1316,
+      "move": [
+        -0.331243,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1317,
+      "move": [
+        -0.331244,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1318,
+      "move": [
+        -0.331243,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1320,
+      "move": [
+        -0.331244,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1321,
+      "move": [
+        -0.331243,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1322,
+      "move": [
+        -0.331244,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1323,
+      "move": [
+        -0.331243,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1325,
+      "move": [
+        -0.331244,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1326,
+      "move": [
+        -0.331243,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1327,
+      "move": [
+        -0.331244,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1328,
+      "move": [
+        -0.331243,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1330,
+      "move": [
+        -0.331244,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1331,
+      "move": [
+        -0.331243,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1332,
+      "move": [
+        -0.331244,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1333,
+      "move": [
+        -0.331243,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1335,
+      "move": [
+        -0.331244,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1336,
+      "move": [
+        -0.331243,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1338,
+      "move": [
+        -0.331244,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1339,
+      "move": [
+        -0.331243,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1340,
+      "move": [
+        -0.331244,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1341,
+      "move": [
+        -0.331243,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1343,
+      "move": [
+        -0.331244,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1344,
+      "move": [
+        -0.331243,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1345,
+      "move": [
+        -0.331244,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1346,
+      "move": [
+        -0.331243,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1348,
+      "move": [
+        -0.331244,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1349,
+      "move": [
+        -0.331243,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1350,
+      "move": [
+        -0.331244,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1351,
+      "move": [
+        -0.331243,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1353,
+      "move": [
+        -0.331244,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1354,
+      "move": [
+        -0.331243,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1355,
+      "move": [
+        -0.331244,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1356,
+      "move": [
+        -0.331243,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1358,
+      "move": [
+        -0.331244,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1359,
+      "move": [
+        -0.331243,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1361,
+      "move": [
+        -0.331244,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1362,
+      "move": [
+        -0.331243,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1363,
+      "move": [
+        -0.331244,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1364,
+      "move": [
+        -0.331243,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1366,
+      "move": [
+        -0.331244,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1367,
+      "move": [
+        -0.331243,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1368,
+      "move": [
+        -0.331244,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1369,
+      "move": [
+        -0.331243,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1371,
+      "move": [
+        -0.331244,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1372,
+      "move": [
+        -0.331243,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1373,
+      "move": [
+        -0.331244,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1374,
+      "move": [
+        -0.331243,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1376,
+      "move": [
+        -0.331244,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1377,
+      "move": [
+        -0.331243,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1378,
+      "move": [
+        -0.331244,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1379,
+      "move": [
+        -0.331243,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1381,
+      "move": [
+        -0.331244,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1382,
+      "move": [
+        -0.331243,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1383,
+      "move": [
+        -0.331244,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1384,
+      "move": [
+        -0.331243,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1386,
+      "move": [
+        -0.331244,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1387,
+      "move": [
+        -0.331243,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1389,
+      "move": [
+        -0.331244,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1390,
+      "move": [
+        -0.331243,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1391,
+      "move": [
+        -0.331244,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1392,
+      "move": [
+        -0.331243,
+        0.943545
+      ],
+      "interact": false
+    },
+    {
+      "tick": 1393,
+      "move": [
+        -0.331243,
+        0.943545
+      ],
+      "interact": true
+    }
+  ]
+}

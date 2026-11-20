@@ -1,0 +1,259 @@
+{
+  "generated_at": "2026-11-20T09:31:39.040Z",
+  "platform": "win32 10.0.19045 x64",
+  "node": "v22.19.0",
+  "cpu": "11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz",
+  "contract_version": "1.1",
+  "source_sha256": {
+    "src/core.js": "9f6fba24abf66086f48c2c982604d79b5aa4775e0c103deb6bcd9408b3ef1cd6",
+    "src/simulation.js": "2bd9a25c5984dca27bd5f875f6f1b057d2c42a2c77bb5005c856f7427111ab9c",
+    "src/rules.js": "22e6936d3fa5bf36b43ee7f1bc896a4e7646ce5718ae0446b663cd2b27cc9750",
+    "src/world.js": "4add8df3fe27e0d017ff20ea67b333a86aa1bed083f1fc0d344150aa0e074ff0",
+    "src/campaign.js": "4cac22f739d7768ec25f077404fcc14f53c7390e7f6e854a79dbd7b1357160a2",
+    "game.contract.json": "bfe8499557cb4d95bd723e33991580549f64743adef933db291b2486a11cfb3a"
+  },
+  "deterministic": true,
+  "test_exit_code": 0,
+  "checks": [
+    {
+      "name": "dash",
+      "command": "node src/headless.mjs --seed 2026 --night 1 --ticks 100 --snapshot-every 10 --out docs/proof/phase-2/dash.jsonl --scenario tests/fixtures/phase2/dash.json --inputs tests/fixtures/phase2/dash.inputs.json",
+      "sha256": "e94aba143150612dd949bb551b0c6047097a78ef0bcba300d465d8e69cef5a0c",
+      "elapsed_ms": 64.61,
+      "end": {
+        "type": "end",
+        "ticks": 100,
+        "state": "playing",
+        "score": 0
+      }
+    },
+    {
+      "name": "pause",
+      "command": "node src/headless.mjs --seed 2026 --night 2 --ticks 180 --snapshot-every 10 --out docs/proof/phase-2/pause.jsonl --scenario tests/fixtures/phase2/pause.json --inputs tests/fixtures/phase2/pause.inputs.json",
+      "sha256": "2bb9300d3c964bb0369e9cc0c2072c01d160bb84b938b0eb90d020ab5129140a",
+      "elapsed_ms": 63.03,
+      "end": {
+        "type": "end",
+        "ticks": 180,
+        "state": "playing",
+        "score": 0
+      }
+    },
+    {
+      "name": "charm",
+      "command": "node src/headless.mjs --seed 2026 --night 2 --ticks 650 --snapshot-every 10 --out docs/proof/phase-2/charm.jsonl --scenario tests/fixtures/phase2/charm.json --inputs tests/fixtures/phase2/charm.inputs.json",
+      "sha256": "b6dd9728170bf5338a4526a788311aad40b5a05803ee1dbcafd647b02ed7b8a0",
+      "elapsed_ms": 67.93,
+      "end": {
+        "type": "end",
+        "ticks": 650,
+        "state": "playing",
+        "score": 0
+      }
+    },
+    {
+      "name": "drifter",
+      "command": "node src/headless.mjs --seed 2026 --night 2 --ticks 150 --snapshot-every 10 --out docs/proof/phase-2/drifter.jsonl --scenario tests/fixtures/phase2/drifter.json --inputs tests/fixtures/phase2/drifter.inputs.json",
+      "sha256": "ef64471420b0a66c449ee35155361125f657dd4331f47465f761ece71f68b614",
+      "elapsed_ms": 64.41,
+      "end": {
+        "type": "end",
+        "ticks": 150,
+        "state": "playing",
+        "score": 0
+      }
+    },
+    {
+      "name": "fall",
+      "command": "node src/headless.mjs --seed 2026 --night 1 --ticks 70 --snapshot-every 10 --out docs/proof/phase-2/fall.jsonl --scenario tests/fixtures/phase2/fall.json --inputs tests/fixtures/phase2/fall.inputs.json",
+      "sha256": "17c7c69eb5c727a3cd4696445b4c302908b52fa78998696d8031a3e7fd55f1d9",
+      "elapsed_ms": 61.51,
+      "end": {
+        "type": "end",
+        "ticks": 70,
+        "state": "playing",
+        "score": 0
+      }
+    },
+    {
+      "name": "pad",
+      "command": "node src/headless.mjs --seed 2026 --night 2 --ticks 100 --snapshot-every 10 --out docs/proof/phase-2/pad.jsonl --scenario tests/fixtures/phase2/pad.json --inputs tests/fixtures/phase2/pad.inputs.json",
+      "sha256": "ea14d5cf4c6e513ddf02585878c36005c6c6be5a8c3762e7b6c0e992220bba91",
+      "elapsed_ms": 64.27,
+      "end": {
+        "type": "end",
+        "ticks": 100,
+        "state": "playing",
+        "score": 0
+      }
+    },
+    {
+      "name": "tiers",
+      "command": "node src/headless.mjs --seed 2026 --night 3 --ticks 100 --snapshot-every 10 --out docs/proof/phase-2/tiers.jsonl --scenario tests/fixtures/phase2/tiers.json --inputs tests/fixtures/phase2/tiers.inputs.json",
+      "sha256": "f193c216606ebf280dcd05be6b1aaf72e514c0ee9fc1693e292d413b56801cba",
+      "elapsed_ms": 68.27,
+      "end": {
+        "type": "end",
+        "ticks": 100,
+        "state": "playing",
+        "score": 0
+      }
+    },
+    {
+      "name": "tower",
+      "command": "node src/headless.mjs --seed 2026 --night 3 --ticks 70 --snapshot-every 10 --out docs/proof/phase-2/tower.jsonl --scenario tests/fixtures/phase2/tower.json --inputs tests/fixtures/phase2/tower.inputs.json",
+      "sha256": "1af5994fe3c5eecd9fc38405f2d202a5fe4cc32f78294eebb85fdb1a942408e0",
+      "elapsed_ms": 62.07,
+      "end": {
+        "type": "end",
+        "ticks": 70,
+        "state": "playing",
+        "score": 0
+      }
+    },
+    {
+      "name": "wind",
+      "command": "node src/headless.mjs --seed 2026 --night 3 --ticks 2120 --snapshot-every 10 --out docs/proof/phase-2/wind.jsonl --scenario tests/fixtures/phase2/wind.json --inputs tests/fixtures/phase2/wind.inputs.json",
+      "sha256": "b5b194bbcdc388d3875e6dfe0e1f4723d09d906de0d0aa63d1b40d1f8ada6e9b",
+      "elapsed_ms": 77.49,
+      "end": {
+        "type": "end",
+        "ticks": 2120,
+        "state": "playing",
+        "score": 0
+      }
+    },
+    {
+      "name": "dropped",
+      "command": "node src/headless.mjs --seed 2026 --night 1 --ticks 65 --snapshot-every 10 --out docs/proof/phase-2/dropped.jsonl --scenario tests/fixtures/phase2/dropped.json --inputs tests/fixtures/phase2/dropped.inputs.json",
+      "sha256": "522f705a9dee10ea8649ddc96d7a377d0111af0ab5a639cdc206a28a8c18f28b",
+      "elapsed_ms": 61.38,
+      "end": {
+        "type": "end",
+        "ticks": 65,
+        "state": "playing",
+        "score": 0
+      }
+    },
+    {
+      "name": "spawns",
+      "command": "node src/headless.mjs --seed 2026 --night 2 --ticks 2450 --snapshot-every 10 --out docs/proof/phase-2/spawns.jsonl --scenario tests/fixtures/phase2/spawns.json --inputs tests/fixtures/phase2/spawns.inputs.json",
+      "sha256": "3f6316c0b0fb6edbbc7a6a60262e6b32371dde71de746bd924648c612a400b82",
+      "elapsed_ms": 116.01,
+      "end": {
+        "type": "end",
+        "ticks": 2450,
+        "state": "playing",
+        "score": 0
+      }
+    },
+    {
+      "name": "night-1-win",
+      "command": "node src/headless.mjs --seed 2026 --night 1 --ticks 100 --snapshot-every 10 --out docs/proof/phase-2/night-1-win.jsonl --scenario tests/fixtures/phase2/campaign-1.json --inputs tests/fixtures/phase2/win.inputs.json",
+      "sha256": "5bc0e665712fb6e72ff69df20eb00870eb7a812b3d2a065a0e9d4e4a2b7e3e7b",
+      "elapsed_ms": 62.21,
+      "end": {
+        "type": "end",
+        "ticks": 1,
+        "state": "won",
+        "score": 588
+      }
+    },
+    {
+      "name": "route-1",
+      "command": "node src/headless.mjs --seed 2026 --night 1 --ticks 1395 --snapshot-every 60 --out docs/proof/phase-2/route-1.jsonl --scenario docs/proof/phase-2/route-1.scenario.json --inputs docs/proof/phase-2/route-1.inputs.json",
+      "sha256": "406f09a6988f2c945f90116f794b2ed9b922d43f8cb1ddbf8123dc26f3f410e3",
+      "elapsed_ms": 81.11,
+      "end": {
+        "type": "end",
+        "ticks": 1394,
+        "state": "won",
+        "score": 1702
+      }
+    },
+    {
+      "name": "night-2-win",
+      "command": "node src/headless.mjs --seed 2026 --night 2 --ticks 100 --snapshot-every 10 --out docs/proof/phase-2/night-2-win.jsonl --scenario tests/fixtures/phase2/campaign-2.json --inputs tests/fixtures/phase2/win.inputs.json",
+      "sha256": "2cd88feb66905e832cc139fc546c6184f8a2de355ac038f4f9df67abd51736de",
+      "elapsed_ms": 64.07,
+      "end": {
+        "type": "end",
+        "ticks": 1,
+        "state": "won",
+        "score": 588
+      }
+    },
+    {
+      "name": "route-2",
+      "command": "node src/headless.mjs --seed 2026 --night 2 --ticks 2289 --snapshot-every 60 --out docs/proof/phase-2/route-2.jsonl --scenario docs/proof/phase-2/route-2.scenario.json --inputs docs/proof/phase-2/route-2.inputs.json",
+      "sha256": "4e84457ca84a72e485785a493b8ce636b830caf0bdfb21ad4e0bf41360ae7946",
+      "elapsed_ms": 95.04,
+      "end": {
+        "type": "end",
+        "ticks": 2288,
+        "state": "won",
+        "score": 1932
+      }
+    },
+    {
+      "name": "night-3-win",
+      "command": "node src/headless.mjs --seed 2026 --night 3 --ticks 100 --snapshot-every 10 --out docs/proof/phase-2/night-3-win.jsonl --scenario tests/fixtures/phase2/campaign-3.json --inputs tests/fixtures/phase2/win.inputs.json",
+      "sha256": "3809ad11e5069abbc6b7371df7f1043aa35996a74a7d55793859367d4f461e16",
+      "elapsed_ms": 60.03,
+      "end": {
+        "type": "end",
+        "ticks": 1,
+        "state": "won",
+        "score": 588
+      }
+    },
+    {
+      "name": "route-3",
+      "command": "node src/headless.mjs --seed 2026 --night 3 --ticks 2344 --snapshot-every 60 --out docs/proof/phase-2/route-3.jsonl --scenario docs/proof/phase-2/route-3.scenario.json --inputs docs/proof/phase-2/route-3.inputs.json",
+      "sha256": "6e039331fbf80b8d23abde47cc1a6530df457cc8bae5b8b46a2102345b07d972",
+      "elapsed_ms": 90.13,
+      "end": {
+        "type": "end",
+        "ticks": 2343,
+        "state": "won",
+        "score": 2190
+      }
+    },
+    {
+      "name": "headless-21600",
+      "command": "node src/headless.mjs --seed 2026 --night 3 --ticks 21600 --snapshot-every 60 --out docs/proof/phase-2/headless-21600.jsonl --scenario tests/fixtures/phase2/benchmark.json",
+      "sha256": "b6b5626efc68e8fff40dacbfa370467d709d98ef37e92a1db25dc08782fdeb4a",
+      "elapsed_ms": 300.81,
+      "end": {
+        "type": "end",
+        "ticks": 21600,
+        "state": "lost",
+        "score": 0
+      }
+    },
+    {
+      "name": "seed-a",
+      "command": "node src/headless.mjs --seed 2026 --night 3 --ticks 2400 --snapshot-every 30 --out docs/proof/phase-2/seed-a.jsonl --scenario tests/fixtures/phase2/benchmark.json",
+      "sha256": "65d146147a80dab568854791e16052ddd85cefc2ec8570d9fdfa20a7c48e32f0",
+      "elapsed_ms": 107.42,
+      "end": {
+        "type": "end",
+        "ticks": 2400,
+        "state": "playing",
+        "score": 0
+      }
+    },
+    {
+      "name": "seed-b",
+      "command": "node src/headless.mjs --seed 2026 --night 3 --ticks 2400 --snapshot-every 30 --out docs/proof/phase-2/seed-b.jsonl --scenario tests/fixtures/phase2/benchmark.json",
+      "sha256": "65d146147a80dab568854791e16052ddd85cefc2ec8570d9fdfa20a7c48e32f0",
+      "elapsed_ms": 106.22,
+      "end": {
+        "type": "end",
+        "ticks": 2400,
+        "state": "playing",
+        "score": 0
+      }
+    }
+  ]
+}
