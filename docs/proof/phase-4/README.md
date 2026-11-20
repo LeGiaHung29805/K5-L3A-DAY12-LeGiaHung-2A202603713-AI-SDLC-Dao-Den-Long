@@ -19,3 +19,17 @@ Lệnh cũ qua `cmd start` cắt query string tại dấu `&`. Gọi URL handler
 
 - Tự mở Chrome: [kết quả](bench-retest-auto.json) · [raw frame times](bench-retest-auto.frames.json).
 - Đúng viewport: [kết quả](bench-retest-1280.json) · [raw frame times](bench-retest-1280.frames.json).
+
+## Đo lại với URL ngắn và cập nhật trạng thái ít hơn
+
+Khi chạy `--no-open`, mở đường dẫn gốc của máy chủ benchmark để vào phiên đo. Đường dẫn này chuyển sang URL có mã phiên. Đồng hồ vẫn tính từ lúc tiến trình benchmark bắt đầu. Ở hai lượt cuối, phần tiến độ cập nhật tối đa bốn lần mỗi giây. Cảnh vẫn render mọi khung hình và giữ 200 Bóng Mực, 100 đom đóm, ánh sáng và chuyển động camera theo ticket.
+
+| Lượt | Viewport | FPS trung bình | 1% low | Load | Dữ liệu |
+|---|---:|---:|---:|---:|---|
+| Mở URL đã in ngay khi sẵn sàng | 1280×720 | 92,77 | 46,71 | 11,52 s | [Kết quả](bench-retest-1280-fast-open.json) · [raw](bench-retest-1280-fast-open.frames.json) |
+| Mở URL ngắn | 1280×720 | 57,97 | 34,90 | 10,46 s | [Kết quả](bench-retest-1280-short-url.json) · [raw](bench-retest-1280-short-url.frames.json) |
+| Mở URL ngắn, cửa sổ sẵn sàng | 1280×720 | 50,33 | 32,34 | 7,97 s | [Kết quả](bench-retest-1280-under10.json) · [raw](bench-retest-1280-under10.frames.json) |
+| URL ngắn và giảm cập nhật bảng tiến độ | 658×622 | 73,17 | 35,54 | 4,03 s | [Kết quả](bench-retest-compact-viewport.json) · [raw](bench-retest-compact-viewport.frames.json) |
+| URL ngắn và giảm cập nhật bảng tiến độ | 1280×720 | 58,20 | 33,08 | 42,88 s | [Kết quả](bench-retest-1280-overlay.json) · [raw](bench-retest-1280-overlay.frames.json) |
+
+Mỗi ngưỡng đã đạt ít nhất một lần ở 1280×720. Chưa có một lượt ở đúng kích thước đạt cả ba ngưỡng. Lượt 658×622 chỉ dùng để chẩn đoán vì kích thước viewport thực khác ticket. Mỗi mảng raw có đúng số frame đã báo, tổng thời gian 30 giây và SHA-256 khớp báo cáo.

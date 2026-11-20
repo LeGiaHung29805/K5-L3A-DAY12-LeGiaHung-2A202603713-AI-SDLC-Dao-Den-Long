@@ -14,7 +14,9 @@ try {
   const seed = Number(values.seed ?? 42), duration = Number(values.duration ?? 30), port = Number(values.port ?? 5174);
   if (!Number.isSafeInteger(seed) || !Number.isFinite(duration) || duration <= 0 || duration > 300 || !values.out) throw Error('Usage: --seed 42 --duration 30 --out bench.json');
   const token = randomBytes(16).toString('hex'); let loadMs = null, completed = false;
-  const server = createGameServer({ root: fileURLToPath(new URL('../dist/', import.meta.url)),
+  const query = new URLSearchParams({ seed: String(seed), duration: String(duration), token, process_start: String(processEpoch), record: values.video ? '1' : '0' });
+  const benchmarkEntry = `/bench.html?${query}`;
+  const server = createGameServer({ root: fileURLToPath(new URL('../dist/', import.meta.url)), benchmarkEntry,
     receiveBenchmark: async (data, send) => {
       if (data.token !== token) return send(403, { error: 'Wrong benchmark job' });
       if (data.type === 'first_frame') { loadMs ??= performance.now() - started; return send(200, { ok: true }); }
@@ -32,8 +34,7 @@ try {
   });
   const timeout = setTimeout(() => { console.error(completed ? 'Video recording did not arrive' : 'Benchmark browser did not complete. No result fabricated.'); server.close(); process.exitCode = 1; }, (duration + 120) * 1000);
   server.listen(port, '127.0.0.1', () => {
-    const query = new URLSearchParams({ seed: String(seed), duration: String(duration), token, process_start: String(processEpoch), record: values.video ? '1' : '0' });
-    const url = `http://localhost:${port}/bench.html?${query}`; console.log(`BENCH_URL=${url}`);
+    const url = `http://localhost:${port}${benchmarkEntry}`; console.log(`BENCH_URL=${url}`);
     if (!values['no-open']) {
       const command = process.platform === 'win32' ? ['rundll32.exe', ['url.dll,FileProtocolHandler', url]] : process.platform === 'darwin' ? ['open', [url]] : ['xdg-open', [url]];
       const opener = spawn(command[0], command[1], { stdio: 'ignore', windowsHide: true }); opener.on('error', () => console.log('Open BENCH_URL manually.'));

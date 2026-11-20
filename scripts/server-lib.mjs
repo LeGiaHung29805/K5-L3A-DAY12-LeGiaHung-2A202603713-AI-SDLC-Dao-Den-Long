@@ -3,11 +3,15 @@ import { readFile, stat, mkdir, writeFile } from 'node:fs/promises';
 import { resolve, extname, sep, dirname } from 'node:path';
 import { orderedEntries } from '../src/leaderboard.js';
 const mime = { '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 'text/javascript', '.json': 'application/json', '.jpg': 'image/jpeg', '.mp4': 'video/mp4' };
-export function createGameServer({ root, leaderboardFile, receiveBenchmark, receiveVideo }) {
+export function createGameServer({ root, leaderboardFile, benchmarkEntry, receiveBenchmark, receiveVideo }) {
   return createServer(async (req, res) => {
     const send = (code, value) => { res.writeHead(code, { 'Content-Type': 'application/json' }); res.end(JSON.stringify(value)); };
     try {
       const url = new URL(req.url, 'http://localhost'), pathname = decodeURIComponent(url.pathname);
+      if (benchmarkEntry && pathname === '/' && req.method === 'GET') {
+        res.writeHead(302, { Location: benchmarkEntry, 'Cache-Control': 'no-store' });
+        return res.end();
+      }
       if (req.method === 'POST' && req.headers.origin && new URL(req.headers.origin).host !== req.headers.host) return send(403, { error: 'Cross-origin write denied' });
       const body = async (limit = 1_000_000) => { const chunks = []; let size = 0; for await (const part of req) { size += part.length; if (size > limit) throw Error('Request too large'); chunks.push(part); } return Buffer.concat(chunks); };
       if (pathname === '/__bench' && receiveBenchmark && req.method === 'POST') return await receiveBenchmark(JSON.parse(await body(10_000_000)), send);

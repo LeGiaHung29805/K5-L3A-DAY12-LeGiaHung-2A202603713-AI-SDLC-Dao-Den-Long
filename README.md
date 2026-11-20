@@ -63,7 +63,7 @@ node scripts/bench.mjs --seed 42 --duration 30 --out bench.json
 npm run soak -- --seed 7 --nights 10 --out soak.json
 ```
 
-Benchmark tự mở tab local: giữ tab hoạt động, cửa sổ 1280×720, đóng game khác. Nếu không tự mở, dùng BENCH_URL in ra; --no-open dành cho công cụ. Warmup 3 giây rồi đo đúng thời lượng: 200 bóng wander, 100 đom đóm, L1–L3 sáng; dầu/gameplay/spawn/input tắt. Camera bán kính 30, cao 15, ngược chiều kim đồng hồ nhìn từ +Y với -Z phía trên, chu kỳ 15 giây. Instancing giữ nguyên mô hình, ánh sáng và số thực thể.
+Benchmark tự mở tab local. Giữ tab hiển thị ở 1280×720 và đóng các cảnh 3D khác. Khi dùng `--no-open`, mở ngay `http://localhost:5174/` (hoặc cổng đã chọn bằng `--port`) để vào phiên đo đang chạy. Warmup 3 giây rồi đo đúng thời lượng với 200 bóng wander, 100 đom đóm và L1–L3 sáng. Cảnh đo tắt tiêu hao dầu, gameplay, spawn và input. Camera bán kính 30, cao 15, quay ngược chiều kim đồng hồ nhìn từ +Y với -Z phía trên, chu kỳ 15 giây. Instancing giữ nguyên mô hình, ánh sáng và số thực thể.
 
 Web không có API ép tắt vsync/đo RSS tiến trình: khai vsync_off:false, peak_mem_mb:null. bench.frames.json có raw dt và SHA-256 trong bench.json; FPS = 1000N/sum(dt), 1% low dùng ceil(1%N) khung chậm nhất, P95 nearest-rank. Chỉ cắt hai khung biên để đo đúng thời lượng. load_ms bao gồm cả chờ mở browser từ lúc tiến trình chạy, không trừ độ trễ công cụ.
 

@@ -15,7 +15,7 @@ Dùng tag tương ứng khi kiểm tra lại Phase 1–4. Ở mỗi tag, chạy 
 | `phase-4` | Hồi quy contract và luật đang có hiệu lực | 73 test và 19 ca CLI đối chiếu từng byte với Phase 3. [Tóm tắt hồi quy](phase-4/regression/summary.json) |
 | `phase-4` | Bảng điểm, lưu và xuất JSON | Test sắp hạng, validate tên, lưu và xuất; QA form sau thua và sau thắng Đêm 3. [Bảng Phase 4](phase-4/README.md) |
 | `phase-4` | Đổi phím, cảnh báo, giảm chuyển động, cỡ chữ | Test đổi phím và QA ảnh, cỡ chữ tính từ DOM ở 1280×720. [Bảng Phase 4](phase-4/README.md) |
-| `phase-4` và lượt chạy bổ sung | Benchmark và soak | Lượt chạy bổ sung ở 1280×720 đạt 92,67 FPS trung bình, 30,06 FPS ở 1% low; load 21,26 giây chưa đạt. Soak đủ 10 Đêm, không crash, RSS tăng 4,25%. Báo cáo tách số đo ở tag và số đo sau sửa launcher. [Bảng Phase 4](phase-4/README.md) |
+| `phase-4` và lượt chạy bổ sung | Benchmark và soak | Ở 1280×720, lượt đạt cả hai ngưỡng FPS đo 92,77 FPS trung bình, 46,71 FPS ở 1% low và load 11,52 giây. Lượt load 7,97 giây ở cùng viewport có FPS trung bình 50,33. Chưa xác nhận cả ba ngưỡng trong một lượt. Soak đủ 10 Đêm, không crash, RSS tăng 4,25%. [Bảng Phase 4](phase-4/README.md) |
 | `v1.0.0` | Gói chơi được, demo dưới 5 phút, hướng dẫn, credit, license và retro | Release có ZIP, MP4 và checksum. MP4 dài 71,63 giây; URL tải trả HTTP 200 không cần đăng nhập. [Release](https://github.com/LeGiaHung29805/K5-L3A-DAY12-LeGiaHung-2A202603713-AI-SDLC-Dao-Den-Long/releases/tag/v1.0.0) · [Retro](../retro-phase-4.md) |
 
 Bộ test ẩn do giảng viên chạy. Chưa có biên bản đánh giá của người hoặc agent khác người viết. Các mục giới hạn trong proof từng phase ghi rõ điều kiện và phạm vi của lần chạy gốc.
