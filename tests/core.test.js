@@ -23,9 +23,9 @@ test('scenario tick0 has no score/events, override by lamp id keeps all other la
   assert.equal(g.lanterns.length, 5); assert.equal(g.lanterns[1].deposited, 10);
 });
 test('movement 60Hz speed, exact time precision, yaw rotation, diagonal normalization', () => {
-  const a = run(game(), 60, { move: [0, 1] }); approx(a.player.pos[2], 6); assert.equal(a.timeLeft, 299);
+  const a = run(game(), 60, { move: [0, 1] }); approx(a.player.pos[2], 6); assert.equal(a.timeLeft, 239);
   const b = run(game(), 60, { move: [1, 1], cam_yaw_deg: 90 }); approx(b.player.pos[0], 6 / Math.sqrt(2)); approx(b.player.pos[2], -6 / Math.sqrt(2));
-  const c = game(); c.step(); assert.equal(c.snapshot().time_left_s, 300 - 1 / 60);
+  const c = game(); c.step(); assert.equal(c.snapshot().time_left_s, 240 - 1 / 60);
 });
 test('partial input retains movement/camera; jump launches only on ground and fresh edge', () => {
   const g = game(); g.step({ move: [0, 1], cam_yaw_deg: 90 }); g.step({ jump: true }); approx(g.player.pos[0], .2); assert.ok(g.player.pos[1] > 0);
@@ -42,18 +42,18 @@ test('empty inputs stay still and preserve out-of-range motes', () => {
 });
 test('partial deposit remembers progress, scores deposit amount, held interact does not repeat', () => {
   const g = game({ player: { carried: 4 }, lanterns: [{ id: 'L1', pos: [0, 0, 2] }] });
-  assert.deepEqual(events(g, { interact: true })[0].data, { lantern_id: 'L1', amount: 4, deposited: 4 }); assert.equal(g.score, 40);
+  assert.deepEqual(events(g, { interact: true })[0].data, { lantern_id: 'L1', amount: 4, deposited: 4 }); assert.equal(g.score, 20);
   g.addMote([0, 0, 0]); g.step(); assert.equal(g.lanterns[0].deposited, 4); assert.equal(g.player.carried, 1);
-  g.step({ interact: false }); g.step({ interact: true }); assert.equal(g.lanterns[0].deposited, 5); assert.equal(g.score, 50);
+  g.step({ interact: false }); g.step({ interact: true }); assert.equal(g.lanterns[0].deposited, 5); assert.equal(g.score, 25);
 });
 test('full deposit preserves excess; light scores once; exact ties use id', () => {
   const g = game({ player: { carried: 10 }, lanterns: [{ id: 'L1', pos: [0, 0, 0], deposited: 3 }, { id: 'L2', pos: [0, 0, 0] }] });
-  const e = events(g, { interact: true }); assert.equal(e[0].data.lantern_id, 'L1'); assert.equal(g.player.carried, 3); assert.equal(g.score, 170);
-  assert.deepEqual(e.map(e => e.name), ['deposit', 'lantern_lit']); g.step(); assert.equal(g.score, 170);
+  const e = events(g, { interact: true }); assert.equal(e[0].data.lantern_id, 'L1'); assert.equal(g.player.carried, 3); assert.equal(g.score, 135);
+  assert.deepEqual(e.map(e => e.name), ['deposit', 'lantern_lit']); g.step(); assert.equal(g.score, 135);
 });
-test('deposit selects nearest unlit, refuses outside range and ignores lit lamps', () => {
+test('deposit selects nearest accepting lamp, refuses outside range and accepts lit lamps', () => {
   const g = game({ player: { carried: 10 }, lanterns: [{ id: 'L1', pos: [2.001, 0, 0] }] }); assert.deepEqual(events(g, { interact: true }), []);
-  const h = game({ player: { carried: 10 }, lanterns: [{ id: 'L1', pos: [0, 0, 0], lit: true }, { id: 'L2', pos: [1, 0, 0] }] }); assert.equal(events(h, { interact: true })[0].data.lantern_id, 'L2');
+  const h = game({ player: { carried: 10 }, lanterns: [{ id: 'L1', pos: [0, 0, 0], lit: true }, { id: 'L2', pos: [1, 0, 0] }] }); assert.equal(events(h, { interact: true })[0].data.lantern_id, 'L1');
 });
 test('pulse measures 3D from foot+.8; inclusive radius and no phantom XZ-only hit', () => {
   const g = game({ player: { carried: 10 }, shades: [{ id: 'near', pos: [5, .8, 0] }, { id: 'outside', pos: [5.001, .8, 0] }, { id: 'high', pos: [0, 6, 0] }] });
@@ -69,7 +69,7 @@ test('pulse cost/cooldown/edge; hitting an already stunned shade scores again', 
 });
 test('stun expires at120 ticks and changes to allowed wander/chase state', () => {
   const g = game({ player: { carried: 10 }, shades: [{ pos: [2, .8, 0] }] }); g.step({ pulse: true }); run(g, 119);
-  assert.equal(g.shades[0].state, 'stunned'); g.step(); assert.equal(g.shades[0].state, 'chase');
+  assert.equal(g.shades[0].state, 'stunned'); g.step(); assert.equal(g.shades[0].state, 'wander');
 });
 test('shade normal and N3 chase speeds and detect/lose hysteresis', () => {
   const g = run(game({ shades: [{ pos: [10, .8, 0] }] }), 60); approx(g.shades[0].pos[0], 6);
@@ -169,7 +169,7 @@ test('drifter theft precedes shade damage, so dropped count is based on remainin
 test('pause increments tick but freezes sim_tick/timers/cooldowns/TTL/enemies/spawns', () => {
   const g = game({ player: { invuln_ticks: 20, dash_cd_ticks: 40, pulse_cd_ticks: 50, charm_ticks: 60 }, motes: [{ pos: [10, 0, 0], kind: 'dropped', ttl_s: 3 }], shades: [{ pos: [10, .8, 0], state: 'stunned', state_ticks_left: 50 }] });
   assert.equal(events(g, { pause: true })[0].name, 'paused'); const before = g.snapshot(); run(g, 240);
-  const after = g.snapshot(); assert.equal(after.tick, 241); assert.equal(after.sim_tick, 0); assert.equal(after.state, 'paused'); assert.equal(after.time_left_s, 300);
+  const after = g.snapshot(); assert.equal(after.tick, 241); assert.equal(after.sim_tick, 0); assert.equal(after.state, 'paused'); assert.equal(after.time_left_s, 240);
   assert.deepEqual(after.player, before.player); assert.deepEqual(after.shades, before.shades); assert.deepEqual(after.motes, before.motes);
   g.step({ pause: false }); assert.equal(events(g, { pause: true })[0].name, 'resumed'); assert.equal(g.simTick, 1); assert.equal(g.player.invuln_ticks, 19);
 });
@@ -188,15 +188,15 @@ test('drifter schedule1200/2400, cap2, stableDids, N1 never spawn drifters', () 
   const g = game({ random_drifters: true }, 2); run(g, 1199); assert.equal(g.drifters.length, 0); g.step(); assert.equal(g.drifters[0].id, 'D1'); run(g, 1200); assert.equal(g.drifters[1].id, 'D2'); run(g, 1200); assert.equal(g.drifters.length, 2);
   const h = game({ random_drifters: true }); run(h, 2400); assert.equal(h.drifters.length, 0);
 });
-test('all three nights can win, score on final deposit plusstandardbonus, night_start once', () => {
+test('all three nights win at dawn, exact fuel bonuses, night_start once', () => {
   for (const night of [1, 2, 3]) {
     const lamps = worldFor(night).lanterns.map((l, i) => i ? { id: l.id, lit: true } : { id: l.id, pos: [0, 0, 0] });
-    const g = game({ player: { pos: [0, 0, -10], carried: 10 }, lanterns: lamps.map(l => l.lit ? l : { ...l, pos: [0, 0, -10] }), time_left_s: 120 }, night);
-    const e = g.step({ interact: true }); assert.equal(g.state, 'won'); assert.equal(g.score, 100 + 100 + 119 * 2 + 150); assert.equal(e.filter(e => e.name === 'night_start').length, 1);
+    const g = game({ player: { pos: [0, 0, -10], carried: 10 }, lanterns: lamps.map(l => l.lit ? l : { ...l, pos: [0, 0, -10] }), time_left_s: 1 / 60 }, night);
+    const e = g.step({ interact: true }); assert.equal(g.state, 'won'); assert.equal(g.score, 450 + 149 * (lamps.length - 1)); assert.equal(e.filter(e => e.name === 'night_start').length, 1);
     assert.deepEqual(g.step(), []); assert.equal(g.tick, 1);
   }
 });
-test('end priorities: last-flame loses; all-lit wins onexactdawn; otherwise dawn', () => {
+test('end priorities: last-flame loses; threshold wins at dawn; otherwise dawn', () => {
   const g = game({ player: { flames: 1 }, shades: [{ pos: [0, .8, 0] }] }); assert.equal(events(g).at(-1).data.reason, 'no_flames');
   const won = game({ lanterns: worldFor(1).lanterns.map(l => ({ id: l.id, lit: true })), time_left_s: 1 / 60 }); won.step(); assert.equal(won.state, 'won');
   const dawn = run(game({ time_left_s: 1 }), 60); assert.equal(dawn.state, 'lost'); assert.equal(dawn.events.at(-1).data.reason, 'dawn');

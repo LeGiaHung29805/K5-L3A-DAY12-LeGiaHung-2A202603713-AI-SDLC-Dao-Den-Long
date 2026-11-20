@@ -22,7 +22,7 @@ const finite = v => typeof v === 'number' && Number.isFinite(v);
 const nonnegativeInt = v => Number.isSafeInteger(v) && v >= 0;
 const position = v => Array.isArray(v) && v.length === 3 && v.every(finite);
 const allowed = (value, keys, label) => requireValue(Object.keys(value).every(key => keys.includes(key)), `${label}: unknown field`);
-export const SHADE_STATES = ['spawning', 'wander', 'chase', 'recoil', 'stunned'];
+export const SHADE_STATES = ['spawning', 'wander', 'chase', 'recoil', 'stunned', 'drain'];
 export const DRIFTER_STATES = ['idle', 'chase', 'flee', 'removed'];
 
 export function validateInputs(value) {
@@ -45,9 +45,10 @@ export function validateScenario(s, t, night = 1) {
   allowed(s, ['player', 'random_motes', 'random_shades', 'random_drifters', 'wind_enabled', 'motes', 'shades', 'drifters', 'charms', 'lanterns', 'time_left_s'], 'scenario');
   if ('player' in s) {
     const p = s.player; requireValue(object(p), 'player must be an object');
-    allowed(p, ['pos', 'carried', 'flames', 'invuln_ticks', 'dash_cd_ticks', 'pulse_cd_ticks', 'charm_ticks'], 'player');
+    allowed(p, ['pos', 'carried', 'flames', 'successful_lights', 'invuln_ticks', 'dash_cd_ticks', 'pulse_cd_ticks', 'charm_ticks'], 'player');
+    if ('successful_lights' in p) requireValue(nonnegativeInt(p.successful_lights), 'successful_lights must be a nonnegative integer');
     if ('pos' in p) requireValue(position(p.pos), 'player.pos must be a finite 3D position');
-    if ('carried' in p) requireValue(nonnegativeInt(p.carried) && p.carried <= t.carry_capacity, 'invalid player.carried');
+    if ('carried' in p) requireValue(nonnegativeInt(p.carried) && p.carried <= Math.min(t.capacity_max, t.carry_capacity + 2 * (p.successful_lights ?? 0)), 'invalid player.carried');
     if ('flames' in p) requireValue(nonnegativeInt(p.flames) && p.flames <= t.flames, 'invalid player.flames');
     for (const k of ['invuln_ticks', 'dash_cd_ticks', 'pulse_cd_ticks', 'charm_ticks']) if (k in p) requireValue(nonnegativeInt(p[k]), `${k} must be a nonnegative integer`);
   }
@@ -70,7 +71,8 @@ export function validateScenario(s, t, night = 1) {
     const ids = new Set();
     for (const item of s[key]) {
       requireValue(object(item) && position(item.pos), `${key}.pos must be a finite 3D position`);
-      allowed(item, ['id', 'pos', 'state', 'state_ticks_left', ...(key === 'drifters' ? ['stolen'] : [])], key);
+      allowed(item, ['id', 'pos', 'state', 'state_ticks_left', ...(key === 'drifters' ? ['stolen'] : ['target_lantern_id'])], key);
+      if ('target_lantern_id' in item) requireValue(item.target_lantern_id === null || WORLDS[night].lanterns.some(l => l.id === item.target_lantern_id), 'invalid target_lantern_id');
       if ('id' in item) { requireValue(typeof item.id === 'string' && item.id.length > 0 && !ids.has(item.id), `${key} ids must be unique strings`); ids.add(item.id); }
       if ('state' in item) requireValue((key === 'shades' ? SHADE_STATES : DRIFTER_STATES).includes(item.state), `invalid ${key} state`);
       if ('state_ticks_left' in item) requireValue(nonnegativeInt(item.state_ticks_left), 'invalid state_ticks_left');
@@ -93,7 +95,9 @@ export function validateScenario(s, t, night = 1) {
     requireValue(Array.isArray(s.lanterns), 'lanterns must be an array'); const ids = new Set();
     for (const l of s.lanterns) {
       requireValue(object(l) && WORLDS[night].lanterns.some(item => item.id === l.id) && !ids.has(l.id), 'invalid/duplicate lantern id'); ids.add(l.id);
-      allowed(l, ['id', 'pos', 'deposited', 'lit'], 'lantern');
+      allowed(l, ['id', 'pos', 'deposited', 'lit', 'fuel', 'ever_lit'], 'lantern');
+      if ('fuel' in l) requireValue(finite(l.fuel) && l.fuel >= 0 && l.fuel <= t.fuel_max, 'invalid fuel');
+      if ('ever_lit' in l) requireValue(typeof l.ever_lit === 'boolean', 'ever_lit must be boolean');
       if ('pos' in l) requireValue(position(l.pos), 'invalid lantern position');
       if ('deposited' in l) requireValue(nonnegativeInt(l.deposited) && l.deposited <= t.lantern_cost, 'invalid deposited');
       if ('lit' in l) requireValue(typeof l.lit === 'boolean', 'lit must be boolean');

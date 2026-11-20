@@ -132,7 +132,11 @@ export class GameView {
       const light = new THREE.PointLight(P.lantern, 0, 15, 2); light.position.set(.7, 2.1, 0); g.add(light);
       const ringMat = new THREE.MeshBasicMaterial({ color: P.lantern, transparent: true, opacity: .3, side: THREE.DoubleSide, depthWrite: false });
       const ring = this.add(new THREE.RingGeometry(5.92, 6, 64), ringMat, g, [0, .05, 0]); ring.rotation.x = -Math.PI / 2; ring.userData.ownMaterial = true;
-      this.lamps.push({ g, body, light, ring });
+      const tear = new THREE.Group(); g.add(tear);
+      for (let j = 0; j < 3; j++) { const cut = this.add(this.geo.box, m.black, tear, [.7 + (j - 1) * .11, 2.1 + j * .09, .48], [.18, .045, .03]); cut.rotation.z = j % 2 ? -.5 : .5; }
+      const barBack = this.add(this.geo.box, m.off, g, [.7, 3.55, 0], [1.4, .12, .09]);
+      const bar = this.add(this.geo.box, m.gold, g, [.7, 3.55, -.01], [1.4, .1, .12]);
+      this.lamps.push({ g, body, light, ring, tear, barBack, bar });
     }
     for (const c of game.charms) {
       const g = new THREE.Group(); this.dynamic.add(g); const paper = this.add(this.geo.box, m.scarf, g, [0, 0, 0], [.48, .75, .04]);
@@ -154,7 +158,13 @@ export class GameView {
     this.keeper.visible = game.respawnTicks === 0 && (p.invuln_ticks === 0 || Math.floor(time * 12) % 2 === 0);
     const moving = Math.hypot(p.vel[0], p.vel[2]) > .1 && game.state === 'playing';
     this.legs.forEach((o, i) => { o.rotation.x = moving ? Math.sin(time * 12 + i * Math.PI) * .5 : 0; }); this.arms.forEach((o, i) => { o.rotation.x = moving ? Math.sin(time * 12 - i * Math.PI) * .35 : .08; }); this.hat.rotation.z = Math.sin(time * 1.8) * .025;
-    game.lanterns.forEach((l, i) => { const v = this.lamps[i]; v.body.material = l.lit ? m.core : m.off; v.light.intensity = l.lit ? 25 : l.deposited * .15; v.ring.visible = l.lit; });
+    game.lanterns.forEach((l, i) => {
+      const v = this.lamps[i], fuel = l.fuelUnits / 60, blink = l.lit && fuel < game.t.low_fuel_threshold && Math.floor(time * 2) % 2 === 0;
+      v.body.material = l.lit ? m.core : m.off; v.body.scale.set(.9, l.lit ? 1.2 : .96, .9); v.tear.visible = !l.lit;
+      v.body.visible = !blink; v.light.intensity = l.lit ? blink ? 3 : 25 : 0; v.ring.visible = game.hasSafeZone(l);
+      v.bar.visible = l.lit && !blink; v.barBack.visible = l.lit;
+      v.bar.scale.x = 1.4 * fuel / game.t.fuel_max; v.bar.position.x = v.bar.scale.x / 2;
+    });
     const moteIds = new Set(game.motes.map(o => o.id));
     for (const [id, g] of this.motes) if (!moteIds.has(id)) { this.dynamic.remove(g); this.motes.delete(id); }
     for (const item of game.motes) {
@@ -200,4 +210,5 @@ export class GameView {
     return { visible, angle: Math.atan2(local.x * sign, local.y * sign) * 180 / Math.PI };
   }
   resize() { this.renderer.setSize(innerWidth, innerHeight); this.camera.aspect = innerWidth / innerHeight; this.camera.updateProjectionMatrix(); }
+  setAccessiblePalette(enabled) { this.materials.rim.color.set(enabled ? '#00B3FF' : P.shadeRim); }
 }

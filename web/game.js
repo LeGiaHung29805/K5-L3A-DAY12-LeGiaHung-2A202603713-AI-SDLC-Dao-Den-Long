@@ -12,7 +12,7 @@ const contract = await fetch('./game.contract.json').then(r => { if (!r.ok) thro
 const tuning = contract.tuning, params = new URLSearchParams(location.search);
 const debugNight = [1, 2, 3].includes(Number(params.get('night'))) ? Number(params.get('night')) : 1;
 const scenarioName = params.get('scenario');
-const scenarioFiles = { 'near-win': 'near-win', 'near-loss': 'near-loss', pulse: 'pulse', dash: 'phase2/dash', charm: 'phase2/charm', drifter: 'phase2/drifter', wind: 'phase2/wind', fall: 'phase2/fall', pad: 'phase2/pad', tiers: 'phase2/tiers' };
+const scenarioFiles = { refuel: 'phase3/refuel', relight: 'phase3/relight', drain: 'phase3/drain', 'drain-pulse': 'phase3/drain-pulse', 'fuel-out': 'phase3/fuel-out', 'near-win': 'near-win', 'near-loss': 'near-loss', pulse: 'pulse', dash: 'phase2/dash', charm: 'phase2/charm', drifter: 'phase2/drifter', wind: 'phase2/wind', fall: 'phase2/fall', pad: 'phase2/pad', tiers: 'phase2/tiers' };
 let storage; try { storage = localStorage; } catch { /* Storage may be disabled. */ }
 const settings = new Settings(storage), audio = new GameAudio(settings.value.volume), input = new InputBuffer();
 let campaign = new Campaign(debugNight), game, mode = 'menu', settingsReturn = 'menu', yaw = 0, accumulator = 0, lastTime = 0, toastUntil = 0, countdown = null, settingsAfterPause = false;
@@ -24,7 +24,7 @@ const ids = ['menu', 'night-intro', 'hud', 'pause-panel', 'settings-panel', 'end
 function panels(...visible) { for (const id of ids) $(id).classList.toggle('hidden', !visible.includes(id)); $('intro-footer').classList.toggle('hidden', !visible.includes('menu')); }
 function toast(message) { $('toast').textContent = message; $('toast').classList.add('show'); toastUntil = performance.now() + 2800; }
 async function newGame(night) {
-  const file = scenarioName === 'campaign' ? `phase2/campaign-${night}` : scenarioFiles[scenarioName];
+  const file = scenarioName === 'campaign' ? `phase3/campaign-${night}` : scenarioFiles[scenarioName];
   const scenario = file ? await fetch(`./scenarios/${file}.json`).then(r => { if (!r.ok) throw Error('Cannot load scenario'); return r.json(); }) : {};
   return new Game({ tuning, seed: 2026, night, scenario });
 }
@@ -32,13 +32,13 @@ async function prepareNight() {
   audio.stopMusic(); input.clear(); settingsAfterPause = false; game = await newGame(campaign.night); view.build(game); yaw = 0; accumulator = 0; countdown = null;
   $('chapter-label').textContent = `ĐÊM ${game.night} · ${game.world.name.toUpperCase()}`;
   $('night-kicker').textContent = `ĐÊM ${game.night} / 3`; $('night-title').textContent = game.world.name; $('night-story').textContent = game.world.story;
-  $('night-info').textContent = `${game.lanterns.length} đèn lồng · ${Math.round(game.initialTime)} giây · 3 ngọn lửa`;
+  $('night-info').textContent = `${game.lanterns.length} đèn lồng · ${Math.round(game.initialTime)} giây · Bình minh cần ${Math.ceil(tuning.win_ratio * game.lanterns.length)} đèn sáng`;
   $('lantern-progress').innerHTML = game.lanterns.map(l => `<span title="${l.id}">✧</span>`).join('');
   $('map-title').textContent = game.world.name.toUpperCase(); mode = 'intro'; panels('night-intro');
 }
 function launchNight() {
   mode = 'playing'; input.clear(); accumulator = 0; fpsFrames = 0; fpsElapsed = 0; fpsWarmup = 0;
-  panels('hud'); audio.startNight(game.night); toast(game.night === 1 ? 'Gom 10 đom đóm rồi mang về một ngọn đèn nhé.' : game.night === 2 ? 'Cầu tre nối hai đảo. Bục vàng đưa Mây bay qua sương.' : 'Men theo hai dốc lên tầng cao, rồi tìm bục gió tới tháp chuông.');
+  panels('hud'); audio.startNight(game.night); toast(game.night === 1 ? 'Giữ ít nhất 3/5 đèn sáng tới bình minh. Nhớ quay lại châm dầu.' : game.night === 2 ? 'Cầu tre nối hai đảo. Bục vàng đưa Mây bay qua sương.' : 'Men theo hai dốc lên tầng cao, rồi tìm bục gió tới tháp chuông.');
 }
 async function retry() { await prepareNight(); launchNight(); }
 async function menu() { audio.stopMusic(); campaign = new Campaign(debugNight); await prepareNight(); mode = 'menu'; panels('menu'); }
@@ -50,6 +50,7 @@ function openSettings() {
 }
 function closeSettings() { mode = settingsReturn; panels(...(mode === 'paused' ? ['hud', 'pause-panel'] : mode === 'intro' ? ['night-intro'] : mode === 'result' || mode === 'dawn' ? ['hud', 'ending'] : ['menu'])); }
 function updateSettings() {
+  $('accessible-palette').checked = settings.value.accessiblePalette; document.body.classList.toggle('accessible-palette', settings.value.accessiblePalette); view.setAccessiblePalette(settings.value.accessiblePalette);
   $('volume').value = Math.round(settings.value.volume * 100); $('volume-value').textContent = `${Math.round(settings.value.volume * 100)}%`;
   $('sensitivity').value = Math.round(settings.value.sensitivity * 100); $('sensitivity-value').textContent = `${settings.value.sensitivity.toFixed(2)}×`;
   audio.volume = settings.value.volume; $('sound').textContent = settings.value.volume > 0 ? '♪' : '♩'; $('sound').setAttribute('aria-label', settings.value.volume > 0 ? 'Tắt âm thanh' : 'Bật âm thanh');
@@ -63,11 +64,12 @@ $('help').onclick = () => { if (mode === 'playing' || mode === 'paused') queuePa
 $('sound').onclick = () => { audio.unlock(); settings.set({ volume: settings.value.volume > 0 ? 0 : .35 }); updateSettings(); audio.effect('pickup'); };
 $('volume').oninput = () => { settings.set({ volume: Number($('volume').value) / 100 }); updateSettings(); };
 $('sensitivity').oninput = () => { settings.set({ sensitivity: Number($('sensitivity').value) / 100 }); updateSettings(); };
+$('accessible-palette').onchange = () => { settings.set({ accessiblePalette: $('accessible-palette').checked }); updateSettings(); };
 function showEnding() {
   audio.stopMusic(); input.clear(); campaign.record(game); const won = game.state === 'won'; mode = won && game.night === 3 ? 'dawn' : 'result'; panels('hud', 'ending');
   $('ending-kicker').textContent = mode === 'dawn' ? 'BA HÒN ĐẢO ĐÃ THỨC GIẤC' : `KẾT QUẢ ĐÊM ${game.night} · ${game.world.name.toUpperCase()}`;
   $('ending-title').textContent = mode === 'dawn' ? 'Bình Minh' : won ? 'Đảo đã sáng rồi!' : 'Một đốm hy vọng.';
-  $('ending-text').textContent = mode === 'dawn' ? 'Tiếng chuông ngân qua biển mây. Mây đã mang ánh sáng về nhà, và Ông Đăng đang chờ bên ngọn đèn.' : won ? 'Đèn đã thức giấc. Nghỉ một chút rồi cùng Ông Đăng đến hòn đảo tiếp theo nhé.' : game.timeLeft <= 0 ? 'Bình minh đã đến trước khi mọi ngọn đèn được thắp. Mây có thể thử lại Đêm này.' : 'Ngọn lửa cuối cùng đã tắt. Những đốm đom đóm vẫn chờ Mây quay lại.';
+  $('ending-text').textContent = mode === 'dawn' ? 'Tiếng chuông ngân qua biển mây. Mây đã mang ánh sáng về nhà, và Ông Đăng đang chờ bên ngọn đèn.' : won ? 'Đèn đã thức giấc. Nghỉ một chút rồi cùng Ông Đăng đến hòn đảo tiếp theo nhé.' : game.timeLeft <= 0 ? 'Bình minh đã đến nhưng số đèn còn sáng chưa đủ ngưỡng. Mây có thể thử lại Đêm này.' : 'Ngọn lửa cuối cùng đã tắt. Những đốm đom đóm vẫn chờ Mây quay lại.';
   $('ending-score').textContent = `${game.score.toLocaleString('vi-VN')} điểm đêm`; $('ending-total').textContent = `Tổng điểm các Đêm đã thắng: ${campaign.total.toLocaleString('vi-VN')}`;
   $('next-night').classList.toggle('hidden', !won || game.night === 3); $('next-night').textContent = `Đến Đêm ${Math.min(3, game.night + 1)}`;
   $('replay').textContent = `Chơi lại Đêm ${game.night}`; audio.effect(won ? 'won' : 'lost');
@@ -75,7 +77,9 @@ function showEnding() {
 function handle(events) {
   for (const e of events) {
     if (e.name === 'mote_picked') audio.effect('pickup');
-    if (e.name === 'lantern_lit') { audio.effect('lantern'); view.effect('lantern_lit', game.lanterns.find(l => l.id === e.data.lantern_id).pos); toast('Đèn đã sáng. Bóng Mực không thể vào vùng sáng này.'); }
+    if (e.name === 'lantern_out') toast('⚠ Một đèn đã cạn dầu! Thắp lại chỉ cần 5 đom đóm.');
+    if (e.name === 'refuel') { audio.effect('lantern'); toast(`Đã châm ${e.data.amount} đom đóm · Dầu ${e.data.fuel}/100`); }
+    if (e.name === 'lantern_lit') { audio.effect('lantern'); view.effect('lantern_lit', game.lanterns.find(l => l.id === e.data.lantern_id).pos); toast('Đèn đã sáng. Đèn đủ 30 dầu sẽ giữ Bóng Mực ở ngoài vùng sáng.'); }
     if (e.name === 'pulse') { audio.effect('pulse'); view.effect('pulse', game.player.pos); }
     if (e.name === 'dash') { audio.effect('dash'); view.effect('dash', game.player.pos); }
     if (e.name === 'player_hit') { audio.effect('hit'); toast(e.data.by === 'fall' ? 'Mây rơi vào biển mây. Chờ một chút để trở lại bờ.' : 'Mây mất một ngọn lửa. Đom đóm đánh rơi có thể nhặt lại trong 8 giây.'); }
@@ -112,7 +116,7 @@ function drawMap() {
   if (game.world.bridge) { const a = xy([26, 0, 0]), b = xy([44, 0, 0]); map.strokeStyle = '#C9B48A'; map.lineWidth = 4; map.beginPath(); map.moveTo(...a); map.lineTo(...b); map.stroke(); }
   const dot = (pos, r, color) => { const [x, y] = xy(pos); map.fillStyle = color; map.beginPath(); map.arc(x, y, r, 0, 6.3); map.fill(); };
   for (const m of game.motes) dot(m.pos, 1, '#FFE58A'); for (const l of game.lanterns) dot(l.pos, 2.6, l.lit ? '#FFB347' : '#5B5F6E');
-  for (const s of game.shades) dot(s.pos, 2, '#7A3CFF'); for (const d of game.drifters) dot(d.pos, 2, '#8FA3B8'); for (const c of game.charms) if (c.available) dot(c.pos, 2, '#C8102E'); dot(game.player.pos, 3, '#F5F1E6');
+  for (const s of game.shades) dot(s.pos, 2, settings.value.accessiblePalette ? '#00B3FF' : '#7A3CFF'); for (const d of game.drifters) dot(d.pos, 2, '#8FA3B8'); for (const c of game.charms) if (c.available) dot(c.pos, 2, '#C8102E'); dot(game.player.pos, 3, '#F5F1E6');
 }
 $('carry-slots').innerHTML = Array.from({ length: 10 }, () => '<i></i>').join('');
 function updateHUD() {
@@ -121,16 +125,17 @@ function updateHUD() {
   $('charm-status').textContent = p.charm_ticks > 0 ? `Bùa Gió ${(p.charm_ticks / 60).toFixed(1)}s` : game.respawnTicks ? `Hồi sinh ${(game.respawnTicks / 60).toFixed(1)}s` : 'Giữ lửa trong tim';
   const sec = Math.ceil(game.timeLeft); $('time').textContent = `${String(Math.floor(sec / 60)).padStart(2, '0')}:${String(sec % 60).padStart(2, '0')}`; $('time').classList.toggle('urgent', game.timeLeft <= 30);
   $('wind-status').textContent = game.wind.active ? 'GIÓ MẠNH · CẨN THẬN MÉP ĐẢO' : game.windWarning ? 'LÁ ĐANG BAY · GIÓ SẮP ĐẾN' : '';
-  $('lit-count').textContent = `${lit} / ${game.lanterns.length}`; $('score').textContent = String(game.score).padStart(4, '0'); $('campaign-score').textContent = `Tổng Đêm đã thắng: ${campaign.total}`;
+  $('lit-count').textContent = `${lit} / ${game.lanterns.length}`; $('score').textContent = String(game.score).padStart(4, '0'); $('campaign-score').textContent = `Bình minh cần ${Math.ceil(tuning.win_ratio * game.lanterns.length)} đèn · Tổng: ${campaign.total}`;
   [...$('lantern-progress').children].forEach((o, i) => { o.classList.toggle('lit', game.lanterns[i].lit); o.title = `${game.lanterns[i].id}: ${game.lanterns[i].deposited}/10`; });
-  $('carried').textContent = `${p.carried} / 10`; [...$('carry-slots').children].forEach((o, i) => o.classList.toggle('filled', i < p.carried));
+  if ($('carry-slots').children.length !== game.capacity) $('carry-slots').innerHTML = Array.from({ length: game.capacity }, () => '<i></i>').join('');
+  $('carried').textContent = `${p.carried} / ${game.capacity}`; [...$('carry-slots').children].forEach((o, i) => o.classList.toggle('filled', i < p.carried));
   const dashCD = p.dash_cd_ticks / 60, pulseCD = p.pulse_cd_ticks / 60;
   $('dash-status').textContent = p.charm_ticks > 0 ? 'Bùa Gió · Sẵn sàng' : dashCD > 0 ? `${dashCD.toFixed(1)}s` : 'Sẵn sàng';
   $('pulse-status').textContent = pulseCD > 0 ? `${pulseCD.toFixed(1)}s` : p.carried >= 3 ? 'Sẵn sàng · −3 con' : 'Cần 3 đom đóm';
   $('dash-meter').style.width = `${100 * (1 - Math.min(1, dashCD / 1.5))}%`; $('pulse-meter').style.width = `${100 * (1 - Math.min(1, pulseCD / 3))}%`;
-  const nearest = game.lanterns.filter(l => !l.lit).sort((a, b) => distance(a.pos, p.pos) - distance(b.pos, p.pos))[0];
+  const nearest = game.lanterns.filter(l => game.accepts(l)).sort((a, b) => distance(a.pos, p.pos) - distance(b.pos, p.pos))[0];
   const near = nearest && distance(nearest.pos, p.pos) <= 2;
-  $('prompt').classList.toggle('hidden', !near || mode !== 'playing'); if (near) $('prompt').textContent = `E — Nạp ánh sáng (${nearest.deposited}/10)`;
+  $('prompt').classList.toggle('hidden', !near || mode !== 'playing'); if (near) $('prompt').textContent = nearest.lit ? `E — Châm dầu (${game.fuel(nearest)}/100)` : `E — ${nearest.ever_lit ? 'Thắp lại' : 'Nạp ánh sáng'} (${nearest.deposited}/${game.lightCost(nearest)})`;
   const hint = nearest ? view.lampHint(nearest) : null; $('lamp-arrow').classList.toggle('hidden', !hint || hint.visible || mode !== 'playing');
   if (hint) { $('arrow-symbol').style.transform = `rotate(${hint.angle}deg)`; $('arrow-distance').textContent = `${nearest.id} · ${Math.round(distance(nearest.pos, p.pos))} m`; }
   drawMap();

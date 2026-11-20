@@ -1,5 +1,14 @@
 # Changelog
 
+## Phase 3 — Breaking changes (2026-11-20)
+
+- Contract1.2: thời lượng240/270/300; chỉ thắngtại bìnhminh với60%đèn, bỏall_lit vàtimebonus.
+- Đèn cófuel/history/relit_count; decay1/s,refuel10/con,relight5. Safezonechỉkhi>=30; drain5/s/con,state/eventmới.
+- Capacity10..20 theo sốlầnthắp. ToànbộscorethaybằngTicket03; snapshots/scenariofieldsmới.
+- Settingsmùmàu lưu lại; đèn tắt xẹp/vếtrách, thanh dầu/blink1Hz.
+- Testcũ đổi cólýdo ởADR003/notesPhase3, khôngskip. ProofPhase1/2 khôngđè.
+
+
 ## Phase2 —2026-11-20
 
 - Chuẩn hóa Test Contract1.1, tuning/score, canonical3 maps, pickupheight, pulse3D/timedpush, recoil/droppedTTL, fall/respawn,12-stagepipeline, pause outertick/sim_tick.

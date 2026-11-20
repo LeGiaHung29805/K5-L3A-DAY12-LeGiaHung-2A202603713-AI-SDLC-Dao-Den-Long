@@ -11,7 +11,7 @@ test('campaign sums only won nights, loss/replay never double-counts, dawn follo
 });
 test('settings persist volume/sensitivity across new sessions and survive denied/corruptstorage', () => {
   const data = new Map(), storage = { getItem: k => data.get(k), setItem: (k, v) => data.set(k, v) };
-  const a = new Settings(storage); a.set({ volume: .6, sensitivity: 1.75 }); assert.deepEqual(new Settings(storage).value, { volume: .6, sensitivity: 1.75 });
+  const a = new Settings(storage); a.set({ volume: .6, sensitivity: 1.75, accessiblePalette: true }); assert.deepEqual(new Settings(storage).value, { volume: .6, sensitivity: 1.75, accessiblePalette: true });
   storage.setItem('dao-den-long.settings', '{'); assert.doesNotThrow(() => new Settings(storage));
   const denied = new Settings({ getItem() { throw Error(); }, setItem() { throw Error(); } }); assert.doesNotThrow(() => denied.set({ volume: 0 }));
 });

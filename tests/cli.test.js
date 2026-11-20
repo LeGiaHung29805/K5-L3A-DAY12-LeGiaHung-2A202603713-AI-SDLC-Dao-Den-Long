@@ -11,11 +11,13 @@ test('CLI supports contract command, emits parseable JSONL, stops immediately on
   const dir = mkdtempSync(join(tmpdir(), 'lantern-cli-'));
   try {
     const out = join(dir, 'win.jsonl');
-    const result = invoke(['--seed', '-123', '--night', '1', '--ticks', '100', '--scenario', resolve('tests/fixtures/near-win.json'), '--inputs', resolve('tests/fixtures/win-inputs.json'), '--out', out]);
+    const scenario = join(dir, 'dawn.json');
+    const data = JSON.parse(readFileSync(resolve('tests/fixtures/near-win.json'), 'utf8')); data.time_left_s = 1 / 60; writeFileSync(scenario, JSON.stringify(data));
+    const result = invoke(['--seed', '-123', '--night', '1', '--ticks', '100', '--scenario', scenario, '--inputs', resolve('tests/fixtures/win-inputs.json'), '--out', out]);
     assert.equal(result.status, 0, result.stderr); assert.equal(result.stderr, '');
     const rows = readFileSync(out, 'utf8').trim().split('\n').map(JSON.parse);
     assert.equal(rows[0].type, 'snapshot'); assert.equal(rows[0].tick, 0); assert.equal(rows[0].score, 0);
-    assert.deepEqual(rows.at(-1), { type: 'end', ticks: 1, state: 'won', score: 588 });
+    assert.deepEqual(rows.at(-1), { type: 'end', ticks: 1, state: 'won', score: 1046 });
     assert.equal(rows.find(r => r.name === 'game_over').tick, 1);
   } finally { rmSync(dir, { recursive: true, force: true }); }
 });
